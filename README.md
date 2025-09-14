@@ -16,7 +16,7 @@ Some of inspiration:
 
 ## Page
 
-I just create 5 page for visitor to learn about me.
+I just create 6 page for visitor to learn about me.
 
 ```bash
 Site Map
@@ -62,14 +62,24 @@ Personal Website (bandomega.com)
 
 ### Home
 
-![Home](./images/Homepage.jpg)
+![Home](./images/homepage.jpg)
 
 ### About
 
+![About](./images/about.jpg)
+
 ### Projects
+
+![Projects](./images/projects.jpg)
 
 ### Blog
 
+![Blog](./images/blog.jpg)
+
 ### Blog Details
 
+![Blog Details](./images/blog-details.jpg)
+
 ### Find me
+
+![Find me](./images/contact.jpg)
