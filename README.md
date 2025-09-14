@@ -62,7 +62,7 @@ Personal Website (bandomega.com)
 
 ### Home
 
-![Home](./images/homepage.jpg)
+![Home](./images/home.jpg)
 
 ### About
 
