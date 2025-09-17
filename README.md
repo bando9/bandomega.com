@@ -14,23 +14,9 @@ Some of inspiration:
 - [haydenbleasel.com](https://www.haydenbleasel.com/)
 - [taniarascia.com](https://www.taniarascia.com/)
 
-## Page
+## Pages / Sitemap
 
 I just create 6 page for visitor to learn about me.
-
-```bash
-Site Map
-
-Personal Website (bandomega.com)
-├──Home
-├──About
-├──Blogs
-│──Blog Detail
-├──Projects
-└──Find me
-```
-
-### Features
 
 - [Home](#home): Overview of who I am and what I do.
 - [About](#blog): About: Shares my background, education, and journey into web development.
@@ -39,7 +25,7 @@ Personal Website (bandomega.com)
 - [Blog Details](#blog-details): Displays the full content of a single blog post with related articles.
 - [Find me](#find-me): Provides a form and links to connect with me on social media.
 
-## Technologies Used
+## Tech Stack
 
 - HTML5
 - Tailwind CSS
@@ -62,24 +48,24 @@ Personal Website (bandomega.com)
 
 ### Home
 
-![Home](./images/home.jpg)
+![Home](images/home.jpg)
 
 ### About
 
-![About](./images/about.jpg)
+![About](images/about.jpg)
 
 ### Projects
 
-![Projects](./images/projects.jpg)
+![Projects](images/projects.jpg)
 
 ### Blog
 
-![Blog](./images/blog.jpg)
+![Blog](images/blog.jpg)
 
 ### Blog Details
 
-![Blog Details](./images/blog-details.jpg)
+![Blog Details](images/blog-details.jpg)
 
 ### Find me
 
-![Find me](./images/contact.jpg)
+![Find me](images/contact.jpg)
