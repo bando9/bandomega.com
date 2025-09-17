@@ -1,4 +1,4 @@
-# bandomega.com
+# bandomega.com website
 
 ## Introduction
 
