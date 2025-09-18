@@ -70,6 +70,9 @@
   .body-xtra-small-400-12 {
     @apply font-normal text-xs text-text;
   }
+  .color-gradient {
+    @apply bg-gradient-to-r from-primary from-30% to-accent text-transparent bg-clip-text inline-block;
+  }
 }
 
 @layer base {
