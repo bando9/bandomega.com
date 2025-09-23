@@ -67,7 +67,7 @@
     @apply font-normal text-sm text-text;
   }
 
-  .body-xtra-small-400-12 {
+  .body-extra-small-400-12 {
     @apply font-normal text-xs text-text;
   }
   .color-gradient {
