@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #006aff;
+  --color-secondary: #0fb8f0;
+  --color-accent: #ef3434;
+  --color-bg-dark: #020104;
+  --color-bg-light: #04131c;
+  --color-text: #f3eef7;
+  --color-text-muted: #666269;
+  --color-text-blog: #e6e5e6;
+  --color-card: #021636;
+  --color-button: #06384b;
+  --color-linear: ;
+}
+
+@layer components {
+  .heading-700-24 {
+    @apply font-bold text-2xl text-text; /* text-2xl = 24px */
+  }
+
+  .title-600-64 {
+    @apply font-semibold text-6xl text-text; /* text-6xl = 64px */
+  }
+
+  .title-600-48 {
+    @apply font-semibold text-5xl text-text; /* text-5xl = 48px */
+  }
+
+  .heading-600-32 {
+    @apply font-semibold text-4xl text-text; /* text-4xl = 32px */
+  }
+
+  .subtitle-600-24 {
+    @apply font-semibold text-2xl text-text;
+  }
+
+  .subtitle-600-20 {
+    @apply font-semibold text-xl text-text;
+  }
+
+  .subtitle-600-16 {
+    @apply font-semibold text-base text-text;
+  }
+
+  .caption-500-24 {
+    @apply font-medium text-2xl text-text;
+  }
+
+  .caption-500-14 {
+    @apply font-medium text-sm text-text; /* text-sm = 14px */
+  }
+
+  .caption-500-12 {
+    @apply font-medium text-xs text-text; /* text-xs = 12px */
+  }
+
+  .body-default-400-16 {
+    @apply font-normal text-base text-text; /* 16px */
+  }
+
+  .body-large-400-18 {
+    @apply font-normal text-lg text-text; /* 18px */
+  }
+
+  .body-small-400-14 {
+    @apply font-normal text-sm text-text;
+  }
+
+  .body-extra-small-400-12 {
+    @apply font-normal text-xs text-text;
+  }
+  .color-gradient {
+    @apply bg-gradient-to-r from-primary from-30% to-accent text-transparent bg-clip-text inline-block;
+  }
+}
+
+@layer base {
+  ::selection {
+    @apply bg-text text-primary;
+  }
+}
+
+body {
+  font-family: "Geist", sans-serif;
+}
+
+/* @keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.animate-scroll {
+  animation: scroll 40s linear infinite;
+} */

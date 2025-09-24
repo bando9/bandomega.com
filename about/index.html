@@ -3,9 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About | Bandomega.com</title>
+    <title>About | Bando Mega Kusuma</title>
     <meta name="description" content="I am developer" />
-    <link rel="stylesheet" href="../index.css" />
+
+    <link rel="icon" href="/images/icons/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/src/output.css" />
   </head>
   <body class="bg-bg-dark text-text">
     <header class="flex justify-center">
@@ -13,7 +15,7 @@
         class="bg-bg-light text-text mt-10 px-10 py-3 rounded-xl overflow-hidden max-w-fit"
       >
         <ul class="font-semibold text-[16px] flex gap-[30px]">
-          <li><a href="index.html">Home</a></li>
+          <li><a href="/">Home</a></li>
           <li><a href="/about" class="text-secondary">About</a></li>
           <li><a href="/blog">Blog</a></li>
           <li><a href="/projects">Projects</a></li>
@@ -21,6 +23,591 @@
         </ul>
       </nav>
     </header>
-    <h1 class="text-4xl">Halaman About</h1>
+    <main>
+      <section id="header" class="mt-20 mx-[6.25rem]">
+        <div class="title">
+          <h1 class="title-600-48 text-center">
+            About <span class="color-gradient">Me</span>
+          </h1>
+          <p class="body-large-400-18 text-center text-text-muted">
+            Learning, building, and becoming along the way
+          </p>
+        </div>
+        <div class="flex justify-between items-center gap-25 mt-25">
+          <div class="">
+            <h2 class="heading-600-32">
+              I’m Bando Mega Kusuma, an aspiring Software Engineer, Frontend
+              Developer, and IoT enthusiast from Indonesia.
+            </h2>
+            <div class="body-default-400-16 mt-2.5">
+              <p>
+                I was born in 1999 in Bogor, Indonesia, and have lived in
+                Semarang for most of my life. I hold a degree in Physics, with a
+                focus on electronics and instrumentation. During my studies, I
+                discovered my passion for programming — especially web
+                development — and decided to pursue a career in this field.
+              </p>
+              <p>
+                My learning journey began with reading articles, taking online
+                courses, and joining both online and campus IT communities.
+                Along the way, I started writing articles to document what I had
+                learned — not only to strengthen my own understanding but also
+                to share knowledge with others on the same path.
+              </p>
+
+              <p>
+                Today, I am growing as a full-stack engineer, with a strong
+                focus on frontend development. I enjoy building projects that
+                combine clean design, responsive user interfaces, and solid
+                technical foundations.
+              </p>
+            </div>
+          </div>
+          <div class="relative w-full flex justify-center items-center py-15">
+            <div class="absolute -rotate-3 -left-10 top-0">
+              <img
+                src="/images/profile.jpg"
+                alt="Profile 1"
+                class="w-70 h-80 object-cover rounded-xl shadow-lg"
+              />
+            </div>
+            <div class="relative rotate-3 z-10">
+              <img
+                src="/images/profile-2.jpg"
+                alt="profile"
+                class="w-70 h-80 object-cover rounded-xl shadow-lg"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="tech" class="mt-20 mx-[6.25rem]">
+        <div class="flex justify-start items-center gap-1.5">
+          <img
+            src="/images/icons/growth.svg"
+            alt="growth-stack-icon"
+            class="w-10 h-10 -rotate-8"
+          />
+          <h2 class="title-600-48">
+            Growth <span class="color-gradient">Stack</span>
+          </h2>
+        </div>
+        <div class="stack mt-10">
+          <div class="grid grid-cols-2 gap-10">
+            <div class="left-side">
+              <div>
+                <h3 class="subtitle-600-20">Frontend Development</h3>
+                <div class="grid grid-cols-4 gap-y-1 mt-3">
+                  <div class="flex gap-1 items-center">
+                    <img src="/images/stack/html5.svg" alt="HTML" class="w-5" />
+                    <p class="subtitle-600-16">HTML</p>
+                  </div>
+
+                  <div class="flex gap-1 items-center">
+                    <img src="/images/stack/css.svg" alt="CSS" class="w-5" />
+                    <p class="subtitle-600-16">CSS</p>
+                  </div>
+
+                  <div class="flex gap-1 items-center">
+                    <img
+                      src="/images/stack/javascript.svg"
+                      alt="JavaScript"
+                      class="w-5"
+                    />
+                    <p class="subtitle-600-16">JavaScript</p>
+                  </div>
+
+                  <div class="flex gap-1 items-center blur-sm hover:blur-none">
+                    <img
+                      src="/images/stack/typescript.svg"
+                      alt="TypeScript"
+                      class="w-5"
+                    />
+                    <p class="subtitle-600-16">TypeScript</p>
+                  </div>
+
+                  <div class="flex gap-1 items-center blur-sm hover:blur-none">
+                    <img
+                      src="/images/stack/react.svg"
+                      alt="React"
+                      class="w-5"
+                    />
+                    <p class="subtitle-600-16">React</p>
+                  </div>
+
+                  <div class="flex gap-1 items-center blur-sm hover:blur-none">
+                    <img
+                      src="/images//stack/reactrouter.svg"
+                      alt="React Router"
+                      class="w-5"
+                    />
+                    <p class="subtitle-600-16">React Router</p>
+                  </div>
+
+                  <div class="flex gap-1 items-center blur-sm hover:blur-none">
+                    <img
+                      src="/images//stack/redux.svg"
+                      alt="Readux"
+                      class="w-5"
+                    />
+                    <p class="subtitle-600-16">Redux</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-8 blur-sm hover:blur-none">
+                <h3 class="subtitle-600-20">Backend & API Development</h3>
+                <div class="grid grid-cols-4 gap-y-1 mt-3">
+                  <div class="flex gap-1 items-center">
+                    <img
+                      src="/images//stack/docker.svg"
+                      alt="Docker"
+                      class="w-5"
+                    />
+                    <p class="subtitle-600-16">Docker</p>
+                  </div>
+
+                  <div class="flex gap-1 items-center">
+                    <img
+                      src="/images//stack/nodedotjs.svg"
+                      alt="Node.js"
+                      class="w-5"
+                    />
+                    <p class="subtitle-600-16">Node.js</p>
+                  </div>
+
+                  <div class="flex gap-1 items-center">
+                    <img
+                      src="/images//stack/express.svg"
+                      alt="Express"
+                      class="w-5"
+                    />
+                    <p class="subtitle-600-16">Express</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-8 blur-sm hover:blur-none">
+                <h3 class="subtitle-600-20">Fullstack Frameworks</h3>
+                <div class="grid grid-cols-4 gap-y-1 mt-3">
+                  <div class="flex gap-1 items-center">
+                    <img
+                      src="/images//stack/nextdotjs.svg"
+                      alt="Next.js"
+                      class="w-5"
+                    />
+                    <p class="subtitle-600-16">Next.js</p>
+                  </div>
+
+                  <div class="flex gap-1 items-center">
+                    <img
+                      src="/images//stack/remix.svg"
+                      alt="Remix"
+                      class="w-5"
+                    />
+                    <p class="subtitle-600-16">Remix</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-8">
+                <h3 class="subtitle-600-20">Database & ORM</h3>
+                <div class="grid grid-cols-4 gap-y-1 mt-3">
+                  <div class="flex gap-1 items-center">
+                    <img
+                      src="/images/stack/postgresql.svg"
+                      alt="PostgreSQL"
+                      class="w-6"
+                    />
+                    <p class="subtitle-600-16">PostgreSQL</p>
+                  </div>
+
+                  <div class="flex gap-1 items-center blur-sm hover:blur-none">
+                    <img
+                      src="/images/stack/mysql.svg"
+                      alt="MySQL"
+                      class="w-6"
+                    />
+                    <p class="subtitle-600-16">MySQL</p>
+                  </div>
+
+                  <div class="flex gap-1 items-center blur-sm hover:blur-none">
+                    <img
+                      src="/images/stack/prisma.svg"
+                      alt="Prisma"
+                      class="w-6"
+                    />
+                    <p class="subtitle-600-16">Prisma</p>
+                  </div>
+
+                  <div class="flex gap-1 items-center blur-sm hover:blur-none">
+                    <img
+                      src="/images/stack/drizzle.svg"
+                      alt="Drizzle"
+                      class="w-6"
+                    />
+                    <p class="subtitle-600-16">Drizzle</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="right-side">
+              <div>
+                <h3 class="subtitle-600-20">
+                  Operating System & Development Environtment
+                </h3>
+                <div class="grid grid-cols-4 gap-y-1 mt-3">
+                  <div class="flex gap-1 items-center">
+                    <img
+                      src="/images/stack/linux.svg"
+                      alt="Linux"
+                      class="w-6"
+                    />
+                    <p class="subtitle-600-16">Linux</p>
+                  </div>
+
+                  <div class="flex gap-1 items-center">
+                    <img
+                      src="/images/stack/ubuntu.svg"
+                      alt="Ubuntu"
+                      class="w-6"
+                    />
+                    <p class="subtitle-600-16">Ubuntu</p>
+                  </div>
+
+                  <div class="flex gap-1 items-center">
+                    <img
+                      src="/images/stack/gnometerminal.svg"
+                      alt="Terminal"
+                      class="w-6"
+                    />
+                    <p class="subtitle-600-16">Terminal</p>
+                  </div>
+
+                  <div class="flex gap-1 items-center">
+                    <img
+                      src="/images/stack/markdown.svg"
+                      alt="Markdown"
+                      class="w-6"
+                    />
+                    <p class="subtitle-600-16">Markdown</p>
+                  </div>
+
+                  <div class="flex gap-1 items-center blur-sm hover:blur-none">
+                    <img src="/images/stack/vim.svg" class="w-6" alt="Vim" />
+                    <p class="subtitle-600-16">Vim</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-8">
+                <h3 class="subtitle-600-20">Design & Collaboration</h3>
+                <div class="grid grid-cols-4 gap-y-1 mt-3">
+                  <div class="flex gap-1 items-center">
+                    <img
+                      src="/images/stack/figma.svg"
+                      class="w-6"
+                      alt="Figma"
+                    />
+                    <p class="subtitle-600-16">Figma</p>
+                  </div>
+
+                  <div class="flex gap-1 items-center">
+                    <img src="/images/stack/git.svg" class="w-6" alt="Git" />
+                    <p class="subtitle-600-16">Git</p>
+                  </div>
+
+                  <div class="flex gap-1 items-center">
+                    <img
+                      src="/images/stack/github.svg"
+                      class="w-6"
+                      alt="GitHub"
+                    />
+                    <p class="subtitle-600-16">GitHub</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-8">
+                <h3 class="subtitle-600-20">
+                  Build Tools & Package Management
+                </h3>
+                <div class="grid grid-cols-4 gap-y-1 mt-3">
+                  <div class="flex gap-1 items-center">
+                    <img src="/images/stack/vite.svg" class="w-6" alt="Vite" />
+                    <p class="subtitle-600-16">Vite</p>
+                  </div>
+
+                  <div class="flex gap-1 items-center blur-sm hover:blur-none">
+                    <img
+                      src="/images/stack/esbuild.svg"
+                      class="w-6"
+                      alt="Esbuild"
+                    />
+                    <p class="subtitle-600-16">esbuild</p>
+                  </div>
+
+                  <div class="flex gap-1 items-center blur-sm hover:blur-none">
+                    <img
+                      src="/images/stack/webpack.svg"
+                      class="w-6"
+                      alt="Webpack"
+                    />
+                    <p class="subtitle-600-16">Webpack</p>
+                  </div>
+
+                  <div class="flex gap-1 items-center blur-sm hover:blur-none">
+                    <img src="/images/stack/deno.svg" class="w-6" alt="Deno" />
+                    <p class="subtitle-600-16">Deno</p>
+                  </div>
+
+                  <div class="flex gap-1 items-center blur-sm hover:blur-none">
+                    <img src="/images/stack/bun.svg" class="w-6" alt="Bun" />
+                    <p class="subtitle-600-16">Bun</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-8">
+                <h3 class="subtitle-600-20">Deployment & Cloud</h3>
+                <div class="grid grid-cols-4 gap-y-1 mt-3">
+                  <div class="flex gap-1 items-center">
+                    <img
+                      src="/images/stack/vercel.svg"
+                      class="w-6"
+                      alt="Vercel"
+                    />
+                    <p class="subtitle-600-16">Vercel</p>
+                  </div>
+
+                  <div class="flex gap-1 items-center">
+                    <img
+                      src="/images/stack/netlify.svg"
+                      class="w-6"
+                      alt="Netlify"
+                    />
+                    <p class="subtitle-600-16">Netlify</p>
+                  </div>
+
+                  <div class="flex gap-1 items-center">
+                    <img
+                      src="/images/stack/cloudflare.svg"
+                      class="w-6"
+                      alt="Cloudflare"
+                    />
+                    <p class="subtitle-600-16">Cloudflare</p>
+                  </div>
+
+                  <div class="flex gap-1 items-center blur-sm hover:blur-none">
+                    <img
+                      src="/images/stack/digitalocean.svg"
+                      class="w-6"
+                      alt="DigitalOcean"
+                    />
+                    <p class="subtitle-600-16">DigitalOcean</p>
+                  </div>
+
+                  <div
+                    class="flex gap-1 items-center col-span-2 blur-sm hover:blur-none"
+                  >
+                    <img
+                      src="/images/stack/googlecloud.svg"
+                      class="w-6"
+                      alt="Google Cloud"
+                    />
+                    <p class="subtitle-600-16">Google Cloud</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="certificate" class="w-full overflow-hidden mt-8">
+        <div class="flex animate-scroll space-x-6">
+          <div class="min-w-[300px] bg-white shadow rounded">
+            <img
+              src="/images/certificates/certificate-reactjs.jpg"
+              alt="Certificate 1"
+              class="w-full h-auto rounded"
+            />
+          </div>
+
+          <div class="min-w-[300px] bg-white shadow rounded">
+            <img
+              src="/images/certificates/certificate-reactjs.jpg"
+              alt="Certificate 2"
+              class="w-full h-auto rounded"
+            />
+          </div>
+
+          <div class="min-w-[300px] bg-white shadow rounded">
+            <img
+              src="/images/certificates/certificate-reactjs.jpg"
+              alt="Certificate 3"
+              class="w-full h-auto rounded"
+            />
+          </div>
+
+          <div class="min-w-[300px] bg-white shadow rounded">
+            <img
+              src="/images/certificates/certificate-reactjs.jpg"
+              alt="Certificate 4"
+              class="w-full h-auto rounded"
+            />
+          </div>
+
+          <div class="min-w-[300px] bg-white shadow rounded">
+            <img
+              src="/images/certificates/certificate-reactjs.jpg"
+              alt="Certificate 1"
+              class="w-full h-auto rounded"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="work-experience" class="mt-20 mx-[6.25rem] h-screen">
+        <div class="flex justify-start items-center gap-1.5">
+          <img
+            src="/images/icons/work.svg"
+            alt="work-icon"
+            class="w-10 h-10 -rotate-8"
+          />
+          <h2 class="title-600-48">
+            Work <span class="color-gradient">Experience</span>
+          </h2>
+        </div>
+      </section>
+
+      <section id="education" class="mt-20 mx-[6.25rem]">
+        <div class="flex justify-center">
+          <div class="flex justify-start items-center gap-1.5 mx-auto">
+            <img
+              src="/images/icons/education.svg"
+              alt="education-icon"
+              class="w-8 h-8 -rotate-8"
+            />
+            <h2 class="heading-600-32 color-gradient">Education</h2>
+          </div>
+        </div>
+        <div class="grid grid-cols-4 mt-10">
+          <h3 class="subtitle-600-24">2019-2024</h3>
+          <div class="col-span-3">
+            <h3 class="subtitle-600-24">Bachelor of Science</h3>
+            <h4 class="subtitle-600-16">
+              Walisongo State Islamic Univesity -- Semarang, Indonesia.
+            </h4>
+
+            <p class="caption-500-14 mt-5">
+              I hold a Bachelor’s degree in Physics from UIN Walisongo (2024),
+              where I specialized in electronics and instrumentation. Throughout
+              my studies, I worked with microcontrollers, sensors, and IoT
+              platforms, which strengthened my logical thinking and
+              problem-solving skills. I also gained experience in programming,
+              research, and documentation — transferable skills that now support
+              my journey in web development.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="mt-20">
+      <div
+        class="w-full h-[1px] bg-gradient-to-r from-bg-dark via-text to-bg-dark my-8 opacity-30"
+      ></div>
+
+      <div class="grid grid-cols-2 mx-[6.25rem] gap-55">
+        <div>
+          <h1 class="caption-500-24">Bando Mega Kusuma</h1>
+          <p class="caption-500-14 text-text-muted mt-2">
+            Learning, building, and sharing software concepts through mental
+            models that make coding more accessible.
+          </p>
+          <div>
+            <ul class="flex gap-5 mt-5">
+              <li>
+                <a href="mailto:bandomega1@gmail.com">
+                  <img
+                    src="/images/icons/mail.svg"
+                    alt="mail-icon"
+                    class="w-5 h-5"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="https://t.me/bandomega" target="_blank">
+                  <img
+                    src="/images/icons/telegram.svg"
+                    alt="Telegram"
+                    class="w-6 h-6"
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/bando-mega-kusuma"
+                  target="_blank"
+                >
+                  <img
+                    src="/images/icons/linkedin.svg"
+                    alt="LinkedIn"
+                    class="w-6 h-6"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.github.com/bando9" target="_blank">
+                  <img
+                    src="/images/stack/github.svg"
+                    class="w-5 h-5"
+                    alt="GitHub"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.threads.com/@asliandho" target="_blank">
+                  <img
+                    src="/images/icons/thread.svg"
+                    alt="Thread"
+                    class="w-5 h-5"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="grid grid-cols-2">
+          <div>
+            <h3 class="text-text-muted">General</h3>
+            <ul class="flex flex-col gap-1 mt-1.5">
+              <li><a href="/" class="hover:underline">Home</a></li>
+              <li><a href="/about" class="hover:underline">About</a></li>
+              <li><a href="/blog" class="hover:underline">Blog</a></li>
+              <li><a href="/projects" class="hover:underline">Project</a></li>
+              <li><a href="/contact" class="hover:underline">Find Me</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-text-muted">The website</h3>
+            <ul class="flex flex-col gap-1 mt-1.5">
+              <li><a href="#" class="hover:underline">Bucket List</a></li>
+              <li><a href="#" class="hover:underline">Uses</a></li>
+              <li><a href="#" class="hover:underline">Attribution</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div
+        class="w-full h-[1px] bg-gradient-to-r from-bg-dark via-text to-bg-dark my-8 opacity-30"
+      ></div>
+
+      <div class="caption-500-14 text-center text-text-muted mb-8">
+        Copyright &copy; 2025. Bando Mega Allright reserved.
+      </div>
+    </footer>
   </body>
 </html>
