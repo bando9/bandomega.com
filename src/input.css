@@ -82,8 +82,19 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Geist", sans-serif;
+}
+
+.header-blog {
+  background-image: url("/images/blog-image-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 /* @keyframes scroll {
