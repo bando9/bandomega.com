@@ -9,28 +9,44 @@
     <link href="/src/output.css" rel="stylesheet" />
   </head>
   <body class="bg-bg-dark text-text">
-    <header class="flex justify-center">
-      <nav
-        class="bg-bg-light text-text mt-10 px-10 py-3 rounded-xl overflow-hidden max-w-fit"
-      >
-        <ul class="font-semibold text-[16px] flex gap-[30px]">
-          <li><a href="/" class="text-secondary">Home</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/blog">Blog</a></li>
-          <li><a href="/projects">Projects</a></li>
-          <li><a href="/contact">Contact</a></li>
-        </ul>
-      </nav>
+    <header class="absolute top-0 left-0 w-full z-10">
+      <div class="flex justify-center items-center px-4">
+        <button
+          id="hamburger"
+          name="hamburger"
+          type="button"
+          class="block absolute right-10 top-5 md:hidden"
+        >
+          <span class="hamburger-line transition origin-top-left"></span>
+          <span class="hamburger-line transition"></span>
+          <span class="hamburger-line transition origin-bottom-left"></span>
+        </button>
+
+        <nav
+          id="nav-menu"
+          class="bg-bg-light text-text mt-10 max-w-fit rounded-xl absolute py-10 px-10 md:px-10 md:py-3 hidden md:block top-full md:top-full right-20 md:right-auto md:left-1/2 md:-translate-x-1/2"
+        >
+          <ul
+            class="subtitle-600-16 flex flex-col md:flex-row gap-1.5 md:gap-8"
+          >
+            <li><a href="/" class="text-secondary">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/projects">Projects</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <main>
+    <main class="mt-35">
       <section
         id="header"
-        class="flex justify-between items-start gap-3 mt-15 mx-[6.25rem]"
+        class="flex flex-col lg:flex-row justify-between items-start gap-3 mt-15 md:mx-25 mx-5"
       >
         <div class="w-full">
           <div
-            class="inline-flex items-center px-6 py-3 rounded-full bg-gradient-to-r from-[#1e3a8a] from-20% to-[#0f172a] to-70% shadow-inner mb-10"
+            class="inline-flex items-center md:px-6 md:py-3 px-3 py-2 rounded-full color-gradient-secondary mb-10"
           >
             <span class="relative flex mr-3">
               <span
@@ -41,34 +57,38 @@
               ></span>
             </span>
 
-            <span class="subtitle-600-20"> Exploring New Opportunities </span>
+            <span class="md:subtitle-600-20 subtitle-600-16">
+              Exploring New Opportunities
+            </span>
           </div>
           <div class="flex flex-col gap-3">
-            <h1 class="title-600-48">I'm Bando Mega Kusuma</h1>
-            <p class="body-default-400-16">
+            <h1 class="heading-600-32 md:title-600-48">
+              I'm Bando Mega Kusuma
+            </h1>
+            <p class="body-small-400-14 md:body-default-400-16">
               I develop with React and write to guide others in rethingking the
               fundamentals through simple, effective mental models.
             </p>
           </div>
-          <div class="flex gap-5 mt-10">
+          <div class="flex gap-5 mt-5 md:mt-10 items-center">
             <a href="/projects">
-              <div
-                class="text-text bg-button px-6 py-3 rounded-xl flex gap-2 cursor-pointer"
+              <h3
+                class="body-small-400-14 md:body-defult-400-16 text-text bg-button md:px-6 md:py-3 px-4 py-2 rounded-lg md:rounded-lg flex gap-2 cursor-pointer"
               >
-                <h3 class="body-defult-400-16">View My Projects</h3>
-              </div>
+                View My Projects
+              </h3>
             </a>
 
             <a href="/about">
               <h3
-                class="text-text bg-bg-dark border-2 border-button px-6 py-3 rounded-xl cursor-pointer hover:shadow-md shadow-button"
+                class="text-text bg-bg-dark border-2 border-button md:px-6 md:py-3 px-4 py-2 rounded-lg md:rounded-lg cursor-pointer hover:shadow-md shadow-button body-small-400-14 md:body-defult-400-16"
               >
                 More about me
               </h3>
             </a>
           </div>
 
-          <div class="flex gap-3 mt-5">
+          <div class="flex gap-3 mt-3 md:mt-5">
             <a
               href="https://drive.google.com/file/d/1gmkJ5dN6XnUKEilYNey5fBkEe_Gq8_zE/view?usp=sharing"
               target="_blank"
@@ -108,7 +128,7 @@
           </div>
         </div>
 
-        <div class="max-w-120">
+        <div class="md:max-w-120 max-w-100 mx-auto mt-3 md:mt-0">
           <img
             src="/images/profile.jpg"
             alt="bando-profile"
@@ -119,13 +139,13 @@
 
       <section
         id="gallery"
-        class="w-full mt-40 flex gap-10 overflow-hidden h-120 py-10"
+        class="w-full mt-40 flex gap-10 overflow-hidden h-120 py-10 bg-accent"
       >
-        <div class="max-w-[18rem] max-h-[18rem]">
+        <div class="max-w-60 md:max-w-75 max-h-10 md:max-h-75">
           <img
-            class="rotate-2 rounded-xl h-100 w-100"
+            class="rotate-2 rounded-xl h-60 w-60 md:h-100 md:w-100"
             src="https://images.unsplash.com/photo-1625967445189-d35d49a37501?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="semarang-city"
+            alt="Semarang City"
           />
         </div>
 
@@ -737,5 +757,6 @@
         Copyright &copy; 2025. Bando Mega Allright reserved.
       </div>
     </footer>
+    <script src="/src/script.js"></script>
   </body>
 </html>
