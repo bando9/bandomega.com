@@ -23,7 +23,7 @@ I just create 6 page for visitor to learn about me.
 - [Projects](#projects): Showcases my personal projects with descriptions, tech stacks, and demo links.
 - [Blog](#blog): Blog: Features my writings, tutorials, and learning journey.
 - [Blog Details](#blog-details): Displays the full content of a single blog post with related articles.
-- [Find me](#find-me): Provides a form and links to connect with me on social media.
+- [Contact](#find-me): Provides a form and links to connect with me on social media.
 
 ## Tech Stack
 
@@ -66,6 +66,6 @@ I just create 6 page for visitor to learn about me.
 
 ![Blog Details](images/blog-details.jpg)
 
-### Find me
+### Contact
 
-![Find me](images/contact.jpg)
+![Contact](images/contact.jpg)
