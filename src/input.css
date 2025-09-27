@@ -97,7 +97,7 @@ body {
   background-position: center;
 }
 
-/* @keyframes scroll {
+@keyframes scroll {
   0% {
     transform: translateX(0);
   }
@@ -107,4 +107,4 @@ body {
 }
 .animate-scroll {
   animation: scroll 40s linear infinite;
-} */
+}
