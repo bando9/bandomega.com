@@ -246,6 +246,9 @@
   .ms-\[6\.25rem\] {
     margin-inline-start: 6.25rem;
   }
+  .me-10 {
+    margin-inline-end: calc(var(--spacing) * 10);
+  }
   .me-\[3rem\] {
     margin-inline-end: 3rem;
   }
@@ -321,6 +324,9 @@
   .h-3 {
     height: calc(var(--spacing) * 3);
   }
+  .h-4 {
+    height: calc(var(--spacing) * 4);
+  }
   .h-5 {
     height: calc(var(--spacing) * 5);
   }
@@ -371,6 +377,9 @@
   }
   .w-3 {
     width: calc(var(--spacing) * 3);
+  }
+  .w-4 {
+    width: calc(var(--spacing) * 4);
   }
   .w-5 {
     width: calc(var(--spacing) * 5);
@@ -512,6 +521,9 @@
   }
   .gap-10 {
     gap: calc(var(--spacing) * 10);
+  }
+  .gap-15 {
+    gap: calc(var(--spacing) * 15);
   }
   .gap-20 {
     gap: calc(var(--spacing) * 20);
@@ -763,6 +775,20 @@
   .blur-sm {
     --tw-blur: blur(var(--blur-sm));
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+  }
+  .group-hover\:underline {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        text-decoration-line: underline;
+      }
+    }
+  }
+  .hover\:bg-bg-light {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-bg-light);
+      }
+    }
   }
   .hover\:text-text {
     &:hover {
