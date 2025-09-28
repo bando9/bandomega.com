@@ -265,6 +265,9 @@
   .mx-auto {
     margin-inline: auto;
   }
+  .my-4 {
+    margin-block: calc(var(--spacing) * 4);
+  }
   .my-8 {
     margin-block: calc(var(--spacing) * 8);
   }
@@ -623,9 +626,6 @@
   .gap-y-1 {
     row-gap: calc(var(--spacing) * 1);
   }
-  .justify-self-start {
-    justify-self: flex-start;
-  }
   .overflow-hidden {
     overflow: hidden;
   }
@@ -708,9 +708,6 @@
   }
   .bg-primary {
     background-color: var(--color-primary);
-  }
-  .bg-secondary {
-    background-color: var(--color-secondary);
   }
   .bg-white {
     background-color: var(--color-white);
@@ -1093,6 +1090,11 @@
       margin-inline: calc(var(--spacing) * 25);
     }
   }
+  .md\:my-0 {
+    @media (width >= 48rem) {
+      margin-block: calc(var(--spacing) * 0);
+    }
+  }
   .md\:me-10 {
     @media (width >= 48rem) {
       margin-inline-end: calc(var(--spacing) * 10);
@@ -1232,11 +1234,6 @@
   .md\:justify-between {
     @media (width >= 48rem) {
       justify-content: space-between;
-    }
-  }
-  .md\:justify-center {
-    @media (width >= 48rem) {
-      justify-content: center;
     }
   }
   .md\:gap-1\.5 {
