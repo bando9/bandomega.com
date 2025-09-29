@@ -9,7 +9,7 @@
     <link href="/src/output.css" rel="stylesheet" />
   </head>
   <body class="bg-bg-dark text-text">
-    <header class="absolute top-0 left-0 w-full z-10">
+    <header class="fixed top-0 left-0 w-full z-10">
       <div class="flex justify-center items-center px-4">
         <button
           id="hamburger"
@@ -71,7 +71,7 @@
             </p>
           </div>
 
-          <div class="flex gap-5 mt-5 md:mt-10 items-center">
+          <div class="flex gap-5 mt-5 md:mt-10 items-center flex-wrap">
             <a href="/projects">
               <h3
                 class="body-small-400-14 md:body-defult-400-16 text-text bg-button md:px-6 md:py-3 px-4 py-2 rounded-lg md:rounded-lg flex gap-2 cursor-pointer"
@@ -89,7 +89,7 @@
             </a>
           </div>
 
-          <div class="flex gap-3 mt-3 md:mt-5">
+          <div class="flex gap-3 mt-3 md:mt-5 flex-wrap">
             <a
               href="https://drive.google.com/file/d/1gmkJ5dN6XnUKEilYNey5fBkEe_Gq8_zE/view?usp=sharing"
               target="_blank"
@@ -129,11 +129,11 @@
           </div>
         </div>
 
-        <div class="md:max-w-120 max-w-100 mx-auto mt-3 md:mt-0">
+        <div class="w-full md:max-w-120 flex justify-center mt-6 lg:mt-0">
           <img
             src="/images/profile.jpg"
             alt="bando-profile"
-            class="rounded-xl"
+            class="rounded-xl max-w-100 sm:w-full object-cover"
           />
         </div>
       </section>
@@ -194,7 +194,7 @@
           <div
             class="project-card-left flex flex-col md:flex-row items-start md:justify-between gap-6"
           >
-            <div class="order-1 w-full md:w-1/2">
+            <div class="order-1 w-full md:w-md">
               <img
                 src="/images/project-1.png"
                 alt="Photo Personal Web v1"
@@ -202,7 +202,7 @@
               />
             </div>
 
-            <div class="order-2 md:order-1 md:w-1/2">
+            <div class="order-2 md:order-1 md:w-2/3">
               <h1
                 class="subtitle-600-20 md:subtitle-600-24 mb-2 group-hover:underline"
               >
@@ -277,15 +277,7 @@
           <div
             class="project-card-right flex flex-col md:flex-row items-start md:justify-between gap-6"
           >
-            <div class="order-1 w-full md:w-1/2">
-              <img
-                src="/images/project-2.jpg"
-                alt="Photo Memomate"
-                class="rounded-lg w-full h-auto"
-              />
-            </div>
-
-            <div class="order-2 md:order-1 md:w-1/2">
+            <div class="order-2 md:order-1 md:w-2/3">
               <h1
                 class="subtitle-600-20 md:subtitle-600-24 mb-2 group-hover:underline"
               >
@@ -349,12 +341,20 @@
                 </a>
               </div>
             </div>
+
+            <div class="order-1 w-full md:w-md">
+              <img
+                src="/images/project-2.jpg"
+                alt="Photo Memomate"
+                class="rounded-lg w-full h-auto"
+              />
+            </div>
           </div>
 
           <div
             class="project-card-right flex flex-col md:flex-row items-start md:justify-between gap-6"
           >
-            <div class="order-1 w-full md:w-1/2">
+            <div class="order-1 w-full md:w-md">
               <img
                 src="/images/project-3.jpg"
                 alt="Photo Memomate"
@@ -362,7 +362,7 @@
               />
             </div>
 
-            <div class="order-2 md:order-1 md:w-1/2">
+            <div class="order-2 md:order-1 md:w-2/3">
               <h1
                 class="subtitle-600-20 md:subtitle-600-24 mb-2 group-hover:underline"
               >
@@ -437,7 +437,7 @@
           </div>
         </div>
 
-        <div class="flex justify-center mt-10 text-center">
+        <div class="flex justify-center mt-8 md:mt-12 text-center">
           <a href="/projects/">
             <h3
               class="flex items-center gap-2 cursor-pointer border rounded-lg py-1 px-3 hover:underline"
@@ -464,7 +464,7 @@
 
         <div class="blog-list mt-9 md:mt-13">
           <div
-            class="card-blog text-text flex flex-col md:flex-row cursor-pointer gap-6 items-center md:justify-between md:mt-15 mt-10 group"
+            class="card-blog text-text flex flex-col md:flex-row cursor-pointer gap-6 items-start md:items-start md:justify-between mt-8 md:mt-12 group"
           >
             <div class="order-2 md:order-1">
               <h4 class="caption-500-14 mb-2 md:mb-4">September 24, 2025</h4>
@@ -477,7 +477,9 @@
                 An in-depth guide on how to animate enter and exit animation for
                 list using Motion for React (previously Framer Motion).
               </p>
-              <div class="flex flex-col md:flex-row md:justify-between">
+              <div
+                class="flex flex-col gap-3 md:flex-row md:items-center md:justify-between"
+              >
                 <div class="icon flex gap-5">
                   <div class="flex gap-1 md:gap-1.5 items-center">
                     <img
@@ -496,7 +498,7 @@
                     <p class="caption-500-14">6 min read</p>
                   </div>
                 </div>
-                <div class="tag flex gap-2 md:gap-3 mt-3">
+                <div class="tag flex flex-wrap gap-2 md:gap-3 mt-2 md:mt-0">
                   <h4
                     class="block body-extra-small-400-12 bg-card py-2 px-3 md:py-2 md:px-4 rounded-xl md:rounded-2xl hover:bg-bg-light"
                   >
@@ -510,7 +512,7 @@
                 </div>
               </div>
             </div>
-            <div class="order-1 w-full md:w-64">
+            <div class="order-1 w-full md:w-2/5 md:max-w-sm">
               <img
                 src="images/blog-image.jpg"
                 alt="Blog Image"
@@ -520,7 +522,7 @@
           </div>
 
           <div
-            class="card-blog text-text flex flex-col md:flex-row cursor-pointer gap-6 items-center md:justify-between md:mt-15 mt-10 group"
+            class="card-blog text-text flex flex-col md:flex-row cursor-pointer gap-6 items-start md:items-start md:justify-between mt-8 md:mt-12 group"
           >
             <div class="order-2 md:order-1">
               <h4 class="caption-500-14 mb-2 md:mb-4">September 24, 2025</h4>
@@ -533,7 +535,9 @@
                 An in-depth guide on how to animate enter and exit animation for
                 list using Motion for React (previously Framer Motion).
               </p>
-              <div class="flex flex-col md:flex-row md:justify-between">
+              <div
+                class="flex flex-col gap-3 md:flex-row md:items-center md:justify-between"
+              >
                 <div class="icon flex gap-5">
                   <div class="flex gap-1 md:gap-1.5 items-center">
                     <img
@@ -552,7 +556,7 @@
                     <p class="caption-500-14">6 min read</p>
                   </div>
                 </div>
-                <div class="tag flex gap-2 md:gap-3 mt-3">
+                <div class="tag flex flex-wrap gap-2 md:gap-3 mt-2 md:mt-0">
                   <h4
                     class="block body-extra-small-400-12 bg-card py-2 px-3 md:py-2 md:px-4 rounded-xl md:rounded-2xl hover:bg-bg-light"
                   >
@@ -566,7 +570,7 @@
                 </div>
               </div>
             </div>
-            <div class="order-1 w-full md:w-64">
+            <div class="order-1 w-full md:w-2/5 md:max-w-sm">
               <img
                 src="images/blog-image.jpg"
                 alt="Blog Image"
@@ -576,7 +580,7 @@
           </div>
 
           <div
-            class="card-blog text-text flex flex-col md:flex-row cursor-pointer gap-6 items-center md:justify-between md:mt-15 mt-10 group"
+            class="card-blog text-text flex flex-col md:flex-row cursor-pointer gap-6 items-start md:items-start md:justify-between mt-8 md:mt-12 group"
           >
             <div class="order-2 md:order-1">
               <h4 class="caption-500-14 mb-2 md:mb-4">September 24, 2025</h4>
@@ -589,7 +593,9 @@
                 An in-depth guide on how to animate enter and exit animation for
                 list using Motion for React (previously Framer Motion).
               </p>
-              <div class="flex flex-col md:flex-row md:justify-between">
+              <div
+                class="flex flex-col gap-3 md:flex-row md:items-center md:justify-between"
+              >
                 <div class="icon flex gap-5">
                   <div class="flex gap-1 md:gap-1.5 items-center">
                     <img
@@ -608,7 +614,7 @@
                     <p class="caption-500-14">6 min read</p>
                   </div>
                 </div>
-                <div class="tag flex gap-2 md:gap-3 mt-3">
+                <div class="tag flex flex-wrap gap-2 md:gap-3 mt-2 md:mt-0">
                   <h4
                     class="block body-extra-small-400-12 bg-card py-2 px-3 md:py-2 md:px-4 rounded-xl md:rounded-2xl hover:bg-bg-light"
                   >
@@ -622,7 +628,7 @@
                 </div>
               </div>
             </div>
-            <div class="order-1 w-full md:w-64">
+            <div class="order-1 w-full md:w-2/5 md:max-w-sm">
               <img
                 src="images/blog-image.jpg"
                 alt="Blog Image"
@@ -632,7 +638,7 @@
           </div>
         </div>
 
-        <div class="flex justify-center mt-9 md:mt-10 text-center">
+        <div class="flex justify-center mt-8 md:mt-12 text-center">
           <a href="/blog">
             <h3
               class="flex items-center gap-2 cursor-pointer border-1 rounded-lg py-1 px-3 hover:underline"
@@ -650,10 +656,10 @@
 
       <section
         id="contact"
-        class="md:mx-25 mx-5 h-150 flex justify-center items-center"
+        class="px-5 md:px-25 py-25 md:py-32 flex justify-center items-center"
       >
-        <div>
-          <h1 class="title-600-48 md:title-600-64 text-center">
+        <div class="w-full max-w-3xl text-center">
+          <h1 class="title-600-48 md:title-600-64">
             Get
             <span
               class="bg-gradient-to-r from-primary from-30% to-accent text-transparent bg-clip-text inline-block"
@@ -661,7 +667,7 @@
             >
           </h1>
           <p
-            class="body-default-400-16 md:body-large-400-18 text-text-muted md:text-text-muted text-center md:w-200 mx-auto"
+            class="body-default-400-16 md:body-large-400-18 text-text-muted max-w-xl mx-auto mt-4"
           >
             While I’m focused on my current journey, my inbox is always open.
             Whether it’s about tech, career, or just a friendly hello, I’d be
@@ -670,7 +676,7 @@
           <div class="flex justify-center items-center mt-10">
             <a
               href="/contact"
-              class="py-3 px-6 bg-button rounded-2xl heading-700-20 md:heading-700-24 hover:shadow-md shadow-bg-light"
+              class="inline-flex items-center justify-center py-3 px-6 bg-button rounded-2xl heading-700-20 md:heading-700-24 hover:shadow-md hover:shadow-bg-light transition"
               >Say Hello</a
             >
           </div>
