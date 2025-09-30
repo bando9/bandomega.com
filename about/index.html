@@ -59,7 +59,7 @@
               I’m Bando Mega Kusuma, an aspiring Software Engineer, Frontend
               Developer, and IoT enthusiast from Indonesia.
             </h2>
-            <div class="body-default-400-16 mt-4 text-text-muted">
+            <div class="body-default-400-16 mt-4 text-text-blog">
               <p class="mt-2">
                 I was born in 1999 in Bogor, Indonesia, and have lived in
                 Semarang for most of my life. I hold a degree in Physics, with a
@@ -122,7 +122,7 @@
             <div class="left-side">
               <div>
                 <h3 class="subtitle-600-20">Frontend Development</h3>
-                <div class="grid grid-cols-4 gap-y-1 mt-3">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-y-1 mt-3">
                   <div class="flex gap-1 items-center">
                     <img src="/images/stack/html5.svg" alt="HTML" class="w-5" />
                     <p class="subtitle-600-16">HTML</p>
@@ -182,7 +182,7 @@
 
               <div class="mt-8 blur-sm hover:blur-none">
                 <h3 class="subtitle-600-20">Backend & API Development</h3>
-                <div class="grid grid-cols-4 gap-y-1 mt-3">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-y-1 mt-3">
                   <div class="flex gap-1 items-center">
                     <img
                       src="/images//stack/docker.svg"
@@ -214,7 +214,7 @@
 
               <div class="mt-8 blur-sm hover:blur-none">
                 <h3 class="subtitle-600-20">Fullstack Frameworks</h3>
-                <div class="grid grid-cols-4 gap-y-1 mt-3">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-y-1 mt-3">
                   <div class="flex gap-1 items-center">
                     <img
                       src="/images//stack/nextdotjs.svg"
@@ -237,7 +237,7 @@
 
               <div class="mt-8">
                 <h3 class="subtitle-600-20">Database & ORM</h3>
-                <div class="grid grid-cols-4 gap-y-1 mt-3">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-y-1 mt-3">
                   <div class="flex gap-1 items-center">
                     <img
                       src="/images/stack/postgresql.svg"
@@ -282,7 +282,7 @@
                 <h3 class="subtitle-600-20">
                   Operating System & Development Environtment
                 </h3>
-                <div class="grid grid-cols-4 gap-y-1 mt-3">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-y-1 mt-3">
                   <div class="flex gap-1 items-center">
                     <img
                       src="/images/stack/linux.svg"
@@ -328,7 +328,7 @@
 
               <div class="mt-8">
                 <h3 class="subtitle-600-20">Design & Collaboration</h3>
-                <div class="grid grid-cols-4 gap-y-1 mt-3">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-y-1 mt-3">
                   <div class="flex gap-1 items-center">
                     <img
                       src="/images/stack/figma.svg"
@@ -358,7 +358,7 @@
                 <h3 class="subtitle-600-20">
                   Build Tools & Package Management
                 </h3>
-                <div class="grid grid-cols-4 gap-y-1 mt-3">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-y-1 mt-3">
                   <div class="flex gap-1 items-center">
                     <img src="/images/stack/vite.svg" class="w-6" alt="Vite" />
                     <p class="subtitle-600-16">Vite</p>
@@ -396,7 +396,7 @@
 
               <div class="mt-8">
                 <h3 class="subtitle-600-20">Deployment & Cloud</h3>
-                <div class="grid grid-cols-4 gap-y-1 mt-3">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-y-1 mt-3">
                   <div class="flex gap-1 items-center">
                     <img
                       src="/images/stack/vercel.svg"
@@ -451,7 +451,9 @@
       </section>
 
       <section id="certificate" class="w-full overflow-hidden mt-15">
-        <div class="flex animate-scroll space-x-3 md:space-x-6">
+        <div
+          class="flex animate-scroll-mobile md:animate-scroll space-x-3 md:space-x-6"
+        >
           <div class="max-w-2xs bg-white shadow rounded">
             <img
               src="/images/certificates/certificate-reactjs.jpg"
@@ -460,7 +462,7 @@
             />
           </div>
 
-          <div class="min-w-[300px] bg-white shadow rounded">
+          <div class="min-w-80 bg-white shadow rounded">
             <img
               src="/images/certificates/certificate-reactjs.jpg"
               alt="Certificate 2"
@@ -468,7 +470,7 @@
             />
           </div>
 
-          <div class="min-w-[300px] bg-white shadow rounded">
+          <div class="min-w-80 bg-white shadow rounded">
             <img
               src="/images/certificates/certificate-reactjs.jpg"
               alt="Certificate 3"
@@ -476,7 +478,7 @@
             />
           </div>
 
-          <div class="min-w-[300px] bg-white shadow rounded">
+          <div class="min-w-80 bg-white shadow rounded">
             <img
               src="/images/certificates/certificate-reactjs.jpg"
               alt="Certificate 4"
@@ -484,7 +486,7 @@
             />
           </div>
 
-          <div class="min-w-[300px] bg-white shadow rounded">
+          <div class="min-w-80 bg-white shadow rounded">
             <img
               src="/images/certificates/certificate-reactjs.jpg"
               alt="Certificate 1"
@@ -495,21 +497,23 @@
       </section>
 
       <section id="work-experience" class="mt-20 md:mt-25 md:mx-25 mx-5">
-        <div class="flex justify-start items-center gap-1.5">
+        <div class="flex justify-start items-center gap-1 md:gap-1.5">
           <img
             src="/images/icons/work.svg"
             alt="work-icon"
-            class="w-10 h-10 -rotate-8"
+            class="w-7 h-7 md:w-10 md:h-10 -rotate-8"
           />
-          <h2 class="title-600-48">
-            Work <span class="color-gradient-primary">Experience</span>
+          <h2 class="heading-600-32 md:title-600-48">
+            Work<span class="color-gradient-primary ms-1"> Experience</span>
           </h2>
         </div>
 
-        <ul class="relative border-l-2 border-gray-700 ml-4 mt-10 text-text">
-          <li class="mb-10 ml-6">
+        <ul
+          class="md:relative md:border-l-2 md:border-gray-700 md:ml-4 mt-10 text-text"
+        >
+          <li class="mb-10 md:ml-6">
             <span
-              class="absolute -left-3 flex items-center justify-center w-6 h-6 bg-primary rounded-full ring-8 ring-black"
+              class="hidden md:absolute md:-left-3 md:flex md:items-center md:justify-center w-6 h-6 bg-primary rounded-full ring-8 ring-black"
             >
             </span>
             <div class="bg-bg-light p-4 rounded-lg shadow-md">
@@ -546,9 +550,9 @@
             </div>
           </li>
 
-          <li class="mb-10 ml-6">
+          <li class="mb-10 md:ml-6">
             <span
-              class="absolute -left-3 flex items-center justify-center w-6 h-6 bg-primary rounded-full ring-8 ring-black"
+              class="hidden md:absolute md:-left-3 md:flex md:items-center md:justify-center w-6 h-6 bg-primary rounded-full ring-8 ring-black"
             >
             </span>
             <div class="bg-bg-light p-4 rounded-lg shadow-md">
@@ -585,9 +589,9 @@
             </div>
           </li>
 
-          <li class="mb-10 ml-6">
+          <li class="mb-10 md:ml-6">
             <span
-              class="absolute -left-3 flex items-center justify-center w-6 h-6 bg-primary rounded-full ring-8 ring-black"
+              class="hidden md:absolute md:-left-3 md:flex md:items-center md:justify-center w-6 h-6 bg-primary rounded-full ring-8 ring-black"
             >
             </span>
             <div class="bg-bg-light p-4 rounded-lg shadow-md">
@@ -622,9 +626,9 @@
             </div>
           </li>
 
-          <li class="mb-10 ml-6">
+          <li class="mb-10 md:ml-6">
             <span
-              class="absolute -left-3 flex items-center justify-center w-6 h-6 bg-primary rounded-full ring-8 ring-black"
+              class="hidden md:absolute md:-left-3 md:flex md:items-center md:justify-center w-6 h-6 bg-primary rounded-full ring-8 ring-black"
             >
             </span>
             <div class="bg-bg-light p-4 rounded-lg shadow-md">
@@ -665,10 +669,14 @@
               alt="education-icon"
               class="w-8 h-8 -rotate-8"
             />
-            <h2 class="heading-600-32 color-gradient-primary">Education</h2>
+            <h2
+              class="heading-600-32 bg-gradient-to-r from-primary from-30% to-accent text-transparent bg-clip-text inline-block"
+            >
+              Education
+            </h2>
           </div>
         </div>
-        <div class="grid grid-cols-4 mt-10">
+        <div class="grid grid-cols-2 md:grid-cols-4 mt-10">
           <h3 class="subtitle-600-24">2019-2024</h3>
           <div class="col-span-3">
             <h3 class="subtitle-600-24">Bachelor of Science</h3>
