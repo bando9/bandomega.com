@@ -5,23 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact & Contact | Bando Mega Kusuma</title>
     <link href="/src/output.css" rel="stylesheet" />
+    <meta
+      name="title"
+      content="Bando Mega Kusuma | Software Engineer & Frontend Developer"
+    />
+    <meta
+      name="description"
+      content="I'm Bando Mega Kusuma, a Software Engineer, Frontend Developer, and IoT enthusiast. Explore my portfolio, projects, blog, and ways to connect with me."
+    />
+    <meta name="author" content="Bando Mega Kusuma" />
+
     <link rel="icon" href="/images/icons/icon.png" type="image/x-icon" />
   </head>
   <body class="bg-bg-dark text-text">
-    <header class="flex justify-center">
-      <nav
-        class="bg-bg-light text-text mt-10 px-10 py-3 rounded-xl overflow-hidden max-w-fit"
-      >
-        <ul class="font-semibold text-[16px] flex gap-[30px]">
-          <li><a href="/">Home</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/blog">Blog</a></li>
-          <li><a href="/projects">Projects</a></li>
-          <li>
-            <a href="/contact" class="text-secondary">Contact</a>
-          </li>
-        </ul>
-      </nav>
+    <header class="fixed top-0 left-0 w-full z-10">
+      <div class="flex justify-center items-center px-4">
+        <button
+          id="hamburger"
+          name="hamburger"
+          type="button"
+          class="block absolute right-10 top-5 md:hidden"
+        >
+          <span class="hamburger-line transition origin-top-left"></span>
+          <span class="hamburger-line transition"></span>
+          <span class="hamburger-line transition origin-bottom-left"></span>
+        </button>
+
+        <nav
+          id="nav-menu"
+          class="bg-bg-light text-text mt-10 max-w-fit rounded-xl absolute py-10 px-10 md:px-10 md:py-3 hidden md:block top-full md:top-full right-20 md:right-auto md:left-1/2 md:-translate-x-1/2"
+        >
+          <ul
+            class="subtitle-600-16 flex flex-col md:flex-row gap-1.5 md:gap-8"
+          >
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/projects">Projects</a></li>
+            <li><a href="/contact" class="text-secondary">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
       <section class="mt-20 mx-[6.25rem]">
@@ -91,7 +115,7 @@
         class="w-full h-[1px] bg-gradient-to-r from-bg-dark via-text to-bg-dark my-8 opacity-30"
       ></div>
 
-      <div class="grid grid-cols-2 mx-[6.25rem] gap-55">
+      <div class="md:grid md:grid-cols-2 md:mx-25 mx-5 md:gap-55">
         <div>
           <h1 class="caption-500-24">Bando Mega Kusuma</h1>
           <p class="caption-500-14 text-text-muted mt-2">
@@ -99,13 +123,13 @@
             models that make coding more accessible.
           </p>
           <div>
-            <ul class="flex gap-5 mt-5">
+            <ul class="flex gap-5 mt-3 md:mt-5">
               <li>
                 <a href="mailto:bandomega1@gmail.com">
                   <img
                     src="/images/icons/mail.svg"
                     alt="mail-icon"
-                    class="w-5 h-5"
+                    class="w-6 h-6"
                   />
                 </a>
               </li>
@@ -134,7 +158,7 @@
                 <a href="https://www.github.com/bando9" target="_blank">
                   <img
                     src="/images/stack/github.svg"
-                    class="w-5 h-5"
+                    class="w-6 h-6"
                     alt="GitHub"
                   />
                 </a>
@@ -144,14 +168,14 @@
                   <img
                     src="/images/icons/thread.svg"
                     alt="Thread"
-                    class="w-5 h-5"
+                    class="w-6 h-6"
                   />
                 </a>
               </li>
             </ul>
           </div>
         </div>
-        <div class="grid grid-cols-2">
+        <div class="grid grid-cols-2 mt-10 md:mt-0">
           <div>
             <h3 class="text-text-muted">General</h3>
             <ul class="flex flex-col gap-1 mt-1.5">
@@ -180,5 +204,6 @@
         Copyright &copy; 2025. Bando Mega Allright reserved.
       </div>
     </footer>
+    <script src="/src/script.js"></script>
   </body>
 </html>
