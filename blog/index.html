@@ -15,7 +15,7 @@
     />
     <meta name="author" content="Bando Mega Kusuma" />
 
-    <link rel="icon" href="/images/icons/icon.png" type="image/x-icon" />
+    <link rel="icon" href="/images/icons/logo.svg" type="image/x-icon" />
   </head>
   <body class="bg-bg-dark text-text">
     <header class="fixed top-0 left-0 w-full z-10">
@@ -51,10 +51,12 @@
     <main class="mt-25 md:mt-35">
       <section class="mt-20 md:mt-25 md:mx-25 mx-5">
         <div class="title text-center">
-          <h1 class="title-600-48">
+          <h1 class="heading-600-32 md:title-600-48">
             The <span class="color-gradient-primary">Blogs</span>
           </h1>
-          <p class="body-large-400-18 text-text-muted">
+          <p
+            class="body-default-400-16 md:body-large-400-18 text-text-muted md:text-text-muted mt-1 md:mt-0"
+          >
             Dive into my thoughts on coding, tech trends, and developer life.
             Explore my latest posts below.
           </p>
@@ -63,7 +65,7 @@
 
       <section class="mt-20 md:mt-25 md:mx-25 mx-5 flex justify-center">
         <div
-          class="bg-gradient-to-r from-primary from-30% to-accent h-10 w-150 rounded-xl p-[1.5px] flex justify-center items-center"
+          class="bg-gradient-to-r from-primary from-30% to-accent h-10 w-60 md:w-150 rounded-xl p-[1.5px] flex justify-center items-center"
         >
           <label
             for="search"
@@ -72,12 +74,12 @@
             <img
               src="/images/icons/search.svg"
               alt="Search Icon"
-              class="ms-1"
+              class="ms-1 sm:w-5"
             />
             <input
               type="text"
               placeholder="Search"
-              class="w-130 ring-0 focus:ring-0 shadow-none focus:shadow-none focus:outline-none border-none focus:border-none"
+              class="w-45 md:w-130 ring-0 focus:ring-0 shadow-none focus:shadow-none focus:outline-none border-none focus:border-none"
             />
           </label>
         </div>
@@ -86,7 +88,7 @@
       <section
         class="mt-20 md:ms-25 md:me-12 flex flex-col md:flex-row gap-1 md:gap-3"
       >
-        <div class="blog-list w-230 flex flex-col gap-20">
+        <div class="blog-list w-230 flex flex-col gap-20 order-2 md:order-1">
           <a href="/blog/blog-details/">
             <div class="blog-card flex gap-5 group">
               <div class="flex flex-col gap-5">
@@ -316,7 +318,7 @@
           </a>
         </div>
 
-        <aside class="w-60 flex pt-2 border-l-1 border-text-muted h-50">
+        <aside class="w-60 flex pt-2 border-l-1 border-text-muted h-50 order-1">
           <div class="ms-3">
             <div class="flex items-center gap-5">
               <p class="caption-500-14">Select date</p>
