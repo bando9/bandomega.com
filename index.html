@@ -5,32 +5,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bando Mega Kusuma</title>
 
-    <link rel="icon" href="/images/icons/icon.png" type="image/x-icon" />
+    <meta
+      name="title"
+      content="Bando Mega Kusuma | Software Engineer & Frontend Developer"
+    />
+    <meta
+      name="description"
+      content="I'm Bando Mega Kusuma, a Software Engineer, Frontend Developer, and IoT enthusiast. Explore my portfolio, projects, blog, and ways to connect with me."
+    />
+    <meta name="author" content="Bando Mega Kusuma" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://bandomega.com/" />
+    <meta
+      property="og:title"
+      content="Bando Mega Kusuma | Software Engineer & Frontend Developer"
+    />
+    <meta
+      property="og:description"
+      content="Explore my projects, blog, and portfolio. Let's connect!"
+    />
+    <meta
+      property="og:image"
+      content="https://bandomega.com/images/icons/logo.svg"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://bandomega.com/" />
+    <meta
+      property="twitter:title"
+      content="Bando Mega Kusuma | Software Engineer & Frontend Developer"
+    />
+    <meta
+      property="twitter:description"
+      content="Explore my projects, blog, and portfolio. Let's connect!"
+    />
+    <meta
+      property="twitter:image"
+      content="https://bandomega.com/images/icons/logo.svg"
+    />
+
+    <link rel="icon" href="/images/icons/logo.svg" type="image/x-icon" />
+
     <link href="/src/output.css" rel="stylesheet" />
   </head>
   <body class="bg-bg-dark text-text">
-    <header class="flex justify-center">
-      <nav
-        class="bg-bg-light text-text mt-10 px-10 py-3 rounded-xl overflow-hidden max-w-fit"
-      >
-        <ul class="font-semibold text-[16px] flex gap-[30px]">
-          <li><a href="/" class="text-secondary">Home</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/blog">Blog</a></li>
-          <li><a href="/projects">Projects</a></li>
-          <li><a href="/contact">Contact</a></li>
-        </ul>
-      </nav>
+    <header class="fixed top-0 left-0 w-full z-10">
+      <div class="flex justify-center items-center px-4">
+        <button
+          id="hamburger"
+          name="hamburger"
+          type="button"
+          class="block absolute right-10 top-5 md:hidden"
+        >
+          <span class="hamburger-line transition origin-top-left"></span>
+          <span class="hamburger-line transition"></span>
+          <span class="hamburger-line transition origin-bottom-left"></span>
+        </button>
+
+        <nav
+          id="nav-menu"
+          class="bg-bg-light text-text mt-10 max-w-fit rounded-xl absolute py-10 px-10 md:px-10 md:py-3 hidden md:block top-full md:top-full right-20 md:right-auto md:left-1/2 md:-translate-x-1/2"
+        >
+          <ul
+            class="subtitle-600-16 flex flex-col md:flex-row gap-1.5 md:gap-8"
+          >
+            <li><a href="/" class="text-secondary">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/projects">Projects</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <main>
+    <main class="mt-25 md:mt-35">
       <section
         id="header"
-        class="flex justify-between items-start gap-3 mt-15 mx-[6.25rem]"
+        class="flex flex-col lg:flex-row justify-between items-start gap-3 mt-15 md:mx-25 mx-5"
       >
         <div class="w-full">
           <div
-            class="inline-flex items-center px-6 py-3 rounded-full bg-gradient-to-r from-[#1e3a8a] from-20% to-[#0f172a] to-70% shadow-inner mb-10"
+            class="inline-flex items-center md:px-6 md:py-3 px-3 py-2 rounded-full color-gradient-secondary mb-10"
           >
             <span class="relative flex mr-3">
               <span
@@ -41,34 +99,39 @@
               ></span>
             </span>
 
-            <span class="subtitle-600-20"> Exploring New Opportunities </span>
+            <span class="md:subtitle-600-20 subtitle-600-16">
+              Exploring New Opportunities
+            </span>
           </div>
           <div class="flex flex-col gap-3">
-            <h1 class="title-600-48">I'm Bando Mega Kusuma</h1>
-            <p class="body-default-400-16">
+            <h1 class="heading-600-32 md:title-600-48">
+              I'm Bando Mega Kusuma
+            </h1>
+            <p class="body-small-400-14 md:body-default-400-16">
               I develop with React and write to guide others in rethingking the
               fundamentals through simple, effective mental models.
             </p>
           </div>
-          <div class="flex gap-5 mt-10">
+
+          <div class="flex gap-5 mt-5 md:mt-10 items-center flex-wrap">
             <a href="/projects">
-              <div
-                class="text-text bg-button px-6 py-3 rounded-xl flex gap-2 cursor-pointer"
+              <h3
+                class="body-small-400-14 md:body-defult-400-16 text-text bg-button md:px-6 md:py-3 px-4 py-2 rounded-lg md:rounded-lg flex gap-2 cursor-pointer"
               >
-                <h3 class="body-defult-400-16">View My Projects</h3>
-              </div>
+                View My Projects
+              </h3>
             </a>
 
             <a href="/about">
               <h3
-                class="text-text bg-bg-dark border-2 border-button px-6 py-3 rounded-xl cursor-pointer hover:shadow-md shadow-button"
+                class="text-text bg-bg-dark border-2 border-button md:px-6 md:py-3 px-4 py-2 rounded-lg md:rounded-lg cursor-pointer hover:shadow-md shadow-button body-small-400-14 md:body-defult-400-16"
               >
                 More about me
               </h3>
             </a>
           </div>
 
-          <div class="flex gap-3 mt-5">
+          <div class="flex gap-3 mt-3 md:mt-5 flex-wrap">
             <a
               href="https://drive.google.com/file/d/1gmkJ5dN6XnUKEilYNey5fBkEe_Gq8_zE/view?usp=sharing"
               target="_blank"
@@ -108,76 +171,91 @@
           </div>
         </div>
 
-        <div class="max-w-120">
+        <div class="w-full md:max-w-120 flex justify-center mt-6 lg:mt-0">
           <img
             src="/images/profile.jpg"
             alt="bando-profile"
-            class="rounded-xl"
+            class="rounded-xl max-w-80 md:max-w-120 sm:w-full object-cover"
           />
         </div>
       </section>
 
       <section
         id="gallery"
-        class="w-full mt-40 flex gap-10 overflow-hidden h-120 py-10"
+        class="mt-15 md:mt-40 flex gap-4 md:gap-10 overflow-hidden h-55 md:h-120 py-10"
       >
-        <div class="max-w-[18rem] max-h-[18rem]">
+        <div class="max-w-60 md:max-w-75 max-h-10 md:max-h-75">
           <img
-            class="rotate-2 rounded-xl h-100 w-100"
+            class="rotate-2 rounded-xl h-35 w-45 md:h-100 md:w-100"
             src="https://images.unsplash.com/photo-1625967445189-d35d49a37501?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="semarang-city"
+            alt="Semarang City"
           />
         </div>
 
-        <div class="max-w-[18rem] max-h-[25rem]">
+        <div class="max-w-60 md:max-w-75 max-h-10 md:max-h-75">
           <img
-            class="rotate-2 rounded-xl"
+            class="rotate-2 rounded-xl h-35 w-45 md:h-100 md:w-100"
             src="https://images.unsplash.com/photo-1625967445155-bf8cc0412e9b?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="semarang-city"
           />
         </div>
 
-        <div class="max-w-[18rem] max-h-[25rem]">
+        <div class="max-w-60 md:max-w-75 max-h-10 md:max-h-75">
           <img
-            class="-rotate-2 rounded-xl h-100"
+            class="-rotate-2 rounded-xl h-35 w-45 md:h-100 md:w-100"
             src="https://images.unsplash.com/photo-1672281699269-86a871c5b2c2?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="makassar-city"
           />
         </div>
 
-        <div class="max-w-[18rem] max-h-[25rem]">
+        <div class="max-w-60 md:max-w-75 max-h-10 md:max-h-75">
           <img
-            class="-rotate-2 rounded-xl"
+            class="-rotate-2 rounded-xl h-35 w-45 md:h-100 md:w-100"
             src="https://images.unsplash.com/photo-1737638423079-5bac4c563ba4?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="makassar-city"
           />
         </div>
       </section>
 
-      <section id="projects" class="mt-25 mx-[6.25rem]">
+      <section id="projects" class="mt-8 md:mt-25 md:mx-25 mx-5">
         <div>
-          <h1 class="title-600-48">
+          <h1 class="heading-600-32 md:title-600-48">
             Featured
             <span
               class="bg-gradient-to-r from-primary from-30% to-accent text-transparent bg-clip-text inline-block"
               >Projects</span
             >
           </h1>
-          <p class="body-large-400-18 text-text-muted">
+          <p class="body-small-400-14 md:body-large-400-18 text-text-muted">
             Some of the projects I’ve worked on, built with passion and a drive
             to keep improving.
           </p>
         </div>
 
-        <div class="projects-list mt-13 flex flex-col gap-15">
-          <div class="project-card-left flex gap-3 items-start justify-between">
-            <div class="w-180">
-              <h1 class="subtitle-600-24 mb-1">Bandomega Personal Website</h1>
+        <div class="projects-list mt-7 md:mt-13 flex flex-col gap-10 md:gap-20">
+          <div
+            class="project-card-left flex flex-col md:flex-row items-start md:justify-between gap-6"
+          >
+            <div class="order-1 w-full md:w-md">
+              <img
+                src="/images/project-1.png"
+                alt="Photo Personal Web v1"
+                class="rounded-lg w-full h-auto"
+              />
+            </div>
+
+            <div class="order-2 md:order-1 md:w-2/3">
+              <h1
+                class="subtitle-600-20 md:subtitle-600-24 mb-2 group-hover:underline"
+              >
+                Bandomega Personal Website
+              </h1>
               <h3 class="caption-500-14">
                 A personal portfolio website showcasing projects, GitHub links,
                 and project highlights. Built with HTML5 and Bootstrap.
               </h3>
-              <div class="flex mt-3 gap-4">
+
+              <div class="flex mt-3 gap-2 md:gap-4 items-center">
                 <h3 class="caption-500-14">Tools:</h3>
                 <div class="flex gap-3">
                   <img
@@ -185,53 +263,48 @@
                     alt="HTML Icon"
                     class="w-5"
                   />
-
-                  <img src="/images/stack/css.svg" class="w-5" alt="CSS Icon" />
-
+                  <img src="/images/stack/css.svg" alt="CSS Icon" class="w-5" />
                   <img
                     src="/images/stack/bootstrap.svg"
-                    class="w-6"
                     alt="Bootstrap Icon"
+                    class="w-6"
                   />
                 </div>
               </div>
-              <div class="flex items-center justify-between">
-                <div class="flex items-center gap-5 mt-5">
+
+              <div
+                class="flex flex-col md:flex-row md:items-center md:justify-between mt-5 gap-4"
+              >
+                <div class="flex items-center gap-5 order-2 md:order-1">
                   <a
                     href="https://github.com/bando9/bandomega-portfolio/tree/main"
                     target="_blank"
+                    class="flex items-center gap-1 hover:underline"
                   >
-                    <div
-                      class="flex items-center justify-center gap-1.5 cursor-pointer hover:underline"
-                    >
-                      <img
-                        src="/images/stack/github.svg"
-                        alt="GitHub Icon"
-                        class="w-5"
-                      />
-                      <p>Repository</p>
-                    </div>
+                    <img
+                      src="/images/stack/github.svg"
+                      alt="GitHub Icon"
+                      class="w-5"
+                    />
+                    <p class="caption-500-14">Repository</p>
                   </a>
-
-                  <a href="https://v1.bandomega.com/" target="_blank">
-                    <div
-                      class="flex justify-center items-center gap-1.5 cursor-pointer hover:underline"
-                    >
-                      <img
-                        src="/images/icons/link-1.svg"
-                        alt="Link Icon"
-                        class="w-5"
-                      />
-                      <p>Open link sites</p>
-                    </div>
+                  <a
+                    href="https://v1.bandomega.com/"
+                    target="_blank"
+                    class="flex items-center gap-1 hover:underline"
+                  >
+                    <img
+                      src="/images/icons/link-1.svg"
+                      alt="Link Icon"
+                      class="w-5"
+                    />
+                    <p class="caption-500-14">Open link sites</p>
                   </a>
                 </div>
 
-                <a href="/projects/project-details" class="me-10">
-                  <div
-                    class="flex items-center justify-center gap-1.5 cursor-pointer hover:underline"
-                  >
-                    <p>View project</p>
+                <a href="/projects/project-details" class="order-1 md:order-2">
+                  <div class="flex items-center gap-1 hover:underline">
+                    <p class="caption-500-14">View project</p>
                     <img
                       src="/images/icons/arrow-right.svg"
                       alt="Arrow right icon"
@@ -241,96 +314,108 @@
                 </a>
               </div>
             </div>
-            <div>
+          </div>
+
+          <div
+            class="project-card-right flex flex-col md:flex-row items-start md:justify-between gap-6"
+          >
+            <div class="order-2 md:order-1 md:w-2/3">
+              <h1
+                class="subtitle-600-20 md:subtitle-600-24 mb-2 group-hover:underline"
+              >
+                Memomate – Daily Notes App
+              </h1>
+              <h3 class="caption-500-14">
+                A simple web app for creating and managing daily notes. Built
+                with ReactJS and modular styling.
+              </h3>
+
+              <div class="flex mt-3 gap-2 md:gap-4 items-center">
+                <h3 class="caption-500-14">Tools:</h3>
+                <div class="flex gap-3">
+                  <img
+                    src="/images/stack/react.svg"
+                    alt="HTML Icon"
+                    class="w-5"
+                  />
+                </div>
+              </div>
+
+              <div
+                class="flex flex-col md:flex-row md:items-center md:justify-between mt-5 gap-4"
+              >
+                <div class="flex items-center gap-5 order-2 md:order-1">
+                  <a
+                    href="https://github.com/bando9/memomate"
+                    target="_blank"
+                    class="flex items-center gap-1 hover:underline"
+                  >
+                    <img
+                      src="/images/stack/github.svg"
+                      alt="GitHub Icon"
+                      class="w-5"
+                    />
+                    <p class="caption-500-14">Repository</p>
+                  </a>
+                  <a
+                    href="https://memomate-six.vercel.app/"
+                    target="_blank"
+                    class="flex items-center gap-1 hover:underline"
+                  >
+                    <img
+                      src="/images/icons/link-1.svg"
+                      alt="Link Icon"
+                      class="w-5"
+                    />
+                    <p class="caption-500-14">Open link sites</p>
+                  </a>
+                </div>
+
+                <a href="/projects/project-details" class="order-1 md:order-2">
+                  <div class="flex items-center gap-1 hover:underline">
+                    <p class="caption-500-14">View project</p>
+                    <img
+                      src="/images/icons/arrow-right.svg"
+                      alt="Arrow right icon"
+                      class="w-5"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="order-1 w-full md:w-md">
               <img
-                src="/images/project-1.png"
-                alt="Photo Personal Web v1"
-                class="rounded-lg"
+                src="/images/project-2.jpg"
+                alt="Photo Memomate"
+                class="rounded-lg w-full h-auto"
               />
             </div>
           </div>
 
           <div
-            class="project-card-right flex gap-3 items-start justify-between"
+            class="project-card-right flex flex-col md:flex-row items-start md:justify-between gap-6"
           >
-            <div>
+            <div class="order-1 w-full md:w-md">
               <img
-                src="/images/project-2.jpg"
+                src="/images/project-3.jpg"
                 alt="Photo Memomate"
-                class="rounded-lg"
+                class="rounded-lg w-full h-auto"
               />
             </div>
-            <div class="w-180">
-              <h1 class="subtitle-600-24 mb-1">Memomate – Daily Notes App</h1>
-              <h3 class="caption-500-14">
-                A simple web app for creating and managing daily notes. Built
-                with ReactJS and modular styling.
-              </h3>
-              <div class="flex mt-3 gap-4">
-                <h3 class="caption-500-14">Tools:</h3>
-                <div class="flex gap-3">
-                  <img
-                    src="/images/stack/react.svg"
-                    alt="React Icon"
-                    class="w-5"
-                  />
-                </div>
-              </div>
-              <div class="flex items-center justify-between">
-                <div class="flex items-center gap-5 mt-5">
-                  <a href="https://github.com/bando9/memomate" target="_blank">
-                    <div
-                      class="flex items-center justify-center gap-1.5 cursor-pointer hover:underline"
-                    >
-                      <img
-                        src="/images/stack/github.svg"
-                        alt="GitHub Icon"
-                        class="w-5"
-                      />
-                      <p>Repository</p>
-                    </div>
-                  </a>
 
-                  <a href="https://memomate-six.vercel.app/" target="_blank">
-                    <div
-                      class="flex justify-center items-center gap-1.5 cursor-pointer hover:underline"
-                    >
-                      <img
-                        src="/images/icons/link-1.svg"
-                        alt="Link Icon"
-                        class="w-5"
-                      />
-                      <p>Open link sites</p>
-                    </div>
-                  </a>
-                </div>
-
-                <a href="/projects/project-details" class="me-10">
-                  <div
-                    class="flex items-center justify-center gap-1.5 cursor-pointer hover:underline"
-                  >
-                    <p>View project</p>
-                    <img
-                      src="/images/icons/arrow-right.svg"
-                      alt="Arrow right icon"
-                      class="w-5"
-                    />
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-card-left flex gap-3 items-start justify-between">
-            <div class="w-180">
-              <h1 class="subtitle-600-24 mb-1">
+            <div class="order-2 md:order-1 md:w-2/3">
+              <h1
+                class="subtitle-600-20 md:subtitle-600-24 mb-2 group-hover:underline"
+              >
                 Mini Library – Book CRUD Application
               </h1>
               <h3 class="caption-500-14">
                 A personal portfolio website showcasing projects, GitHub links,
                 and project highlights. Built with HTML5 and Bootstrap.
               </h3>
-              <div class="flex mt-3 gap-4">
+
+              <div class="flex mt-3 gap-2 md:gap-4 items-center">
                 <h3 class="caption-500-14">Tools:</h3>
                 <div class="flex gap-3">
                   <img
@@ -343,52 +428,45 @@
 
                   <img
                     src="/images/stack/javascript.svg"
-                    class="w-6"
+                    class="w-5"
                     alt="JavaScript Icon"
                   />
                 </div>
               </div>
 
-              <div class="flex items-center justify-between">
-                <div class="flex items-center gap-5 mt-5">
+              <div
+                class="flex flex-col md:flex-row md:items-center md:justify-between mt-5 gap-4"
+              >
+                <div class="flex items-center gap-5 order-2 md:order-1">
                   <a
                     href="https://github.com/bando9/perpustakaan-mini"
                     target="_blank"
+                    class="flex items-center gap-1 hover:underline"
                   >
-                    <div
-                      class="flex items-center justify-center gap-1.5 cursor-pointer hover:underline"
-                    >
-                      <img
-                        src="/images/stack/github.svg"
-                        alt="GitHub Icon"
-                        class="w-5"
-                      />
-                      <p>Repository</p>
-                    </div>
+                    <img
+                      src="/images/stack/github.svg"
+                      alt="GitHub Icon"
+                      class="w-5"
+                    />
+                    <p class="caption-500-14">Repository</p>
                   </a>
-
                   <a
                     href="https://perpustakaan-mini.vercel.app/"
                     target="_blank"
+                    class="flex items-center gap-1 hover:underline"
                   >
-                    <div
-                      class="flex justify-center items-center gap-1.5 cursor-pointer hover:underline"
-                    >
-                      <img
-                        src="/images/icons/link-1.svg"
-                        alt="Link Icon"
-                        class="w-5"
-                      />
-                      <p>Open link sites</p>
-                    </div>
+                    <img
+                      src="/images/icons/link-1.svg"
+                      alt="Link Icon"
+                      class="w-5"
+                    />
+                    <p class="caption-500-14">Open link sites</p>
                   </a>
                 </div>
 
-                <a href="/projects/project-details" class="me-10">
-                  <div
-                    class="flex items-center justify-center gap-1.5 cursor-pointer hover:underline"
-                  >
-                    <p>View project</p>
+                <a href="/projects/project-details" class="order-1 md:order-2">
+                  <div class="flex items-center gap-1 hover:underline">
+                    <p class="caption-500-14">View project</p>
                     <img
                       src="/images/icons/arrow-right.svg"
                       alt="Arrow right icon"
@@ -398,20 +476,13 @@
                 </a>
               </div>
             </div>
-            <div>
-              <img
-                src="/images/project-3.jpg"
-                alt="Photo Mini Library"
-                class="rounded-lg"
-              />
-            </div>
           </div>
         </div>
 
-        <div class="flex justify-center mt-10 text-center">
+        <div class="flex justify-center mt-8 md:mt-12 text-center">
           <a href="/projects/">
             <h3
-              class="flex items-center gap-2 cursor-pointer border-1 rounded-lg py-1 px-3 hover:underline"
+              class="flex items-center gap-2 cursor-pointer border rounded-lg py-1 px-3 hover:underline"
             >
               See more projects
               <img
@@ -424,8 +495,8 @@
         </div>
       </section>
 
-      <section id="blog-posts" class="mt-20 mx-[6.25rem]">
-        <h1 class="title-600-48">
+      <section id="blog-posts" class="mt-20 md:mx-25 mx-5">
+        <h1 class="heading-600-32 md:title-600-48">
           Featured
           <span
             class="bg-gradient-to-r from-primary from-30% to-accent text-transparent bg-clip-text inline-block"
@@ -433,171 +504,183 @@
           >
         </h1>
 
-        <div class="blog-list mt-13">
+        <div class="blog-list mt-9 md:mt-13">
           <div
-            class="card-blog text-text flex cursor-pointer gap-6 justify-between items-center"
+            class="card-blog text-text flex flex-col md:flex-row cursor-pointer gap-6 items-start md:items-start md:justify-between mt-8 md:mt-12 group"
           >
-            <div>
-              <h4 class="caption-500-14 mb-4">September 24, 2025</h4>
-              <h1 class="subtitle-600-24 mb-1">
+            <div class="order-2 md:order-1">
+              <h4 class="caption-500-14 mb-2 md:mb-4">September 24, 2025</h4>
+              <h1
+                class="subtitle-600-20 md:subtitle-600-24 mb-1 group-hover:underline"
+              >
                 List Animation using Motion for React
               </h1>
               <p class="body-small-400-14 mb-3">
                 An in-depth guide on how to animate enter and exit animation for
                 list using Motion for React (previously Framer Motion).
               </p>
-              <div class="flex justify-between">
+              <div
+                class="flex flex-col gap-3 md:flex-row md:items-center md:justify-between"
+              >
                 <div class="icon flex gap-5">
-                  <div class="flex gap-1.5 items-center">
+                  <div class="flex gap-1 md:gap-1.5 items-center">
                     <img
                       src="/images/icons/book-1.svg"
-                      class="w-5 h-5"
+                      class="w-4 md:w-5"
                       alt="Book Icon"
                     />
-                    <p>1,200 views</p>
+                    <p class="caption-500-14">1,200 views</p>
                   </div>
                   <div class="flex gap-1.5 items-center">
                     <img
                       src="/images/icons/time.svg"
                       alt="Clock Icon"
-                      class="w-5"
+                      class="w-4 md:w-5"
                     />
-                    <p>6 min read</p>
+                    <p class="caption-500-14">6 min read</p>
                   </div>
                 </div>
-                <div class="tag flex gap-3">
+                <div class="tag flex flex-wrap gap-2 md:gap-3 mt-2 md:mt-0">
                   <h4
-                    class="inline-block body-extra-small-400-12 bg-card py-2 px-4 rounded-2xl"
+                    class="block body-extra-small-400-12 bg-card py-2 px-3 md:py-2 md:px-4 rounded-xl md:rounded-2xl hover:bg-bg-light"
                   >
                     React
                   </h4>
                   <h4
-                    class="inline-block body-extra-small-400-12 bg-card py-2 px-4 rounded-2xl"
+                    class="inline-block body-extra-small-400-12 bg-card py-2 px-3 md:py-2 md:px-4 rounded-xl md:rounded-2xl hover:bg-bg-light"
                   >
                     Animation
                   </h4>
                 </div>
               </div>
             </div>
-            <div>
+            <div class="order-1 w-full md:w-2/5 md:max-w-sm">
               <img
                 src="images/blog-image.jpg"
                 alt="Blog Image"
-                class="rounded-lg w-50"
+                class="rounded-lg w-full"
               />
             </div>
           </div>
 
           <div
-            class="card-blog text-text flex mt-10 cursor-pointer gap-6 justify-between items-center"
+            class="card-blog text-text flex flex-col md:flex-row cursor-pointer gap-6 items-start md:items-start md:justify-between mt-8 md:mt-12 group"
           >
-            <div>
-              <h4 class="caption-500-14 mb-4">September 24, 2025</h4>
-              <h1 class="subtitle-600-24 mb-1">
+            <div class="order-2 md:order-1">
+              <h4 class="caption-500-14 mb-2 md:mb-4">September 24, 2025</h4>
+              <h1
+                class="subtitle-600-20 md:subtitle-600-24 mb-1 group-hover:underline"
+              >
                 List Animation using Motion for React
               </h1>
               <p class="body-small-400-14 mb-3">
                 An in-depth guide on how to animate enter and exit animation for
                 list using Motion for React (previously Framer Motion).
               </p>
-              <div class="flex justify-between">
+              <div
+                class="flex flex-col gap-3 md:flex-row md:items-center md:justify-between"
+              >
                 <div class="icon flex gap-5">
-                  <div class="flex gap-1.5 items-center">
+                  <div class="flex gap-1 md:gap-1.5 items-center">
                     <img
                       src="/images/icons/book-1.svg"
-                      class="w-5 h-5"
+                      class="w-4 md:w-5"
                       alt="Book Icon"
                     />
-                    <p>1,200 views</p>
+                    <p class="caption-500-14">1,200 views</p>
                   </div>
                   <div class="flex gap-1.5 items-center">
                     <img
                       src="/images/icons/time.svg"
                       alt="Clock Icon"
-                      class="w-5"
+                      class="w-4 md:w-5"
                     />
-                    <p>6 min read</p>
+                    <p class="caption-500-14">6 min read</p>
                   </div>
                 </div>
-                <div class="tag flex gap-3">
+                <div class="tag flex flex-wrap gap-2 md:gap-3 mt-2 md:mt-0">
                   <h4
-                    class="inline-block body-extra-small-400-12 bg-card py-2 px-4 rounded-2xl"
+                    class="block body-extra-small-400-12 bg-card py-2 px-3 md:py-2 md:px-4 rounded-xl md:rounded-2xl hover:bg-bg-light"
                   >
                     React
                   </h4>
                   <h4
-                    class="inline-block body-extra-small-400-12 bg-card py-2 px-4 rounded-2xl"
+                    class="inline-block body-extra-small-400-12 bg-card py-2 px-3 md:py-2 md:px-4 rounded-xl md:rounded-2xl hover:bg-bg-light"
                   >
                     Animation
                   </h4>
                 </div>
               </div>
             </div>
-            <div>
+            <div class="order-1 w-full md:w-2/5 md:max-w-sm">
               <img
                 src="images/blog-image.jpg"
                 alt="Blog Image"
-                class="rounded-lg w-50"
+                class="rounded-lg w-full"
               />
             </div>
           </div>
 
           <div
-            class="card-blog text-text flex mt-10 cursor-pointer gap-6 justify-between items-center"
+            class="card-blog text-text flex flex-col md:flex-row cursor-pointer gap-6 items-start md:items-start md:justify-between mt-8 md:mt-12 group"
           >
-            <div>
-              <h4 class="caption-500-14 mb-4">September 24, 2025</h4>
-              <h1 class="subtitle-600-24 mb-1">
+            <div class="order-2 md:order-1">
+              <h4 class="caption-500-14 mb-2 md:mb-4">September 24, 2025</h4>
+              <h1
+                class="subtitle-600-20 md:subtitle-600-24 mb-1 group-hover:underline"
+              >
                 List Animation using Motion for React
               </h1>
               <p class="body-small-400-14 mb-3">
                 An in-depth guide on how to animate enter and exit animation for
                 list using Motion for React (previously Framer Motion).
               </p>
-              <div class="flex justify-between">
+              <div
+                class="flex flex-col gap-3 md:flex-row md:items-center md:justify-between"
+              >
                 <div class="icon flex gap-5">
-                  <div class="flex gap-1.5 items-center">
+                  <div class="flex gap-1 md:gap-1.5 items-center">
                     <img
                       src="/images/icons/book-1.svg"
-                      class="w-5 h-5"
+                      class="w-4 md:w-5"
                       alt="Book Icon"
                     />
-                    <p>1,200 views</p>
+                    <p class="caption-500-14">1,200 views</p>
                   </div>
                   <div class="flex gap-1.5 items-center">
                     <img
                       src="/images/icons/time.svg"
                       alt="Clock Icon"
-                      class="w-5"
+                      class="w-4 md:w-5"
                     />
-                    <p>6 min read</p>
+                    <p class="caption-500-14">6 min read</p>
                   </div>
                 </div>
-                <div class="tag flex gap-3">
+                <div class="tag flex flex-wrap gap-2 md:gap-3 mt-2 md:mt-0">
                   <h4
-                    class="inline-block body-extra-small-400-12 bg-card py-2 px-4 rounded-2xl"
+                    class="block body-extra-small-400-12 bg-card py-2 px-3 md:py-2 md:px-4 rounded-xl md:rounded-2xl hover:bg-bg-light"
                   >
                     React
                   </h4>
                   <h4
-                    class="inline-block body-extra-small-400-12 bg-card py-2 px-4 rounded-2xl"
+                    class="inline-block body-extra-small-400-12 bg-card py-2 px-3 md:py-2 md:px-4 rounded-xl md:rounded-2xl hover:bg-bg-light"
                   >
                     Animation
                   </h4>
                 </div>
               </div>
             </div>
-            <div>
+            <div class="order-1 w-full md:w-2/5 md:max-w-sm">
               <img
                 src="images/blog-image.jpg"
                 alt="Blog Image"
-                class="rounded-lg w-50"
+                class="rounded-lg w-full"
               />
             </div>
           </div>
         </div>
 
-        <div class="flex justify-center mt-10 text-center">
+        <div class="flex justify-center mt-8 md:mt-12 text-center">
           <a href="/blog">
             <h3
               class="flex items-center gap-2 cursor-pointer border-1 rounded-lg py-1 px-3 hover:underline"
@@ -615,10 +698,10 @@
 
       <section
         id="contact"
-        class="mx-[6.25rem] h-screen flex justify-center items-center"
+        class="px-5 md:px-25 py-25 md:py-32 flex justify-center items-center"
       >
-        <div>
-          <h1 class="title-600-64 text-center">
+        <div class="w-full max-w-3xl text-center">
+          <h1 class="title-600-48 md:title-600-64">
             Get
             <span
               class="bg-gradient-to-r from-primary from-30% to-accent text-transparent bg-clip-text inline-block"
@@ -626,7 +709,7 @@
             >
           </h1>
           <p
-            class="body-large-400-18 text-text-muted text-center w-200 mx-auto"
+            class="body-default-400-16 md:body-large-400-18 text-text-muted max-w-xl mx-auto mt-4"
           >
             While I’m focused on my current journey, my inbox is always open.
             Whether it’s about tech, career, or just a friendly hello, I’d be
@@ -635,7 +718,7 @@
           <div class="flex justify-center items-center mt-10">
             <a
               href="/contact"
-              class="py-3 px-6 bg-button rounded-2xl heading-700-24"
+              class="inline-flex items-center justify-center py-3 px-6 bg-button rounded-2xl heading-700-20 md:heading-700-24 hover:shadow-md hover:shadow-bg-light transition"
               >Say Hello</a
             >
           </div>
@@ -648,7 +731,7 @@
         class="w-full h-[1px] bg-gradient-to-r from-bg-dark via-text to-bg-dark my-8 opacity-30"
       ></div>
 
-      <div class="grid grid-cols-2 mx-[6.25rem] gap-55">
+      <div class="md:grid md:grid-cols-2 md:mx-25 mx-5 md:gap-55">
         <div>
           <h1 class="caption-500-24">Bando Mega Kusuma</h1>
           <p class="caption-500-14 text-text-muted mt-2">
@@ -656,13 +739,13 @@
             models that make coding more accessible.
           </p>
           <div>
-            <ul class="flex gap-5 mt-5">
+            <ul class="flex gap-5 mt-3 md:mt-5">
               <li>
                 <a href="mailto:bandomega1@gmail.com">
                   <img
                     src="/images/icons/mail.svg"
                     alt="mail-icon"
-                    class="w-5 h-5"
+                    class="w-6 h-6"
                   />
                 </a>
               </li>
@@ -691,7 +774,7 @@
                 <a href="https://www.github.com/bando9" target="_blank">
                   <img
                     src="/images/stack/github.svg"
-                    class="w-5 h-5"
+                    class="w-6 h-6"
                     alt="GitHub"
                   />
                 </a>
@@ -701,14 +784,14 @@
                   <img
                     src="/images/icons/thread.svg"
                     alt="Thread"
-                    class="w-5 h-5"
+                    class="w-6 h-6"
                   />
                 </a>
               </li>
             </ul>
           </div>
         </div>
-        <div class="grid grid-cols-2">
+        <div class="grid grid-cols-2 mt-10 md:mt-0">
           <div>
             <h3 class="text-text-muted">General</h3>
             <ul class="flex flex-col gap-1 mt-1.5">
@@ -737,5 +820,6 @@
         Copyright &copy; 2025. Bando Mega Allright reserved.
       </div>
     </footer>
+    <script src="/src/script.js"></script>
   </body>
 </html>

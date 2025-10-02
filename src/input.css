@@ -12,68 +12,6 @@
   --color-text-blog: #e6e5e6;
   --color-card: #021636;
   --color-button: #06384b;
-  --color-linear: ;
-}
-
-@layer components {
-  .heading-700-24 {
-    @apply font-bold text-2xl text-text; /* text-2xl = 24px */
-  }
-
-  .title-600-64 {
-    @apply font-semibold text-6xl text-text; /* text-6xl = 64px */
-  }
-
-  .title-600-48 {
-    @apply font-semibold text-5xl text-text; /* text-5xl = 48px */
-  }
-
-  .heading-600-32 {
-    @apply font-semibold text-4xl text-text; /* text-4xl = 32px */
-  }
-
-  .subtitle-600-24 {
-    @apply font-semibold text-2xl text-text;
-  }
-
-  .subtitle-600-20 {
-    @apply font-semibold text-xl text-text;
-  }
-
-  .subtitle-600-16 {
-    @apply font-semibold text-base text-text;
-  }
-
-  .caption-500-24 {
-    @apply font-medium text-2xl text-text;
-  }
-
-  .caption-500-14 {
-    @apply font-medium text-sm text-text; /* text-sm = 14px */
-  }
-
-  .caption-500-12 {
-    @apply font-medium text-xs text-text; /* text-xs = 12px */
-  }
-
-  .body-default-400-16 {
-    @apply font-normal text-base text-text; /* 16px */
-  }
-
-  .body-large-400-18 {
-    @apply font-normal text-lg text-text; /* 18px */
-  }
-
-  .body-small-400-14 {
-    @apply font-normal text-sm text-text;
-  }
-
-  .body-extra-small-400-12 {
-    @apply font-normal text-xs text-text;
-  }
-  .color-gradient {
-    @apply bg-gradient-to-r from-primary from-30% to-accent text-transparent bg-clip-text inline-block;
-  }
 }
 
 @layer base {
@@ -82,12 +20,98 @@
   }
 }
 
+@layer components {
+  .color-gradient-primary {
+    @apply bg-gradient-to-r from-primary from-30% to-accent text-transparent bg-clip-text inline-block;
+  }
+
+  .color-gradient-secondary {
+    @apply bg-gradient-to-r from-[#1e3a8a] from-20% to-[#0f172a] to-70% shadow-inner;
+  }
+
+  .hamburger-line {
+    @apply w-[30px] h-[2px] my-2 block bg-text;
+  }
+}
+
+@utility heading-700-24 {
+  @apply font-bold text-2xl text-text;
+}
+
+@utility heading-700-20 {
+  @apply font-bold text-xl text-text;
+}
+
+@utility title-600-64 {
+  @apply font-semibold text-6xl text-text;
+}
+
+@utility title-600-48 {
+  @apply font-semibold text-5xl text-text;
+}
+
+@utility heading-600-32 {
+  @apply font-semibold text-4xl text-text;
+}
+
+@utility subtitle-600-24 {
+  @apply font-semibold text-2xl text-text;
+}
+
+@utility subtitle-600-20 {
+  @apply font-semibold text-xl text-text;
+}
+
+@utility subtitle-600-16 {
+  @apply font-semibold text-base text-text;
+}
+
+@utility caption-500-24 {
+  @apply font-medium text-2xl text-text;
+}
+
+@utility caption-500-14 {
+  @apply font-medium text-sm text-text;
+}
+
+@utility caption-500-12 {
+  @apply font-medium text-xs text-text;
+}
+
+@utility body-default-400-16 {
+  @apply font-normal text-base text-text;
+}
+
+@utility body-large-400-18 {
+  @apply font-normal text-lg text-text;
+}
+
+@utility body-small-400-14 {
+  @apply font-normal text-sm text-text;
+}
+
+@utility body-extra-small-400-12 {
+  @apply font-normal text-xs text-text;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
   font-family: "Geist", sans-serif;
+}
+
+.hamburger-active > span:nth-child(1) {
+  @apply rotate-45;
+}
+
+.hamburger-active > span:nth-child(2) {
+  @apply scale-0;
+}
+
+.hamburger-active > span:nth-child(3) {
+  @apply -rotate-45;
 }
 
 .header-blog {
@@ -107,4 +131,8 @@ body {
 }
 .animate-scroll {
   animation: scroll 40s linear infinite;
+}
+
+.animate-scroll-mobile {
+  animation: scroll 10s linear infinite;
 }

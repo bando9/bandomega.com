@@ -4,58 +4,85 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About | Bando Mega Kusuma</title>
-    <meta name="description" content="I am developer" />
+    <meta
+      name="title"
+      content="Bando Mega Kusuma | Software Engineer & Frontend Developer"
+    />
+    <meta
+      name="description"
+      content="I'm Bando Mega Kusuma, a Software Engineer, Frontend Developer, and IoT enthusiast. Explore my portfolio, projects, blog, and ways to connect with me."
+    />
+    <meta name="author" content="Bando Mega Kusuma" />
 
-    <link rel="icon" href="/images/icons/icon.png" type="image/x-icon" />
+    <link rel="icon" href="/images/icons/logo.svg" type="image/x-icon" />
     <link rel="stylesheet" href="/src/output.css" />
   </head>
   <body class="bg-bg-dark text-text">
-    <header class="flex justify-center">
-      <nav
-        class="bg-bg-light text-text mt-10 px-10 py-3 rounded-xl overflow-hidden max-w-fit"
-      >
-        <ul class="font-semibold text-[16px] flex gap-[30px]">
-          <li><a href="/">Home</a></li>
-          <li><a href="/about" class="text-secondary">About</a></li>
-          <li><a href="/blog">Blog</a></li>
-          <li><a href="/projects">Projects</a></li>
-          <li><a href="/contact">Contact</a></li>
-        </ul>
-      </nav>
+    <header class="fixed top-0 left-0 w-full z-10">
+      <div class="flex justify-center items-center px-4">
+        <button
+          id="hamburger"
+          name="hamburger"
+          type="button"
+          class="block absolute right-10 top-5 md:hidden"
+        >
+          <span class="hamburger-line transition origin-top-left"></span>
+          <span class="hamburger-line transition"></span>
+          <span class="hamburger-line transition origin-bottom-left"></span>
+        </button>
+
+        <nav
+          id="nav-menu"
+          class="bg-bg-light text-text mt-10 max-w-fit rounded-xl absolute py-10 px-10 md:px-10 md:py-3 hidden md:block top-full md:top-full right-20 md:right-auto md:left-1/2 md:-translate-x-1/2"
+        >
+          <ul
+            class="subtitle-600-16 flex flex-col md:flex-row gap-1.5 md:gap-8"
+          >
+            <li><a href="/">Home</a></li>
+            <li><a href="/about" class="text-secondary">About</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/projects">Projects</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <main>
-      <section id="header" class="mt-20 mx-[6.25rem]">
+
+    <main class="mt-25 md:mt-35">
+      <section id="header" class="mt-25 md:mt-25 md:mx-25 mx-5">
         <div class="title">
-          <h1 class="title-600-48 text-center">
-            About <span class="color-gradient">Me</span>
+          <h1 class="heading-600-32 md:title-600-48 text-center">
+            About <span class="color-gradient-primary">Me</span>
           </h1>
           <p class="body-large-400-18 text-center text-text-muted">
             Learning, building, and becoming along the way
           </p>
         </div>
-        <div class="flex justify-between items-center gap-25 mt-25">
-          <div class="">
-            <h2 class="heading-600-32">
+
+        <div
+          class="flex flex-col md:flex-row justify-between items-center gap-25 mt-25"
+        >
+          <div class="order-2 md:order-1">
+            <h2 class="subtitle-600-24">
               I’m Bando Mega Kusuma, an aspiring Software Engineer, Frontend
               Developer, and IoT enthusiast from Indonesia.
             </h2>
-            <div class="body-default-400-16 mt-2.5">
-              <p>
+            <div class="body-default-400-16 mt-4 text-text-blog">
+              <p class="mt-2">
                 I was born in 1999 in Bogor, Indonesia, and have lived in
                 Semarang for most of my life. I hold a degree in Physics, with a
                 focus on electronics and instrumentation. During my studies, I
                 discovered my passion for programming — especially web
                 development — and decided to pursue a career in this field.
               </p>
-              <p>
+              <p class="mt-2">
                 My learning journey began with reading articles, taking online
                 courses, and joining both online and campus IT communities.
                 Along the way, I started writing articles to document what I had
                 learned — not only to strengthen my own understanding but also
                 to share knowledge with others on the same path.
               </p>
-
-              <p>
+              <p class="mt-2">
                 Today, I am growing as a full-stack engineer, with a strong
                 focus on frontend development. I enjoy building projects that
                 combine clean design, responsive user interfaces, and solid
@@ -63,42 +90,47 @@
               </p>
             </div>
           </div>
-          <div class="relative w-full flex justify-center items-center py-15">
-            <div class="absolute -rotate-3 -left-10 top-0">
+
+          <div
+            class="relative w-2/3 ms-10 md:ms-0 flex justify-center items-center py-5 order-1"
+          >
+            <div class="absolute -rotate-3 -left-5 top-2 md:-left-10 md:top-0">
               <img
                 src="/images/profile.jpg"
                 alt="Profile 1"
-                class="w-70 h-80 object-cover rounded-xl shadow-lg"
+                class="w-40 h-56 md:w-60 md:h-80 object-cover rounded-xl shadow-lg"
               />
             </div>
+
             <div class="relative rotate-3 z-10">
               <img
                 src="/images/profile-2.jpg"
-                alt="profile"
-                class="w-70 h-80 object-cover rounded-xl shadow-lg"
+                alt="Profile 2"
+                class="w-44 h-56 md:w-70 md:h-80 object-cover rounded-xl shadow-lg"
               />
             </div>
           </div>
         </div>
       </section>
 
-      <section id="tech" class="mt-20 mx-[6.25rem]">
+      <section id="tech" class="mt-20 md:mt-25 md:mx-25 mx-5">
         <div class="flex justify-start items-center gap-1.5">
           <img
             src="/images/icons/growth.svg"
             alt="growth-stack-icon"
-            class="w-10 h-10 -rotate-8"
+            class="w-7 h-7 md:w-10 md:h-10 -rotate-8"
           />
-          <h2 class="title-600-48">
-            Growth <span class="color-gradient">Stack</span>
+          <h2 class="heading-600-32 md:title-600-48">
+            Growth <span class="color-gradient-primary">Stack</span>
           </h2>
         </div>
+
         <div class="stack mt-10">
-          <div class="grid grid-cols-2 gap-10">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
             <div class="left-side">
               <div>
                 <h3 class="subtitle-600-20">Frontend Development</h3>
-                <div class="grid grid-cols-4 gap-y-1 mt-3">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-y-1 mt-3">
                   <div class="flex gap-1 items-center">
                     <img src="/images/stack/html5.svg" alt="HTML" class="w-5" />
                     <p class="subtitle-600-16">HTML</p>
@@ -156,9 +188,9 @@
                 </div>
               </div>
 
-              <div class="mt-8 blur-sm hover:blur-none">
+              <div class="mt-8 blur-sm hover:blur-none hidden md:block">
                 <h3 class="subtitle-600-20">Backend & API Development</h3>
-                <div class="grid grid-cols-4 gap-y-1 mt-3">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-y-1 mt-3">
                   <div class="flex gap-1 items-center">
                     <img
                       src="/images//stack/docker.svg"
@@ -188,9 +220,9 @@
                 </div>
               </div>
 
-              <div class="mt-8 blur-sm hover:blur-none">
+              <div class="mt-8 blur-sm hover:blur-none hidden md:block">
                 <h3 class="subtitle-600-20">Fullstack Frameworks</h3>
-                <div class="grid grid-cols-4 gap-y-1 mt-3">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-y-1 mt-3">
                   <div class="flex gap-1 items-center">
                     <img
                       src="/images//stack/nextdotjs.svg"
@@ -213,7 +245,7 @@
 
               <div class="mt-8">
                 <h3 class="subtitle-600-20">Database & ORM</h3>
-                <div class="grid grid-cols-4 gap-y-1 mt-3">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-y-1 mt-3">
                   <div class="flex gap-1 items-center">
                     <img
                       src="/images/stack/postgresql.svg"
@@ -252,12 +284,13 @@
                 </div>
               </div>
             </div>
+
             <div class="right-side">
               <div>
                 <h3 class="subtitle-600-20">
                   Operating System & Development Environtment
                 </h3>
-                <div class="grid grid-cols-4 gap-y-1 mt-3">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-y-1 mt-3">
                   <div class="flex gap-1 items-center">
                     <img
                       src="/images/stack/linux.svg"
@@ -303,7 +336,7 @@
 
               <div class="mt-8">
                 <h3 class="subtitle-600-20">Design & Collaboration</h3>
-                <div class="grid grid-cols-4 gap-y-1 mt-3">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-y-1 mt-3">
                   <div class="flex gap-1 items-center">
                     <img
                       src="/images/stack/figma.svg"
@@ -333,7 +366,7 @@
                 <h3 class="subtitle-600-20">
                   Build Tools & Package Management
                 </h3>
-                <div class="grid grid-cols-4 gap-y-1 mt-3">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-y-1 mt-3">
                   <div class="flex gap-1 items-center">
                     <img src="/images/stack/vite.svg" class="w-6" alt="Vite" />
                     <p class="subtitle-600-16">Vite</p>
@@ -371,7 +404,7 @@
 
               <div class="mt-8">
                 <h3 class="subtitle-600-20">Deployment & Cloud</h3>
-                <div class="grid grid-cols-4 gap-y-1 mt-3">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-y-1 mt-3">
                   <div class="flex gap-1 items-center">
                     <img
                       src="/images/stack/vercel.svg"
@@ -426,8 +459,10 @@
       </section>
 
       <section id="certificate" class="w-full overflow-hidden mt-15">
-        <div class="flex animate-scroll space-x-6">
-          <div class="min-w-[300px] bg-white shadow rounded">
+        <div
+          class="flex animate-scroll-mobile md:animate-scroll space-x-3 md:space-x-6"
+        >
+          <div class="max-w-2xs bg-white shadow rounded">
             <img
               src="/images/certificates/certificate-reactjs.jpg"
               alt="Certificate 1"
@@ -435,7 +470,7 @@
             />
           </div>
 
-          <div class="min-w-[300px] bg-white shadow rounded">
+          <div class="min-w-80 bg-white shadow rounded">
             <img
               src="/images/certificates/certificate-reactjs.jpg"
               alt="Certificate 2"
@@ -443,7 +478,7 @@
             />
           </div>
 
-          <div class="min-w-[300px] bg-white shadow rounded">
+          <div class="min-w-80 bg-white shadow rounded">
             <img
               src="/images/certificates/certificate-reactjs.jpg"
               alt="Certificate 3"
@@ -451,7 +486,7 @@
             />
           </div>
 
-          <div class="min-w-[300px] bg-white shadow rounded">
+          <div class="min-w-80 bg-white shadow rounded">
             <img
               src="/images/certificates/certificate-reactjs.jpg"
               alt="Certificate 4"
@@ -459,7 +494,7 @@
             />
           </div>
 
-          <div class="min-w-[300px] bg-white shadow rounded">
+          <div class="min-w-80 bg-white shadow rounded">
             <img
               src="/images/certificates/certificate-reactjs.jpg"
               alt="Certificate 1"
@@ -469,22 +504,24 @@
         </div>
       </section>
 
-      <section id="work-experience" class="mt-20 mx-[6.25rem]">
-        <div class="flex justify-start items-center gap-1.5">
+      <section id="work-experience" class="mt-20 md:mt-25 md:mx-25 mx-5">
+        <div class="flex justify-start items-center gap-1 md:gap-1.5">
           <img
             src="/images/icons/work.svg"
             alt="work-icon"
-            class="w-10 h-10 -rotate-8"
+            class="w-7 h-7 md:w-10 md:h-10 -rotate-8"
           />
-          <h2 class="title-600-48">
-            Work <span class="color-gradient">Experience</span>
+          <h2 class="heading-600-32 md:title-600-48">
+            Work<span class="color-gradient-primary ms-1"> Experience</span>
           </h2>
         </div>
 
-        <ul class="relative border-l-2 border-gray-700 ml-4 mt-10 text-text">
-          <li class="mb-10 ml-6">
+        <ul
+          class="md:relative md:border-l-2 md:border-gray-700 md:ml-4 mt-10 text-text"
+        >
+          <li class="mb-10 md:ml-6">
             <span
-              class="absolute -left-3 flex items-center justify-center w-6 h-6 bg-primary rounded-full ring-8 ring-black"
+              class="hidden md:absolute md:-left-3 md:flex md:items-center md:justify-center w-6 h-6 bg-primary rounded-full ring-8 ring-black"
             >
             </span>
             <div class="bg-bg-light p-4 rounded-lg shadow-md">
@@ -521,9 +558,9 @@
             </div>
           </li>
 
-          <li class="mb-10 ml-6">
+          <li class="mb-10 md:ml-6">
             <span
-              class="absolute -left-3 flex items-center justify-center w-6 h-6 bg-primary rounded-full ring-8 ring-black"
+              class="hidden md:absolute md:-left-3 md:flex md:items-center md:justify-center w-6 h-6 bg-primary rounded-full ring-8 ring-black"
             >
             </span>
             <div class="bg-bg-light p-4 rounded-lg shadow-md">
@@ -560,9 +597,9 @@
             </div>
           </li>
 
-          <li class="mb-10 ml-6">
+          <li class="mb-10 md:ml-6">
             <span
-              class="absolute -left-3 flex items-center justify-center w-6 h-6 bg-primary rounded-full ring-8 ring-black"
+              class="hidden md:absolute md:-left-3 md:flex md:items-center md:justify-center w-6 h-6 bg-primary rounded-full ring-8 ring-black"
             >
             </span>
             <div class="bg-bg-light p-4 rounded-lg shadow-md">
@@ -597,9 +634,9 @@
             </div>
           </li>
 
-          <li class="mb-10 ml-6">
+          <li class="mb-10 md:ml-6">
             <span
-              class="absolute -left-3 flex items-center justify-center w-6 h-6 bg-primary rounded-full ring-8 ring-black"
+              class="hidden md:absolute md:-left-3 md:flex md:items-center md:justify-center w-6 h-6 bg-primary rounded-full ring-8 ring-black"
             >
             </span>
             <div class="bg-bg-light p-4 rounded-lg shadow-md">
@@ -632,7 +669,7 @@
         </ul>
       </section>
 
-      <section id="education" class="mt-20 mx-[6.25rem]">
+      <section id="education" class="mt-20 md:mt-25 md:mx-25 mx-5">
         <div class="flex justify-center">
           <div class="flex justify-start items-center gap-1.5 mx-auto">
             <img
@@ -640,18 +677,24 @@
               alt="education-icon"
               class="w-8 h-8 -rotate-8"
             />
-            <h2 class="heading-600-32 color-gradient">Education</h2>
+            <h2
+              class="heading-600-32 bg-gradient-to-r from-primary from-30% to-accent text-transparent bg-clip-text inline-block"
+            >
+              Education
+            </h2>
           </div>
         </div>
-        <div class="grid grid-cols-4 mt-10">
-          <h3 class="subtitle-600-24">2019-2024</h3>
+        <div class="grid grid-cols-2 md:grid-cols-4 mt-10">
+          <h3 class="subtitle-600-20 md:subtitle-600-24">2019-2024</h3>
           <div class="col-span-3">
-            <h3 class="subtitle-600-24">Bachelor of Science</h3>
+            <h3 class="subtitle-600-20 md:subtitle-600-24">
+              Bachelor of Science
+            </h3>
             <h4 class="subtitle-600-16">
-              Walisongo State Islamic Univesity -- Semarang, Indonesia.
+              Walisongo State Islamic Univesity — Semarang, Indonesia.
             </h4>
 
-            <p class="caption-500-14 mt-5">
+            <p class="caption-500-14 mt-5 text-text-blog">
               I hold a Bachelor’s degree in Physics from UIN Walisongo (2024),
               where I specialized in electronics and instrumentation. Throughout
               my studies, I worked with microcontrollers, sensors, and IoT
@@ -670,7 +713,7 @@
         class="w-full h-[1px] bg-gradient-to-r from-bg-dark via-text to-bg-dark my-8 opacity-30"
       ></div>
 
-      <div class="grid grid-cols-2 mx-[6.25rem] gap-55">
+      <div class="md:grid md:grid-cols-2 md:mx-25 mx-5 md:gap-55">
         <div>
           <h1 class="caption-500-24">Bando Mega Kusuma</h1>
           <p class="caption-500-14 text-text-muted mt-2">
@@ -678,13 +721,13 @@
             models that make coding more accessible.
           </p>
           <div>
-            <ul class="flex gap-5 mt-5">
+            <ul class="flex gap-5 mt-3 md:mt-5">
               <li>
                 <a href="mailto:bandomega1@gmail.com">
                   <img
                     src="/images/icons/mail.svg"
                     alt="mail-icon"
-                    class="w-5 h-5"
+                    class="w-6 h-6"
                   />
                 </a>
               </li>
@@ -713,7 +756,7 @@
                 <a href="https://www.github.com/bando9" target="_blank">
                   <img
                     src="/images/stack/github.svg"
-                    class="w-5 h-5"
+                    class="w-6 h-6"
                     alt="GitHub"
                   />
                 </a>
@@ -723,14 +766,14 @@
                   <img
                     src="/images/icons/thread.svg"
                     alt="Thread"
-                    class="w-5 h-5"
+                    class="w-6 h-6"
                   />
                 </a>
               </li>
             </ul>
           </div>
         </div>
-        <div class="grid grid-cols-2">
+        <div class="grid grid-cols-2 mt-10 md:mt-0">
           <div>
             <h3 class="text-text-muted">General</h3>
             <ul class="flex flex-col gap-1 mt-1.5">
@@ -759,5 +802,6 @@
         Copyright &copy; 2025. Bando Mega Allright reserved.
       </div>
     </footer>
+    <script src="/src/script.js"></script>
   </body>
 </html>

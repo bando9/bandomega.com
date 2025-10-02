@@ -5,41 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog Article's | Bando Mega Kusuma</title>
     <link href="/src/output.css" rel="stylesheet" />
-    <link rel="icon" href="/images/icons/icon.png" type="image/x-icon" />
+    <meta
+      name="title"
+      content="Bando Mega Kusuma | Software Engineer & Frontend Developer"
+    />
+    <meta
+      name="description"
+      content="I'm Bando Mega Kusuma, a Software Engineer, Frontend Developer, and IoT enthusiast. Explore my portfolio, projects, blog, and ways to connect with me."
+    />
+    <meta name="author" content="Bando Mega Kusuma" />
+
+    <link rel="icon" href="/images/icons/logo.svg" type="image/x-icon" />
   </head>
   <body class="bg-bg-dark text-text">
-    <header class="flex justify-center">
-      <nav
-        class="bg-bg-light text-text mt-10 px-10 py-3 rounded-xl overflow-hidden max-w-fit"
-      >
-        <ul class="font-semibold text-[16px] flex gap-[30px]">
-          <li><a href="/">Home</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/blog" class="text-secondary">Blog</a></li>
-          <li><a href="/projects">Projects</a></li>
-          <li>
-            <a href="/contact">Contact</a>
-          </li>
-        </ul>
-      </nav>
+    <header class="fixed top-0 left-0 w-full z-10">
+      <div class="flex justify-center items-center px-4">
+        <button
+          id="hamburger"
+          name="hamburger"
+          type="button"
+          class="block absolute right-10 top-5 md:hidden"
+        >
+          <span class="hamburger-line transition origin-top-left"></span>
+          <span class="hamburger-line transition"></span>
+          <span class="hamburger-line transition origin-bottom-left"></span>
+        </button>
+
+        <nav
+          id="nav-menu"
+          class="bg-bg-light text-text mt-10 max-w-fit rounded-xl absolute py-10 px-10 md:px-10 md:py-3 hidden md:block top-full md:top-full right-20 md:right-auto md:left-1/2 md:-translate-x-1/2"
+        >
+          <ul
+            class="subtitle-600-16 flex flex-col md:flex-row gap-1.5 md:gap-8"
+          >
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/blog" class="text-secondary">Blog</a></li>
+            <li><a href="/projects">Projects</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <main>
-      <section class="mt-20 mx-[6.25rem]">
+    <main class="mt-25 md:mt-35">
+      <section class="mt-20 md:mt-25 md:mx-25 mx-5">
         <div class="title text-center">
-          <h1 class="title-600-48">
-            The <span class="color-gradient">Blogs</span>
+          <h1 class="heading-600-32 md:title-600-48">
+            The <span class="color-gradient-primary">Blogs</span>
           </h1>
-          <p class="body-large-400-18 text-text-muted">
+          <p
+            class="body-default-400-16 md:body-large-400-18 text-text-muted md:text-text-muted mt-1 md:mt-0"
+          >
             Dive into my thoughts on coding, tech trends, and developer life.
             Explore my latest posts below.
           </p>
         </div>
       </section>
 
-      <section class="mt-20 mx-[6.25rem] flex justify-center">
+      <section class="mt-20 md:mt-25 md:mx-25 mx-5 flex justify-center">
         <div
-          class="bg-gradient-to-r from-primary from-30% to-accent h-10 w-150 rounded-xl p-[1.5px] flex justify-center items-center"
+          class="bg-gradient-to-r from-primary from-30% to-accent h-10 w-60 md:w-150 rounded-xl p-[1.5px] flex justify-center items-center"
         >
           <label
             for="search"
@@ -48,25 +74,31 @@
             <img
               src="/images/icons/search.svg"
               alt="Search Icon"
-              class="ms-1"
+              class="ms-1 sm:w-5"
             />
             <input
               type="text"
               placeholder="Search"
-              class="w-130 ring-0 focus:ring-0 shadow-none focus:shadow-none focus:outline-none border-none focus:border-none"
+              class="w-45 md:w-130 ring-0 focus:ring-0 shadow-none focus:shadow-none focus:outline-none border-none focus:border-none"
             />
           </label>
         </div>
       </section>
 
-      <section class="mt-20 ms-[6.25rem] me-[3rem] flex gap-3">
-        <div class="blog-list w-230 flex flex-col gap-20">
+      <section
+        class="mt-20 mx-5 md:ms-25 md:me-12 flex flex-col md:flex-row gap-1 md:gap-3"
+      >
+        <div
+          class="blog-list w-full md:w-230 flex flex-col gap-10 md:gap-20 order-2 md:order-1"
+        >
           <a href="/blog/blog-details/">
-            <div class="blog-card flex gap-5 group">
-              <div class="flex flex-col gap-5">
+            <div class="blog-card flex flex-col md:flex-row gap-5 group bg">
+              <div
+                class="flex flex-col gap-5 order-2 md:order-1 w-full md:w-2/3"
+              >
                 <div class="flex flex-col gap-2">
                   <p class="caption-500-14">December 17, 2024</p>
-                  <h3 class="subtitle-600-16 group-hover:underline tria">
+                  <h3 class="subtitle-600-16 group-hover:underline">
                     List Animation using Motion for ReactList Animation using
                     Motion for React
                   </h3>
@@ -75,7 +107,7 @@
                     for list using Motion for React (previously Framer Motion).
                   </p>
                 </div>
-                <div class="flex justify-between">
+                <div class="flex justify-between flex-col md:flex-row gap-3">
                   <div class="icon flex gap-5">
                     <div class="flex gap-1.5 items-center">
                       <img
@@ -108,22 +140,24 @@
                   </div>
                 </div>
               </div>
-              <div>
+              <div class="order-1">
                 <img
                   src="/images/blog-image-1.jpg"
                   alt="Blog Image"
-                  class="rounded-lg"
+                  class="rounded-lg w-full"
                 />
               </div>
             </div>
           </a>
 
           <a href="/blog/blog-details/">
-            <div class="blog-card flex gap-5 group">
-              <div class="flex flex-col gap-5">
+            <div class="blog-card flex flex-col md:flex-row gap-5 group">
+              <div
+                class="flex flex-col gap-5 order-2 md:order-1 w-full md:w-2/3"
+              >
                 <div class="flex flex-col gap-2">
                   <p class="caption-500-14">December 17, 2024</p>
-                  <h3 class="subtitle-600-16 group-hover:underline tria">
+                  <h3 class="subtitle-600-16 group-hover:underline">
                     List Animation using Motion for ReactList Animation using
                     Motion for React
                   </h3>
@@ -132,7 +166,7 @@
                     for list using Motion for React (previously Framer Motion).
                   </p>
                 </div>
-                <div class="flex justify-between">
+                <div class="flex justify-between flex-col md:flex-row gap-3">
                   <div class="icon flex gap-5">
                     <div class="flex gap-1.5 items-center">
                       <img
@@ -165,22 +199,23 @@
                   </div>
                 </div>
               </div>
-              <div>
+              <div class="order-1">
                 <img
                   src="/images/blog-image-1.jpg"
                   alt="Blog Image"
-                  class="rounded-lg"
+                  class="rounded-lg w-full"
                 />
               </div>
             </div>
           </a>
-
           <a href="/blog/blog-details/">
-            <div class="blog-card flex gap-5 group">
-              <div class="flex flex-col gap-5">
+            <div class="blog-card flex flex-col md:flex-row gap-5 group">
+              <div
+                class="flex flex-col gap-5 order-2 md:order-1 w-full md:w-2/3"
+              >
                 <div class="flex flex-col gap-2">
                   <p class="caption-500-14">December 17, 2024</p>
-                  <h3 class="subtitle-600-16 group-hover:underline tria">
+                  <h3 class="subtitle-600-16 group-hover:underline">
                     List Animation using Motion for ReactList Animation using
                     Motion for React
                   </h3>
@@ -189,7 +224,7 @@
                     for list using Motion for React (previously Framer Motion).
                   </p>
                 </div>
-                <div class="flex justify-between">
+                <div class="flex justify-between flex-col md:flex-row gap-3">
                   <div class="icon flex gap-5">
                     <div class="flex gap-1.5 items-center">
                       <img
@@ -222,22 +257,23 @@
                   </div>
                 </div>
               </div>
-              <div>
+              <div class="order-1">
                 <img
                   src="/images/blog-image-1.jpg"
                   alt="Blog Image"
-                  class="rounded-lg"
+                  class="rounded-lg w-full"
                 />
               </div>
             </div>
           </a>
-
           <a href="/blog/blog-details/">
-            <div class="blog-card flex gap-5 group">
-              <div class="flex flex-col gap-5">
+            <div class="blog-card flex flex-col md:flex-row gap-5 group">
+              <div
+                class="flex flex-col gap-5 order-2 md:order-1 w-full md:w-2/3"
+              >
                 <div class="flex flex-col gap-2">
                   <p class="caption-500-14">December 17, 2024</p>
-                  <h3 class="subtitle-600-16 group-hover:underline tria">
+                  <h3 class="subtitle-600-16 group-hover:underline">
                     List Animation using Motion for ReactList Animation using
                     Motion for React
                   </h3>
@@ -246,7 +282,7 @@
                     for list using Motion for React (previously Framer Motion).
                   </p>
                 </div>
-                <div class="flex justify-between">
+                <div class="flex justify-between flex-col md:flex-row gap-3">
                   <div class="icon flex gap-5">
                     <div class="flex gap-1.5 items-center">
                       <img
@@ -279,18 +315,20 @@
                   </div>
                 </div>
               </div>
-              <div>
+              <div class="order-1">
                 <img
                   src="/images/blog-image-1.jpg"
                   alt="Blog Image"
-                  class="rounded-lg"
+                  class="rounded-lg w-full"
                 />
               </div>
             </div>
           </a>
         </div>
 
-        <aside class="w-60 flex pt-2 border-l-1 border-text-muted h-50">
+        <aside
+          class="w-full md:w-60 flex pt-2 md:border-l-1 md:border-text-muted md:h-50 order-1 mb-10"
+        >
           <div class="ms-3">
             <div class="flex items-center gap-5">
               <p class="caption-500-14">Select date</p>
@@ -344,7 +382,7 @@
         class="w-full h-[1px] bg-gradient-to-r from-bg-dark via-text to-bg-dark my-8 opacity-30"
       ></div>
 
-      <div class="grid grid-cols-2 mx-[6.25rem] gap-55">
+      <div class="md:grid md:grid-cols-2 md:mx-25 mx-5 md:gap-55">
         <div>
           <h1 class="caption-500-24">Bando Mega Kusuma</h1>
           <p class="caption-500-14 text-text-muted mt-2">
@@ -352,13 +390,13 @@
             models that make coding more accessible.
           </p>
           <div>
-            <ul class="flex gap-5 mt-5">
+            <ul class="flex gap-5 mt-3 md:mt-5">
               <li>
                 <a href="mailto:bandomega1@gmail.com">
                   <img
                     src="/images/icons/mail.svg"
                     alt="mail-icon"
-                    class="w-5 h-5"
+                    class="w-6 h-6"
                   />
                 </a>
               </li>
@@ -387,7 +425,7 @@
                 <a href="https://www.github.com/bando9" target="_blank">
                   <img
                     src="/images/stack/github.svg"
-                    class="w-5 h-5"
+                    class="w-6 h-6"
                     alt="GitHub"
                   />
                 </a>
@@ -397,14 +435,14 @@
                   <img
                     src="/images/icons/thread.svg"
                     alt="Thread"
-                    class="w-5 h-5"
+                    class="w-6 h-6"
                   />
                 </a>
               </li>
             </ul>
           </div>
         </div>
-        <div class="grid grid-cols-2">
+        <div class="grid grid-cols-2 mt-10 md:mt-0">
           <div>
             <h3 class="text-text-muted">General</h3>
             <ul class="flex flex-col gap-1 mt-1.5">
@@ -433,5 +471,6 @@
         Copyright &copy; 2025. Bando Mega Allright reserved.
       </div>
     </footer>
+    <script src="/src/script.js"></script>
   </body>
 </html>
