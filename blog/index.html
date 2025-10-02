@@ -88,10 +88,14 @@
       <section
         class="mt-20 md:ms-25 md:me-12 flex flex-col md:flex-row gap-1 md:gap-3"
       >
-        <div class="blog-list w-230 flex flex-col gap-20 order-2 md:order-1">
+        <div
+          class="blog-list w-full md:w-230 flex flex-col gap-20 order-2 md:order-1"
+        >
           <a href="/blog/blog-details/">
-            <div class="blog-card flex gap-5 group">
-              <div class="flex flex-col gap-5">
+            <div class="blog-card flex flex-col md:flex-row gap-5 group">
+              <div
+                class="flex flex-col gap-5 order-2 md:order-1 w-full md:w-2/3"
+              >
                 <div class="flex flex-col gap-2">
                   <p class="caption-500-14">December 17, 2024</p>
                   <h3 class="subtitle-600-16 group-hover:underline">
@@ -136,7 +140,7 @@
                   </div>
                 </div>
               </div>
-              <div>
+              <div class="order-1">
                 <img
                   src="/images/blog-image-1.jpg"
                   alt="Blog Image"
@@ -318,7 +322,9 @@
           </a>
         </div>
 
-        <aside class="w-60 flex pt-2 border-l-1 border-text-muted h-50 order-1">
+        <aside
+          class="w-full md:w-60 flex pt-2 border-l-1 border-text-muted h-50 order-1"
+        >
           <div class="ms-3">
             <div class="flex items-center gap-5">
               <p class="caption-500-14">Select date</p>
