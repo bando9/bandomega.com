@@ -49,7 +49,7 @@
     </header>
 
     <main class="mt-25 md:mt-35">
-      <section class="mt-20 mx-[6.25rem]">
+      <section class="mt-20 md:mx-25 mx-5">
         <div class="title text-center">
           <h1
             class="title-600-48 bg-gradient-to-r from-primary from-30% to-accent text-transparent bg-clip-text inline-block"
@@ -63,16 +63,31 @@
         </div>
       </section>
 
-      <section class="mt-25 mx-[6.25rem]">
-        <div class="projects-list mt-13 flex flex-col gap-15">
-          <div class="project-card-left flex gap-3 items-start justify-between">
-            <div class="w-180">
-              <h1 class="subtitle-600-24 mb-1">Bandomega Personal Website</h1>
+      <section class="mt-20 md:mx-25 mx-5">
+        <div class="projects-list mt-7 md:mt-13 flex flex-col gap-10 md:gap-20">
+          <div
+            class="project-card-left flex flex-col md:flex-row items-start md:justify-between gap-6"
+          >
+            <div class="order-1 w-full md:w-md">
+              <img
+                src="/images/project-1.png"
+                alt="Photo Personal Web v1"
+                class="rounded-lg w-full h-auto"
+              />
+            </div>
+
+            <div class="order-2 md:order-1 md:w-2/3">
+              <h1
+                class="subtitle-600-20 md:subtitle-600-24 mb-2 group-hover:underline"
+              >
+                Bandomega Personal Website
+              </h1>
               <h3 class="caption-500-14">
                 A personal portfolio website showcasing projects, GitHub links,
                 and project highlights. Built with HTML5 and Bootstrap.
               </h3>
-              <div class="flex mt-3 gap-4">
+
+              <div class="flex mt-3 gap-2 md:gap-4 items-center">
                 <h3 class="caption-500-14">Tools:</h3>
                 <div class="flex gap-3">
                   <img
@@ -80,53 +95,48 @@
                     alt="HTML Icon"
                     class="w-5"
                   />
-
-                  <img src="/images/stack/css.svg" class="w-5" alt="CSS Icon" />
-
+                  <img src="/images/stack/css.svg" alt="CSS Icon" class="w-5" />
                   <img
                     src="/images/stack/bootstrap.svg"
-                    class="w-6"
                     alt="Bootstrap Icon"
+                    class="w-6"
                   />
                 </div>
               </div>
-              <div class="flex items-center justify-between">
-                <div class="flex items-center gap-5 mt-5">
+
+              <div
+                class="flex flex-col md:flex-row md:items-center md:justify-between mt-5 gap-4"
+              >
+                <div class="flex items-center gap-5 order-2 md:order-1">
                   <a
                     href="https://github.com/bando9/bandomega-portfolio/tree/main"
                     target="_blank"
+                    class="flex items-center gap-1 hover:underline"
                   >
-                    <div
-                      class="flex items-center justify-center gap-1.5 cursor-pointer hover:underline"
-                    >
-                      <img
-                        src="/images/stack/github.svg"
-                        alt="GitHub Icon"
-                        class="w-5"
-                      />
-                      <p>Repository</p>
-                    </div>
+                    <img
+                      src="/images/stack/github.svg"
+                      alt="GitHub Icon"
+                      class="w-5"
+                    />
+                    <p class="caption-500-14">Repository</p>
                   </a>
-
-                  <a href="https://v1.bandomega.com/" target="_blank">
-                    <div
-                      class="flex justify-center items-center gap-1.5 cursor-pointer hover:underline"
-                    >
-                      <img
-                        src="/images/icons/link-1.svg"
-                        alt="Link Icon"
-                        class="w-5"
-                      />
-                      <p>Open link sites</p>
-                    </div>
+                  <a
+                    href="https://v1.bandomega.com/"
+                    target="_blank"
+                    class="flex items-center gap-1 hover:underline"
+                  >
+                    <img
+                      src="/images/icons/link-1.svg"
+                      alt="Link Icon"
+                      class="w-5"
+                    />
+                    <p class="caption-500-14">Open link sites</p>
                   </a>
                 </div>
 
-                <a href="/projects/project-details" class="me-10">
-                  <div
-                    class="flex items-center justify-center gap-1.5 cursor-pointer hover:underline"
-                  >
-                    <p>View project</p>
+                <a href="/projects/project-details" class="order-1 md:order-2">
+                  <div class="flex items-center gap-1 hover:underline">
+                    <p class="caption-500-14">View project</p>
                     <img
                       src="/images/icons/arrow-right.svg"
                       alt="Arrow right icon"
@@ -136,96 +146,108 @@
                 </a>
               </div>
             </div>
-            <div>
+          </div>
+
+          <div
+            class="project-card-right flex flex-col md:flex-row items-start md:justify-between gap-6"
+          >
+            <div class="order-2 md:order-1 md:w-2/3">
+              <h1
+                class="subtitle-600-20 md:subtitle-600-24 mb-2 group-hover:underline"
+              >
+                Memomate – Daily Notes App
+              </h1>
+              <h3 class="caption-500-14">
+                A simple web app for creating and managing daily notes. Built
+                with ReactJS and modular styling.
+              </h3>
+
+              <div class="flex mt-3 gap-2 md:gap-4 items-center">
+                <h3 class="caption-500-14">Tools:</h3>
+                <div class="flex gap-3">
+                  <img
+                    src="/images/stack/react.svg"
+                    alt="HTML Icon"
+                    class="w-5"
+                  />
+                </div>
+              </div>
+
+              <div
+                class="flex flex-col md:flex-row md:items-center md:justify-between mt-5 gap-4"
+              >
+                <div class="flex items-center gap-5 order-2 md:order-1">
+                  <a
+                    href="https://github.com/bando9/memomate"
+                    target="_blank"
+                    class="flex items-center gap-1 hover:underline"
+                  >
+                    <img
+                      src="/images/stack/github.svg"
+                      alt="GitHub Icon"
+                      class="w-5"
+                    />
+                    <p class="caption-500-14">Repository</p>
+                  </a>
+                  <a
+                    href="https://memomate-six.vercel.app/"
+                    target="_blank"
+                    class="flex items-center gap-1 hover:underline"
+                  >
+                    <img
+                      src="/images/icons/link-1.svg"
+                      alt="Link Icon"
+                      class="w-5"
+                    />
+                    <p class="caption-500-14">Open link sites</p>
+                  </a>
+                </div>
+
+                <a href="/projects/project-details" class="order-1 md:order-2">
+                  <div class="flex items-center gap-1 hover:underline">
+                    <p class="caption-500-14">View project</p>
+                    <img
+                      src="/images/icons/arrow-right.svg"
+                      alt="Arrow right icon"
+                      class="w-5"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="order-1 w-full md:w-md">
               <img
-                src="/images/project-1.png"
-                alt="Photo Personal Web v1"
-                class="rounded-lg"
+                src="/images/project-2.jpg"
+                alt="Photo Memomate"
+                class="rounded-lg w-full h-auto"
               />
             </div>
           </div>
 
           <div
-            class="project-card-right flex gap-3 items-start justify-between"
+            class="project-card-right flex flex-col md:flex-row items-start md:justify-between gap-6"
           >
-            <div>
+            <div class="order-1 w-full md:w-md">
               <img
-                src="/images/project-2.jpg"
+                src="/images/project-3.jpg"
                 alt="Photo Memomate"
-                class="rounded-lg"
+                class="rounded-lg w-full h-auto"
               />
             </div>
-            <div class="w-180">
-              <h1 class="subtitle-600-24 mb-1">Memomate – Daily Notes App</h1>
-              <h3 class="caption-500-14">
-                A simple web app for creating and managing daily notes. Built
-                with ReactJS and modular styling.
-              </h3>
-              <div class="flex mt-3 gap-4">
-                <h3 class="caption-500-14">Tools:</h3>
-                <div class="flex gap-3">
-                  <img
-                    src="/images/stack/react.svg"
-                    alt="React Icon"
-                    class="w-5"
-                  />
-                </div>
-              </div>
-              <div class="flex items-center justify-between">
-                <div class="flex items-center gap-5 mt-5">
-                  <a href="https://github.com/bando9/memomate" target="_blank">
-                    <div
-                      class="flex items-center justify-center gap-1.5 cursor-pointer hover:underline"
-                    >
-                      <img
-                        src="/images/stack/github.svg"
-                        alt="GitHub Icon"
-                        class="w-5"
-                      />
-                      <p>Repository</p>
-                    </div>
-                  </a>
 
-                  <a href="https://memomate-six.vercel.app/" target="_blank">
-                    <div
-                      class="flex justify-center items-center gap-1.5 cursor-pointer hover:underline"
-                    >
-                      <img
-                        src="/images/icons/link-1.svg"
-                        alt="Link Icon"
-                        class="w-5"
-                      />
-                      <p>Open link sites</p>
-                    </div>
-                  </a>
-                </div>
-
-                <a href="/projects/project-details" class="me-10">
-                  <div
-                    class="flex items-center justify-center gap-1.5 cursor-pointer hover:underline"
-                  >
-                    <p>View project</p>
-                    <img
-                      src="/images/icons/arrow-right.svg"
-                      alt="Arrow right icon"
-                      class="w-5"
-                    />
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-card-left flex gap-3 items-start justify-between">
-            <div class="w-180">
-              <h1 class="subtitle-600-24 mb-1">
+            <div class="order-2 md:order-1 md:w-2/3">
+              <h1
+                class="subtitle-600-20 md:subtitle-600-24 mb-2 group-hover:underline"
+              >
                 Mini Library – Book CRUD Application
               </h1>
               <h3 class="caption-500-14">
                 A personal portfolio website showcasing projects, GitHub links,
                 and project highlights. Built with HTML5 and Bootstrap.
               </h3>
-              <div class="flex mt-3 gap-4">
+
+              <div class="flex mt-3 gap-2 md:gap-4 items-center">
                 <h3 class="caption-500-14">Tools:</h3>
                 <div class="flex gap-3">
                   <img
@@ -238,52 +260,45 @@
 
                   <img
                     src="/images/stack/javascript.svg"
-                    class="w-6"
+                    class="w-5"
                     alt="JavaScript Icon"
                   />
                 </div>
               </div>
 
-              <div class="flex items-center justify-between">
-                <div class="flex items-center gap-5 mt-5">
+              <div
+                class="flex flex-col md:flex-row md:items-center md:justify-between mt-5 gap-4"
+              >
+                <div class="flex items-center gap-5 order-2 md:order-1">
                   <a
                     href="https://github.com/bando9/perpustakaan-mini"
                     target="_blank"
+                    class="flex items-center gap-1 hover:underline"
                   >
-                    <div
-                      class="flex items-center justify-center gap-1.5 cursor-pointer hover:underline"
-                    >
-                      <img
-                        src="/images/stack/github.svg"
-                        alt="GitHub Icon"
-                        class="w-5"
-                      />
-                      <p>Repository</p>
-                    </div>
+                    <img
+                      src="/images/stack/github.svg"
+                      alt="GitHub Icon"
+                      class="w-5"
+                    />
+                    <p class="caption-500-14">Repository</p>
                   </a>
-
                   <a
                     href="https://perpustakaan-mini.vercel.app/"
                     target="_blank"
+                    class="flex items-center gap-1 hover:underline"
                   >
-                    <div
-                      class="flex justify-center items-center gap-1.5 cursor-pointer hover:underline"
-                    >
-                      <img
-                        src="/images/icons/link-1.svg"
-                        alt="Link Icon"
-                        class="w-5"
-                      />
-                      <p>Open link sites</p>
-                    </div>
+                    <img
+                      src="/images/icons/link-1.svg"
+                      alt="Link Icon"
+                      class="w-5"
+                    />
+                    <p class="caption-500-14">Open link sites</p>
                   </a>
                 </div>
 
-                <a href="/projects/project-details" class="me-10">
-                  <div
-                    class="flex items-center justify-center gap-1.5 cursor-pointer hover:underline"
-                  >
-                    <p>View project</p>
+                <a href="/projects/project-details" class="order-1 md:order-2">
+                  <div class="flex items-center gap-1 hover:underline">
+                    <p class="caption-500-14">View project</p>
                     <img
                       src="/images/icons/arrow-right.svg"
                       alt="Arrow right icon"
@@ -293,23 +308,16 @@
                 </a>
               </div>
             </div>
-            <div>
-              <img
-                src="/images/project-3.jpg"
-                alt="Photo Mini Library"
-                class="rounded-lg"
-              />
-            </div>
           </div>
         </div>
       </section>
 
       <section
         id="contact"
-        class="mx-[6.25rem] h-screen flex justify-center items-center mt-10"
+        class="px-5 md:px-25 py-25 md:py-32 flex justify-center items-center"
       >
-        <div>
-          <h1 class="title-600-64 text-center">
+        <div class="w-full max-w-3xl text-center">
+          <h1 class="title-600-48 md:title-600-64">
             Get
             <span
               class="bg-gradient-to-r from-primary from-30% to-accent text-transparent bg-clip-text inline-block"
@@ -317,7 +325,7 @@
             >
           </h1>
           <p
-            class="body-large-400-18 text-text-muted text-center w-200 mx-auto"
+            class="body-default-400-16 md:body-large-400-18 text-text-muted max-w-xl mx-auto mt-4"
           >
             While I’m focused on my current journey, my inbox is always open.
             Whether it’s about tech, career, or just a friendly hello, I’d be
@@ -326,7 +334,7 @@
           <div class="flex justify-center items-center mt-10">
             <a
               href="/contact"
-              class="py-3 px-6 bg-button rounded-2xl heading-700-24"
+              class="inline-flex items-center justify-center py-3 px-6 bg-button rounded-2xl heading-700-20 md:heading-700-24 hover:shadow-md hover:shadow-bg-light transition"
               >Say Hello</a
             >
           </div>
