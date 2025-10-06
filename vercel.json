@@ -1,8 +1,12 @@
 {
   "rewrites": [
     {
-      "source": "/blog/:path*",
-      "destination": "/blog/dist/:path*"
+      "source": "/blog",
+      "destination": "/astro-blog"
+    },
+    {
+      "source": "/blog/(.*)",
+      "destination": "/astro-blog/$1"
     }
   ]
 }
