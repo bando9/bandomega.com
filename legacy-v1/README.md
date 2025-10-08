@@ -25,23 +25,6 @@ I just create 6 page for visitor to learn about me.
 - [Blog Details](#blog-details): Displays the full content of a single blog post with related articles.
 - [Contact](#find-me): Provides a form and links to connect with me on social media.
 
-## Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-├── public/
-├── src/
-│   ├── components/
-│   ├── content/
-│   ├── layouts/
-│   └── pages/
-├── astro.config.mjs
-├── README.md
-├── package.json
-└── tsconfig.json
-```
-
 ## Tech Stack
 
 - HTML5
