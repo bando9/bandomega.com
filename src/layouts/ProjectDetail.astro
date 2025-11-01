@@ -108,12 +108,11 @@ const { title, description, pubDate, updatedDate, heroImage, headings } = Astro.
           class="w-60 ps-4 pt-3 border-2 border-text-muted rounded-xl min-h-50 flex flex-col gap-0.5"
 
           >
-          <p>dadwad</p>
-            <!-- {headings.map((h) => (
-            <li class={`pl-${(h.depth - 1) * 2} list-none`}>
-              <a href={`#${h.slug}`} class="hover:text-primary">{h.text}</a>
-            </li>
-      ))} -->   
+            {headings.map((h) => (
+              <li class={`pl-${(h.depth - 1) * 2} list-none`}>
+                <a href={`#${h.slug}`} class="hover:text-primary">{h.text}</a>
+              </li>
+          ))} 
         </aside>
       </section>
     </main>
