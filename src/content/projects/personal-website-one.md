@@ -4,7 +4,10 @@ description:
   "A personal portfolio website showcasing projects, GitHub links, and
   project highlights. Built with HTML5 and Bootstrap."
 pubDate: "Oct 24 2025"
+updatedDate: "Oct 27 2025"
 heroImage: "../../assets/blog-placeholder-4.jpg"
+githubUrl: "https://github.com/bando9/bandomega.com"
+siteUrl: "https://bandomega.com"
 ---
 
 # Personal website Dua [bandomega.com](https://bandomega.com)

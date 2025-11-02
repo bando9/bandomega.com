@@ -8,9 +8,10 @@ import { Image } from "astro:assets";
 import { getCollection } from "astro:content";
 import FormattedDate from "../../components/FormattedDate.astro";
 
-const posts = (await getCollection("project")).sort(
-  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
-);
+const projects = (await getCollection("projects")).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+)
+
 ---
 
 <!doctype html>
@@ -107,7 +108,7 @@ const posts = (await getCollection("project")).sort(
                   </a>
                 </div>
 
-                <a href="/projects/project-details" class="order-1 md:order-2">
+                <a href="/projects/bando-mega-personal-website" class="order-1 md:order-2">
                   <div class="flex items-center gap-1 hover:underline">
                     <p class="caption-500-14">View project</p>
                     <img
@@ -176,7 +177,7 @@ const posts = (await getCollection("project")).sort(
                   </a>
                 </div>
 
-                <a href="/projects/project-details" class="order-1 md:order-2">
+                <a href="/projects/memomate" class="order-1 md:order-2">
                   <div class="flex items-center gap-1 hover:underline">
                     <p class="caption-500-14">View project</p>
                     <img
@@ -269,7 +270,7 @@ const posts = (await getCollection("project")).sort(
                   </a>
                 </div>
 
-                <a href="/projects/project-details" class="order-1 md:order-2">
+                <a href="/projects/mini-library" class="order-1 md:order-2">
                   <div class="flex items-center gap-1 hover:underline">
                     <p class="caption-500-14">View project</p>
                     <img
@@ -317,20 +318,20 @@ const posts = (await getCollection("project")).sort(
       <section>
         <ul>
           {
-            posts.map((post) => (
+            projects.map((project) => (
               <li>
-                <a href={`/projects/${post.id}/`}>
-                  {post.data.heroImage && (
+                <a href={`/projects/${project.id}/`}>
+                  {project.data.heroImage && (
                     <Image
                       width={720}
                       height={360}
-                      src={post.data.heroImage}
+                      src={project.data.heroImage}
                       alt=""
                     />
                   )}
-                  <h4 class="title">{post.data.title}</h4>
+                  <h4 class="title">{project.data.title}</h4>
                   <p class="date">
-                    <FormattedDate date={post.data.pubDate} />
+                    <FormattedDate date={project.data.pubDate} />
                   </p>
                 </a>
               </li>

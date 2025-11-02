@@ -46,6 +46,7 @@ Inside of your Astro project, you'll see the following folders and files:
 
 - HTML5
 - Tailwind CSS
+- Astro
 
 ## Links
 

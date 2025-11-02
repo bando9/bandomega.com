@@ -1,6 +1,6 @@
 ---
-import type { MarkdownHeading } from "astro";
-import { Image } from "astro:assets";
+// import type { MarkdownHeading } from "astro";
+// import { Image } from "astro:assets";
 import type { CollectionEntry } from "astro:content";
 
 import BaseHead from "../components/BaseHead.astro";
@@ -10,14 +10,7 @@ import Header from "../components/Header.astro";
 
 type Props = CollectionEntry<"blog">["data"];
 
-const { title, description, pubDate, updatedDate, heroImage, headings } = Astro.props as {
-  title: string;
-  description: string;
-  pubDate: Date;
-  updatedDate?: Date;
-  heroImage?: { src: string; width: number; height: number; format: string };
-  headings?: MarkdownHeading[];
-};
+const { title, description, pubDate, updatedDate, githubUrl, siteUrl, heroImage } = Astro.props
 ---
 
 <html lang="en">
@@ -36,10 +29,10 @@ const { title, description, pubDate, updatedDate, heroImage, headings } = Astro.
             {description}
           </p>
           <div class="text-slate-300 text-sm">
-            <FormattedDate date={pubDate} />
+            Created <FormattedDate date={pubDate} />
             {
                 updatedDate && (
-                  <div class="last-updated-on">
+                  <div class="last-updated-on mt-1">
                     Last updated on <FormattedDate date={updatedDate} />
                   </div>
                 )
@@ -78,33 +71,33 @@ const { title, description, pubDate, updatedDate, heroImage, headings } = Astro.
           </div>
 
           <div class="flex gap-3">
-            <div class="flex gap-1.5 items-center">
+            <a href={githubUrl} target="_blank" class="flex gap-1.5 items-center">
               <img
-                src="/images/icons/time.svg"
+                src="/images/stack/github.svg"
                 alt="Clock Icon"
                 class="w-4 h-4"
               />
-              <p class="caption-500-12">6 min read</p>
-            </div>
+              <p class="caption-500-12">Repository</p>
+            </a>
 
-            <div class="flex gap-1.5 items-center">
+            <a href={siteUrl} target="_blank" class="flex gap-1.5 items-center">
               <img
                 src="/images/icons/link-1.svg"
                 alt="Clock Icon"
                 class="w-4 h-4"
               />
               <p class="caption-500-12">Open link sites</p>
-            </div>
+            </a>
           </div>
         </div>
       </section>
 
-      <section class="mt-20 ms-[6.25rem] me-[3rem] flex gap-3">
-        <div class="w-210 flex flex-col text-text-blog">
+      <div class="mt-20 ms-[6.25rem] me-[3rem] gap-3 prose prose-slate dark:prose-invert">
+        <article class="prose dark:prose-invert">
           <slot />
-        </div>
+        </article>
 
-        <aside
+        <!-- <aside
           class="w-60 ps-4 pt-3 border-2 border-text-muted rounded-xl min-h-50 flex flex-col gap-0.5"
 
           >
@@ -113,8 +106,8 @@ const { title, description, pubDate, updatedDate, heroImage, headings } = Astro.
                 <a href={`#${h.slug}`} class="hover:text-primary">{h.text}</a>
               </li>
           ))} 
-        </aside>
-      </section>
+        </aside> -->
+      </div>
     </main>
 
 
