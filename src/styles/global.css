@@ -136,3 +136,24 @@ body {
 .animate-scroll-mobile {
   animation: scroll 10s linear infinite;
 }
+
+.prose h1,
+.prose h2,
+.prose h3 {
+  scroll-margin-top: 6rem;
+}
+
+.prose code {
+  background-color: #1e293b;
+  color: #f1f5f9;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+}
+
+.prose pre {
+  background-color: #0f172a;
+  color: #e2e8f0;
+  border-radius: 8px;
+  padding: 1rem;
+  overflow-x: auto;
+}

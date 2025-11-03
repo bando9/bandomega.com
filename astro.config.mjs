@@ -1,8 +1,8 @@
 // @ts-check
-
 import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
 import { defineConfig } from "astro/config";
+import remarkGfm from "remark-gfm";
 
 import tailwindcss from "@tailwindcss/vite";
 
@@ -10,7 +10,10 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
   site: "https://bandomega.com",
   integrations: [mdx(), sitemap()],
-
+  markdown: {
+    syntaxHighlight: "shiki",
+    remarkPlugins: [remarkGfm],
+  },
   vite: {
     plugins: [tailwindcss()],
   },

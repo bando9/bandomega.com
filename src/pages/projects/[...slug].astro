@@ -9,12 +9,14 @@ export async function getStaticPaths() {
     props: project,
   }));
 }
-type Props = CollectionEntry<"blog">;
+type Props = CollectionEntry<"projects">;
 
 const project = Astro.props;
-const { Content } = await render(project);
+const { Content, headings, remarkPluginFrontmatter } = await render(project);
 ---
 
-<ProjectDetail {...project.data} >
-  <Content />
+<ProjectDetail {...project.data} headings={headings}>
+  <article class="prose prose-slate dark:prose-invert max-w-none">
+    <Content />
+  </article>
 </ProjectDetail>

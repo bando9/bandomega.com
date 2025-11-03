@@ -22,3 +22,21 @@ baslkndaokdnad
 aakjdnkawdn
 
 ## mantap
+
+dakjndd
+
+dawkjdnwdnwkdjnakdne
+
+drgrdgdrgrgdgrgrdgbgbfbgfbf
+
+gfbqdmosefsfm
+
+- [x] Tugas 1
+- [x] Tugas 2
+
+dakdwd
+
+- dwdwdwd
+- dwdadwggdblmoemef
+- sofimoef
+- wd
