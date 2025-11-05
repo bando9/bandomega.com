@@ -1,50 +1,72 @@
-# Blogster
+# bandomega.com Personal Website
 
-Theme: **sleek**
+## Introduction
 
-Blogster is a collection of beautiful, accessible and performant blog templates built with [Astro](https://astro.build) and [Markdoc](https://markdoc.dev).
+Welcome to my personal website project! This website serves as a platform to showcase information about me, my open-source projects, writings, and contact information.
 
-Check out the demo here - [Blogster sleek template](https://blogster-sleek.netlify.app).
+I am developing myself as a full-stack engineer, with a strong focus on frontend development. I enjoy building projects that combine clean design, responsive user interfaces, and solid technical foundations.
 
-## Sleek Template
+## Inspirations
 
-A beautiful, performant and accessible theme built with [Tailwind](https://tailwindcss.com).
+Some of inspiration:
 
-- **Fast**. Fast by default. Astro websites are engineered to be fast and load before you could blink, even when not cached.
-- **Dark mode**. All themes have light/dark mode built-in.
-- **Mobile first**. Responsive and loads fast in all devices.
-- **Accessible**. A well thought out semantic and accessible content.
-- **Perfect lighthouse score.** 100 across the board.
-- **Easy content authoring**. Author content using markdown (`.md`) from your code editor or directly in GitHub.
-- **Extended markdown with [Markdoc](https://markdoc.dev).** Type-safe custom components like YouTube embed, Twitter embed (or anything you want really) in your markdown (`.md`) files.
-- **RSS feed**. Your blog has an RSS feed setup that can be accessed at `/rss.xml`.
-- **SEO**. All pages are setup with all the SEO you might need.
+- [theodorusclarence.com](https://www.theodorusclarence.com/)
+- [haydenbleasel.com](https://www.haydenbleasel.com/)
+- [taniarascia.com](https://www.taniarascia.com/)
 
-## How do I add content?
+## Pages / Sitemap
 
-All the content is written in markdown (.md) and grouped as `blog` or `projects` in the `content` directory. All the default markdown syntax will work. You also have a few example custom markdown elements like _YouTube embed_, _Twitter embed_, etc. You can create your own custom components too in two easy steps.
+I just create 6 page for visitor to learn about me.
 
-1. Add a markdoc config. Check out the markdoc config in [src/lib/markdoc/config.ts](src/lib/markdoc/config.ts) to learn how to add custom components.
-2. Add a component to render your custom component. Check out the Renderer in [src/components/Renderer.astro](src/components/Renderer.astro).
+- [Home](#home): Overview of who I am and what I do.
+- [About](#blog): About: Shares my background, education, and journey into web development.
+- [Projects](#projects): Showcases my personal projects with descriptions, tech stacks, and demo links.
+- [Blog](#blog): Blog: Features my writings, tutorials, and learning journey.
+- [Blog Details](#blog-details): Displays the full content of a single blog post with related articles.
+- [Contact](#find-me): Provides a form and links to connect with me on social media.
 
-## How do I make it my blog?
+## Tech Stack
 
-Easy.
+- HTML5
+- Tailwind CSS
+- Astrojs
 
-- All content is static and everything is straight forward. Change whatever you need to change.
-- Delete or update the content in `content/{content-group}`. `content-group` could be `blog`, `projects` or `anything`.
-- (Optional) If you need more content types like _Notes_, just create a new dir in `content` and add a new frontmatter validator like [src/lib/markdoc/blog/frontmatter](src/lib/markdoc/blog/frontmatter).
+## Links
 
-## How do I deploy?
+- Website URL: [bandomega.com](www.bandomega.com)
+- Github Repo: [github.com/bando9](https://github.com/bando9/bandomega.com)
+- Figma File: [www.figma.com/design/tjvpqJnoz2F16NSCxFJBYe/Bandomega.com](https://www.figma.com/design/tjvpqJnoz2F16NSCxFJBYe/Bandomega.com)
 
-`yarn build` will generate a static website in `dist` dir. You can host it with any static hosting. If you need a recommendation, check out [Netlify](netlify.com).
+### Social Media
 
-## Credit
+- Telegram: [t.me/bandomega](t.me/bandomega)
+- LinkedIn: [linkedin.com/in/bando-mega-kusuma](https://www.linkedin.com/in/bando-mega-kusuma)
+- GitHub: [github.com/bando9](https://www.github.com/bando9)
+- Instagram: [instagram.com/bandomega1](https://www.instagram.com/bandomega1)
+- CV/Resume: [bandomega.com](https://www.bandomega.com)
 
-Thanks to other templates that inspired this theme.
+## Preview
 
-- [Official Astro Blog template](https://github.com/withastro/astro/tree/main/examples/blog)
+### Home
 
-## License
+![Home](images/home.jpg)
 
-MIT © [Dinesh Pandiyan](https://github.com/flexdinesh)
+### About
+
+![About](images/about.jpg)
+
+### Projects
+
+![Projects](images/projects.jpg)
+
+### Blog
+
+![Blog](images/blog.jpg)
+
+### Blog Details
+
+![Blog Details](images/blog-details.jpg)
+
+### Contact
+
+![Contact](images/contact.jpg)
