@@ -14,22 +14,6 @@ Some of inspiration:
 - [haydenbleasel.com](https://www.haydenbleasel.com/)
 - [taniarascia.com](https://www.taniarascia.com/)
 
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
 ## Pages / Sitemap
 
 I just create 6 page for visitor to learn about me.
@@ -43,10 +27,8 @@ I just create 6 page for visitor to learn about me.
 
 ## Tech Stack
 
-- TypeScript
-- Nextjs
+- HTML5
 - Tailwind CSS
-- Deploy on [Vercel](https://vercel.com/)
 
 ## Links
 
@@ -66,24 +48,24 @@ I just create 6 page for visitor to learn about me.
 
 ### Home
 
-![Home](legacy-v1/images/home.jpg)
+![Home](images/home.jpg)
 
 ### About
 
-![About](legacy-v1/images/about.jpg)
+![About](images/about.jpg)
 
 ### Projects
 
-![Projects](legacy-v1/images/projects.jpg)
+![Projects](images/projects.jpg)
 
 ### Blog
 
-![Blog](legacy-v1/images/blog.jpg)
+![Blog](images/blog.jpg)
 
 ### Blog Details
 
-![Blog Details](legacy-v1/images/blog-details.jpg)
+![Blog Details](images/blog-details.jpg)
 
 ### Contact
 
-![Contact](legacy-v1/images/contact.jpg)
+![Contact](images/contact.jpg)
