@@ -15,6 +15,7 @@ export default defineConfig({
     remarkPlugins: [remarkGfm],
   },
   vite: {
-    plugins: [tailwindcss()],
+    // @ts-ignore
+    plugins: [tailwindcss({})],
   },
 });
