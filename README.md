@@ -1,71 +1,36 @@
-# bandomega.com Personal Website
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Introduction
+## Getting Started
 
-Welcome to my personal website project! This website serves as a platform to showcase information about me, my open-source projects, writings, and contact information.
+First, run the development server:
 
-I am developing myself as a full-stack engineer, with a strong focus on frontend development. I enjoy building projects that combine clean design, responsive user interfaces, and solid technical foundations.
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-## Inspirations
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-Some of inspiration:
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-- [theodorusclarence.com](https://www.theodorusclarence.com/)
-- [haydenbleasel.com](https://www.haydenbleasel.com/)
-- [taniarascia.com](https://www.taniarascia.com/)
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Pages / Sitemap
+## Learn More
 
-I just create 6 page for visitor to learn about me.
+To learn more about Next.js, take a look at the following resources:
 
-- [Home](#home): Overview of who I am and what I do.
-- [About](#blog): About: Shares my background, education, and journey into web development.
-- [Projects](#projects): Showcases my personal projects with descriptions, tech stacks, and demo links.
-- [Blog](#blog): Blog: Features my writings, tutorials, and learning journey.
-- [Blog Details](#blog-details): Displays the full content of a single blog post with related articles.
-- [Contact](#find-me): Provides a form and links to connect with me on social media.
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-## Tech Stack
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-- HTML5
-- Tailwind CSS
+## Deploy on Vercel
 
-## Links
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-- Website URL: [bandomega.com](www.bandomega.com)
-- Github Repo: [github.com/bando9](https://github.com/bando9/bandomega.com)
-- Figma File: [www.figma.com/design/tjvpqJnoz2F16NSCxFJBYe/Bandomega.com](https://www.figma.com/design/tjvpqJnoz2F16NSCxFJBYe/Bandomega.com)
-
-### Social Media
-
-- Telegram: [t.me/bandomega](t.me/bandomega)
-- LinkedIn: [linkedin.com/in/bando-mega-kusuma](https://www.linkedin.com/in/bando-mega-kusuma)
-- GitHub: [github.com/bando9](https://www.github.com/bando9)
-- Instagram: [instagram.com/bandomega1](https://www.instagram.com/bandomega1)
-- CV/Resume: [bandomega.com](https://www.bandomega.com)
-
-## Preview
-
-### Home
-
-![Home](images/home.jpg)
-
-### About
-
-![About](images/about.jpg)
-
-### Projects
-
-![Projects](images/projects.jpg)
-
-### Blog
-
-![Blog](images/blog.jpg)
-
-### Blog Details
-
-![Blog Details](images/blog-details.jpg)
-
-### Contact
-
-![Contact](images/contact.jpg)
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
