@@ -1,6 +1,5 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
-@import "prismjs/themes/prism-okaidia.css";
 
 :root {
   --background: #ffffff;
