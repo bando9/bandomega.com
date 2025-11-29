@@ -9,8 +9,6 @@ export default function Blog() {
 
       <ul className="space-y-2">
         {posts.map((post) => {
-          console.log(post);
-
           return (
             <li key={post.slug}>
               <Link href={`/blog/${post.slug}`}> {post.title} </Link>

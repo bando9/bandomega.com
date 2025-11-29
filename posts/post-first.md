@@ -3,6 +3,9 @@ title: "Blog first"
 description: "You can author content using the familiar markdown syntax you already know. All basic markdown syntax is supported."
 date: 2025-11-29
 author: "Bando"
+like: 1000
+read: 6
+watch: 1220
 ---
 
 Markdown is powered by [Markdoc](https://markdoc.dev/). This is an example post to demonstrate all the basic markdown syntax. You can author content using the familiar markdown syntax you already know.
