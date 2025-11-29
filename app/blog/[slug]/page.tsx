@@ -22,7 +22,7 @@ export default async function Post({
 
   return (
     <div>
-      <article className="prose mx-auto max-w-3xl dark:prose-invert">
+      <article className="prose prose-zinc mx-auto max-w-3xl dark:prose-invert">
         <div dangerouslySetInnerHTML={{ __html: htmlConverter }} />
       </article>
     </div>
