@@ -1,8 +1,6 @@
+import { md } from "@/lib/markdown";
 import { getAllPosts } from "@/lib/posts";
 import { notFound } from "next/navigation";
-import MarkdownIt from "markdown-it";
-
-const md = new MarkdownIt();
 
 async function fetchPosts(slug: string) {
   const posts = getAllPosts();
