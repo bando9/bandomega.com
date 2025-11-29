@@ -92,8 +92,6 @@ Syntax highlighting is done using [Prism.js](https://github.com/PrismJS/prism). 
 </html>
 ```
 
-<br>
-
 ```js
 const exampleString = "example";
 ```
