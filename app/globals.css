@@ -1,29 +1,140 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-primary: #006aff;
+  --color-secondary: #0fb8f0;
+  --color-accent: #ef3434;
+  --color-bg-dark: #020104;
+  --color-bg-light: #04131c;
+  --color-text: #f3eef7;
+  --color-text-muted: #666269;
+  --color-text-blog: #e6e5e6;
+  --color-card: #021636;
+  --color-button: #06384b;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  ::selection {
+    @apply bg-text text-primary;
   }
 }
 
+@layer components {
+  .color-gradient-primary {
+    @apply bg-linear-to-r from-primary from-30% to-accent text-transparent bg-clip-text inline-block;
+  }
+
+  .color-gradient-secondary {
+    @apply bg-linear-to-r from-[#1e3a8a] from-20% to-[#0f172a] to-70% shadow-inner;
+  }
+
+  .hamburger-line {
+    @apply w-[30px] h-0.5 my-2 block bg-text;
+  }
+}
+
+@utility heading-700-24 {
+  @apply font-bold text-2xl text-text;
+}
+
+@utility heading-700-20 {
+  @apply font-bold text-xl text-text;
+}
+
+@utility title-600-64 {
+  @apply font-semibold text-6xl text-text;
+}
+
+@utility title-600-48 {
+  @apply font-semibold text-5xl text-text;
+}
+
+@utility heading-600-32 {
+  @apply font-semibold text-4xl text-text;
+}
+
+@utility subtitle-600-24 {
+  @apply font-semibold text-2xl text-text;
+}
+
+@utility subtitle-600-20 {
+  @apply font-semibold text-xl text-text;
+}
+
+@utility subtitle-600-16 {
+  @apply font-semibold text-base text-text;
+}
+
+@utility caption-500-24 {
+  @apply font-medium text-2xl text-text;
+}
+
+@utility caption-500-14 {
+  @apply font-medium text-sm text-text;
+}
+
+@utility caption-500-12 {
+  @apply font-medium text-xs text-text;
+}
+
+@utility body-default-400-16 {
+  @apply font-normal text-base text-text;
+}
+
+@utility body-large-400-18 {
+  @apply font-normal text-lg text-text;
+}
+
+@utility body-small-400-14 {
+  @apply font-normal text-sm text-text;
+}
+
+@utility body-extra-small-400-12 {
+  @apply font-normal text-xs text-text;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Geist", sans-serif;
+}
+
+.hamburger-active > span:nth-child(1) {
+  @apply rotate-45;
+}
+
+.hamburger-active > span:nth-child(2) {
+  @apply scale-0;
+}
+
+.hamburger-active > span:nth-child(3) {
+  @apply -rotate-45;
+}
+
+.header-blog {
+  background-image: url("/images/blog-image-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.animate-scroll {
+  animation: scroll 40s linear infinite;
+}
+
+.animate-scroll-mobile {
+  animation: scroll 10s linear infinite;
 }
 
 .prose pre {

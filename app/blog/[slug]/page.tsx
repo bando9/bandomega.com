@@ -6,6 +6,8 @@ import { notFound } from "next/navigation";
 import { RiBookOpenLine, RiHeartLine, RiTimeLine } from "@remixicon/react";
 import dayjs from "dayjs";
 import localizedFormat from "dayjs/plugin/localizedFormat";
+import { extractHeadings } from "@/lib/extract-heading";
+import BlogToc from "@/components/blog-toc";
 
 async function fetchPosts(slug: string) {
   const posts = getAllPosts();
@@ -23,6 +25,7 @@ export default async function Post({
   if (!post) notFound();
   const htmlConverter = md.render(post?.content);
 
+  const headings = extractHeadings(post.content);
   const blocks = splitHtmlByPre(htmlConverter);
 
   dayjs.extend(localizedFormat);
@@ -62,21 +65,28 @@ export default async function Post({
         </div>
       </section>
 
-      <article className="prose prose-zinc mx-auto max-w-3xl dark:prose-invert">
-        {blocks.map((block, i) => {
-          if (block.type === "pre") {
-            const raw = decodeURIComponent(
-              /data-raw="([^"]+)"/.exec(block.content)?.[1] || ""
+      <section className="mt-20 ms-25 flex gap-3">
+        <article className="prose prose-zinc dark:prose-invert w-full max-w-5xl pe-5 text-text-blog">
+          {blocks.map((block, i) => {
+            if (block.type === "pre") {
+              const raw = decodeURIComponent(
+                /data-raw="([^"]+)"/.exec(block.content)?.[1] || ""
+              );
+
+              return <CodeBlock key={i} code={raw} html={block.content} />;
+            }
+
+            return (
+              <div
+                key={i}
+                dangerouslySetInnerHTML={{ __html: block.content }}
+              />
             );
+          })}
+        </article>
 
-            return <CodeBlock key={i} code={raw} html={block.content} />;
-          }
-
-          return (
-            <div key={i} dangerouslySetInnerHTML={{ __html: block.content }} />
-          );
-        })}
-      </article>
+        <BlogToc headings={headings} />
+      </section>
     </div>
   );
 }
