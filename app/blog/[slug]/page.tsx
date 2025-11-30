@@ -48,7 +48,7 @@ export default async function Post({
             {post.description}
           </p>
         </div>
-        <div className="border-t border-b flex border-text-muted items-center justify-around mt-10">
+        <div className="border-t border-b flex border-gray-800 text-slate-300 items-center justify-around mt-10">
           <p>{formattedDate}</p>
           <div className="flex gap-1.5 items-center py-3">
             <RiBookOpenLine className="w-5" />
@@ -65,8 +65,8 @@ export default async function Post({
         </div>
       </section>
 
-      <section className="mt-20 ms-25 flex gap-3">
-        <article className="prose prose-zinc dark:prose-invert w-full max-w-5xl pe-5 text-text-blog">
+      <section className="mt-20 ms-25 flex gap-3 ">
+        <article className="prose prose-zinc dark:prose-invert w-full max-w-5xl pe-7 text-text-blog">
           {blocks.map((block, i) => {
             if (block.type === "pre") {
               const raw = decodeURIComponent(

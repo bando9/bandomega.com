@@ -28,7 +28,7 @@ export default function BlogToc({ headings }: { headings: Heading[] }) {
   }, [headings]);
 
   return (
-    <aside className="hidden xl:block sticky right-12 top-40 w-60 h-11/12 ps-4 pt-3 border-2 border-text-muted rounded-xl  gap-0.5">
+    <aside className="hidden xl:block sticky right-15 top-30 w-60 h-80 ps-4 pt-3 border border-gray-800 rounded-xl overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-track]:bg-neutral-900 [&::-webkit-scrollbar-thumb]:rounded-sm [&::-webkit-scrollbar-thumb]:bg-text-muted [&::-webkit-scrollbar-thumb]:hover:bg-text">
       <nav className="flex flex-col space-y-2 text-sm ">
         {headings.map((heading, index) => (
           <a

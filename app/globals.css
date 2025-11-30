@@ -35,63 +35,63 @@
 }
 
 @utility heading-700-24 {
-  @apply font-bold text-2xl text-text;
+  @apply font-bold text-2xl;
 }
 
 @utility heading-700-20 {
-  @apply font-bold text-xl text-text;
+  @apply font-bold text-xl;
 }
 
 @utility title-600-64 {
-  @apply font-semibold text-6xl text-text;
+  @apply font-semibold text-6xl;
 }
 
 @utility title-600-48 {
-  @apply font-semibold text-5xl text-text;
+  @apply font-semibold text-5xl;
 }
 
 @utility heading-600-32 {
-  @apply font-semibold text-4xl text-text;
+  @apply font-semibold text-4xl;
 }
 
 @utility subtitle-600-24 {
-  @apply font-semibold text-2xl text-text;
+  @apply font-semibold text-2xl;
 }
 
 @utility subtitle-600-20 {
-  @apply font-semibold text-xl text-text;
+  @apply font-semibold text-xl;
 }
 
 @utility subtitle-600-16 {
-  @apply font-semibold text-base text-text;
+  @apply font-semibold text-base;
 }
 
 @utility caption-500-24 {
-  @apply font-medium text-2xl text-text;
+  @apply font-medium text-2xl;
 }
 
 @utility caption-500-14 {
-  @apply font-medium text-sm text-text;
+  @apply font-medium text-sm;
 }
 
 @utility caption-500-12 {
-  @apply font-medium text-xs text-text;
+  @apply font-medium text-xs;
 }
 
 @utility body-default-400-16 {
-  @apply font-normal text-base text-text;
+  @apply font-normal text-base;
 }
 
 @utility body-large-400-18 {
-  @apply font-normal text-lg text-text;
+  @apply font-normal text-lg;
 }
 
 @utility body-small-400-14 {
-  @apply font-normal text-sm text-text;
+  @apply font-normal text-sm;
 }
 
 @utility body-extra-small-400-12 {
-  @apply font-normal text-xs text-text;
+  @apply font-normal text-xs;
 }
 
 html {
