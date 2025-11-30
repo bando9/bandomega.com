@@ -3,12 +3,12 @@
 import CopyButton from "./copy-button";
 
 interface CodeBlockProps {
-  lang: string;
-  code: string;
+  lang?: string;
+  code?: string;
   html: string;
 }
 
-export default function CodeBlock({ lang, code, html }: CodeBlockProps) {
+export default function CodeBlock({ lang, code = "", html }: CodeBlockProps) {
   return (
     <div className="relative group my-6 rounded-lg overflow-hidden border border-neutral-700 bg-black">
       <div className="absolute top-2 left-3 text-xs text-neutral-400 font-mono uppercase">
