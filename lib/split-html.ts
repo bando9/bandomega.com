@@ -1,33 +1,26 @@
-export function splitHtmlByPre(html: string) {
-  const regex = /<pre[\s\S]*?<\/pre>/gm;
+export function splitHtmlByCode(html: string) {
+  const parts = html.split(/(<div class="code-block-wrapper"[\s\S]*?<\/div>)/g);
 
-  const parts: { type: "pre" | "html"; content: string }[] = [];
+  return parts
+    .filter((p) => p.trim() !== "")
+    .map((block) => {
+      if (block.includes("code-block-wrapper")) {
+        const raw = decodeURIComponent(
+          block.match(/data-raw="([^"]+)"/)?.[1] || ""
+        );
+        const lang = block.match(/data-lang="([^"]+)"/)?.[1] || "text";
 
-  let lastIndex = 0;
-  let match;
+        return {
+          type: "code",
+          html: block,
+          code: raw,
+          lang,
+        };
+      }
 
-  while ((match = regex.exec(html)) !== null) {
-    if (match.index > lastIndex) {
-      parts.push({
+      return {
         type: "html",
-        content: html.slice(lastIndex, match.index),
-      });
-    }
-
-    parts.push({
-      type: "pre",
-      content: match[0],
+        html: block,
+      };
     });
-
-    lastIndex = regex.lastIndex;
-  }
-
-  if (lastIndex < html.length) {
-    parts.push({
-      type: "html",
-      content: html.slice(lastIndex),
-    });
-  }
-
-  return parts;
 }

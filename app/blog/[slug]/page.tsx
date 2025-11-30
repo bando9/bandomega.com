@@ -1,13 +1,13 @@
-import CodeBlock from "@/components/code-blocks";
 import { md } from "@/lib/markdown";
 import { getAllPosts } from "@/lib/posts";
-import { splitHtmlByPre } from "@/lib/split-html";
+import { splitHtmlByCode } from "@/lib/split-html";
 import { notFound } from "next/navigation";
 import { RiBookOpenLine, RiHeartLine, RiTimeLine } from "@remixicon/react";
 import dayjs from "dayjs";
 import localizedFormat from "dayjs/plugin/localizedFormat";
 import { extractHeadings } from "@/lib/extract-heading";
 import BlogToc from "@/components/blog-toc";
+import CodeBlock from "@/components/code-blocks";
 
 async function fetchPosts(slug: string) {
   const posts = getAllPosts();
@@ -26,7 +26,7 @@ export default async function Post({
   const htmlConverter = md.render(post?.content);
 
   const headings = extractHeadings(post.content);
-  const blocks = splitHtmlByPre(htmlConverter);
+  const blocks = splitHtmlByCode(htmlConverter);
 
   dayjs.extend(localizedFormat);
   const formattedDate = dayjs(post?.date).format("LL");
@@ -68,19 +68,19 @@ export default async function Post({
       <section className="mt-20 ms-25 flex gap-3 ">
         <article className="prose prose-zinc dark:prose-invert w-full max-w-5xl pe-7 text-text-blog">
           {blocks.map((block, i) => {
-            if (block.type === "pre") {
-              const raw = decodeURIComponent(
-                /data-raw="([^"]+)"/.exec(block.content)?.[1] || ""
+            if (block.type === "code") {
+              return (
+                <CodeBlock
+                  key={i}
+                  lang={block.lang}
+                  code={block.code}
+                  html={block.html}
+                />
               );
-
-              return <CodeBlock key={i} code={raw} html={block.content} />;
             }
 
             return (
-              <div
-                key={i}
-                dangerouslySetInnerHTML={{ __html: block.content }}
-              />
+              <div key={i} dangerouslySetInnerHTML={{ __html: block.html }} />
             );
           })}
         </article>

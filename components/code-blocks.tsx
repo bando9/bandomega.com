@@ -1,16 +1,26 @@
-import CopyButton from "@/components/copy-button";
+"use client";
 
-export default function CodeBlock({
-  html,
-  code,
-}: {
-  html: string;
+import CopyButton from "./copy-button";
+
+interface CodeBlockProps {
+  lang: string;
   code: string;
-}) {
+  html: string;
+}
+
+export default function CodeBlock({ lang, code, html }: CodeBlockProps) {
   return (
-    <div className="relative">
+    <div className="relative group my-6 rounded-lg overflow-hidden border border-neutral-700 bg-black">
+      <div className="absolute top-2 left-3 text-xs text-neutral-400 font-mono uppercase">
+        {lang}
+      </div>
+
       <CopyButton code={code} />
-      <div dangerouslySetInnerHTML={{ __html: html }} />
+
+      <div
+        className="overflow-x-auto p-4 text-sm leading-relaxed"
+        dangerouslySetInnerHTML={{ __html: html }}
+      />
     </div>
   );
 }
