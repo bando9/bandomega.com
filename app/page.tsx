@@ -1,5 +1,6 @@
-import { RiBook2Line } from "@remixicon/react";
+import { RiGithubFill, RiLinkedinBoxFill } from "@remixicon/react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -30,62 +31,70 @@ export default function Home() {
           </div>
 
           <div className="flex gap-5 mt-5 md:mt-10 items-center flex-wrap">
-            <a href="/projects">
+            <Link href="/projects">
               <h3 className="body-small-400-14 md:body-defult-400-16 text-text bg-button md:px-6 md:py-3 px-4 py-2 rounded-lg md:rounded-lg flex gap-2 cursor-pointer">
                 View My Projects
               </h3>
-            </a>
+            </Link>
 
-            <a href="/about">
+            <Link href="/about">
               <h3 className="text-text bg-bg-dark border-2 border-button md:px-6 md:py-3 px-4 py-2 rounded-lg md:rounded-lg cursor-pointer hover:shadow-md shadow-button body-small-400-14 md:body-defult-400-16">
                 More about me
               </h3>
-            </a>
+            </Link>
           </div>
 
           <div className="flex gap-3 mt-3 md:mt-5 flex-wrap">
-            <a
+            <Link
               href="https://drive.google.com/file/d/1gmkJ5dN6XnUKEilYNey5fBkEe_Gq8_zE/view?usp=sharing"
               target="_blank"
               className="flex gap-1 opacity-50 hover:underline"
             >
-              {/* <Image
+              <Image
+                width={450}
+                height={450}
                 src="/images/icons/readdotcv.svg"
                 alt="CV Icon"
                 className="w-5"
-              /> */}
-              <RiBook2Line />
+              />
+              {/* <RiBook2Line /> */}
               <p>Resume</p>
-            </a>
-            <a
+            </Link>
+            <Link
               href="https://www.linkedin.com/in/bando-mega-kusuma"
               target="_blank"
               className="flex gap-1 opacity-50 hover:underline"
             >
-              <Image
+              {/* <Image                 width={450}
+                height={450}
                 src="/images/icons/linkedin.svg"
                 alt="LinkedIn Icon"
                 className="w-5"
-              />
+              /> */}
+              <RiLinkedinBoxFill />
               <p>LinkedIn</p>
-            </a>
-            <a
+            </Link>
+            <Link
               href="https://www.github.com/bando9"
               target="_blank"
               className="flex gap-1 opacity-50 hover:underline"
             >
-              <Image
+              {/* <Image                 width={450}
+                height={450}
                 src="/images/stack/github.svg"
                 alt="GitHub Icon"
                 className="w-5"
-              />
+              /> */}
+              <RiGithubFill />
               <p>GitHub</p>
-            </a>
+            </Link>
           </div>
         </div>
 
         <div className="w-full md:max-w-120 flex justify-center mt-6 lg:mt-0">
           <Image
+            width={450}
+            height={450}
             src="/images/profile.jpg"
             alt="bando-profile"
             className="rounded-xl max-w-80 md:max-w-120 sm:w-full object-cover"
@@ -99,6 +108,8 @@ export default function Home() {
       >
         <div className="max-w-60 md:max-w-75 max-h-10 md:max-h-75">
           <Image
+            width={450}
+            height={450}
             className="rotate-2 rounded-xl h-35 w-45 md:h-100 md:w-100"
             src="https://images.unsplash.com/photo-1625967445189-d35d49a37501?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="Semarang City"
@@ -107,6 +118,8 @@ export default function Home() {
 
         <div className="max-w-60 md:max-w-75 max-h-10 md:max-h-75">
           <Image
+            width={450}
+            height={450}
             className="rotate-2 rounded-xl h-35 w-45 md:h-100 md:w-100"
             src="https://images.unsplash.com/photo-1625967445155-bf8cc0412e9b?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="semarang-city"
@@ -115,6 +128,8 @@ export default function Home() {
 
         <div className="max-w-60 md:max-w-75 max-h-10 md:max-h-75">
           <Image
+            width={450}
+            height={450}
             className="-rotate-2 rounded-xl h-35 w-45 md:h-100 md:w-100"
             src="https://images.unsplash.com/photo-1672281699269-86a871c5b2c2?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="makassar-city"
@@ -123,6 +138,8 @@ export default function Home() {
 
         <div className="max-w-60 md:max-w-75 max-h-10 md:max-h-75">
           <Image
+            width={450}
+            height={450}
             className="-rotate-2 rounded-xl h-35 w-45 md:h-100 md:w-100"
             src="https://images.unsplash.com/photo-1737638423079-5bac4c563ba4?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="makassar-city"
@@ -148,6 +165,8 @@ export default function Home() {
           <div className="project-card-left flex flex-col md:flex-row items-start md:justify-between gap-6">
             <div className="order-1 w-full md:w-md">
               <Image
+                width={450}
+                height={450}
                 src="/images/project-1.png"
                 alt="Photo Personal Web v1"
                 className="rounded-lg w-full h-auto"
@@ -167,16 +186,22 @@ export default function Home() {
                 <h3 className="caption-500-14">Tools:</h3>
                 <div className="flex gap-3">
                   <Image
+                    width={450}
+                    height={450}
                     src="/images/stack/html5.svg"
                     alt="HTML Icon"
                     className="w-5"
                   />
                   <Image
+                    width={450}
+                    height={450}
                     src="/images/stack/css.svg"
                     alt="CSS Icon"
                     className="w-5"
                   />
                   <Image
+                    width={450}
+                    height={450}
                     src="/images/stack/bootstrap.svg"
                     alt="Bootstrap Icon"
                     className="w-6"
@@ -186,45 +211,51 @@ export default function Home() {
 
               <div className="flex flex-col md:flex-row md:items-center md:justify-between mt-5 gap-4">
                 <div className="flex items-center gap-5 order-2 md:order-1">
-                  <a
+                  <Link
                     href="https://github.com/bando9/bandomega-portfolio/tree/main"
                     target="_blank"
                     className="flex items-center gap-1 hover:underline"
                   >
                     <Image
+                      width={450}
+                      height={450}
                       src="/images/stack/github.svg"
                       alt="GitHub Icon"
                       className="w-5"
                     />
                     <p className="caption-500-14">Repository</p>
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     href="https://v1.bandomega.com/"
                     target="_blank"
                     className="flex items-center gap-1 hover:underline"
                   >
                     <Image
+                      width={450}
+                      height={450}
                       src="/images/icons/link-1.svg"
                       alt="Link Icon"
                       className="w-5"
                     />
                     <p className="caption-500-14">Open link sites</p>
-                  </a>
+                  </Link>
                 </div>
 
-                <a
+                <Link
                   href="/projects/project-details"
                   className="order-1 md:order-2"
                 >
                   <div className="flex items-center gap-1 hover:underline">
                     <p className="caption-500-14">View project</p>
                     <Image
+                      width={450}
+                      height={450}
                       src="/images/icons/arrow-right.svg"
                       alt="Arrow right icon"
                       className="w-5"
                     />
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -243,6 +274,8 @@ export default function Home() {
                 <h3 className="caption-500-14">Tools:</h3>
                 <div className="flex gap-3">
                   <Image
+                    width={450}
+                    height={450}
                     src="/images/stack/react.svg"
                     alt="HTML Icon"
                     className="w-5"
@@ -252,50 +285,58 @@ export default function Home() {
 
               <div className="flex flex-col md:flex-row md:items-center md:justify-between mt-5 gap-4">
                 <div className="flex items-center gap-5 order-2 md:order-1">
-                  <a
+                  <Link
                     href="https://github.com/bando9/memomate"
                     target="_blank"
                     className="flex items-center gap-1 hover:underline"
                   >
                     <Image
+                      width={450}
+                      height={450}
                       src="/images/stack/github.svg"
                       alt="GitHub Icon"
                       className="w-5"
                     />
                     <p className="caption-500-14">Repository</p>
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     href="https://memomate-six.vercel.app/"
                     target="_blank"
                     className="flex items-center gap-1 hover:underline"
                   >
                     <Image
+                      width={450}
+                      height={450}
                       src="/images/icons/link-1.svg"
                       alt="Link Icon"
                       className="w-5"
                     />
                     <p className="caption-500-14">Open link sites</p>
-                  </a>
+                  </Link>
                 </div>
 
-                <a
+                <Link
                   href="/projects/project-details"
                   className="order-1 md:order-2"
                 >
                   <div className="flex items-center gap-1 hover:underline">
                     <p className="caption-500-14">View project</p>
                     <Image
+                      width={450}
+                      height={450}
                       src="/images/icons/arrow-right.svg"
                       alt="Arrow right icon"
                       className="w-5"
                     />
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
 
             <div className="order-1 w-full md:w-md">
               <Image
+                width={450}
+                height={450}
                 src="/images/project-2.jpg"
                 alt="Photo Memomate"
                 className="rounded-lg w-full h-auto"
@@ -306,6 +347,8 @@ export default function Home() {
           <div className="project-card-right flex flex-col md:flex-row items-start md:justify-between gap-6">
             <div className="order-1 w-full md:w-md">
               <Image
+                width={450}
+                height={450}
                 src="/images/project-3.jpg"
                 alt="Photo Memomate"
                 className="rounded-lg w-full h-auto"
@@ -325,18 +368,24 @@ export default function Home() {
                 <h3 className="caption-500-14">Tools:</h3>
                 <div className="flex gap-3">
                   <Image
+                    width={450}
+                    height={450}
                     src="/images/stack/html5.svg"
                     alt="HTML Icon"
                     className="w-5"
                   />
 
                   <Image
+                    width={450}
+                    height={450}
                     src="/images/stack/css.svg"
                     className="w-5"
                     alt="CSS Icon"
                   />
 
                   <Image
+                    width={450}
+                    height={450}
                     src="/images/stack/javascript.svg"
                     className="w-5"
                     alt="JavaScript Icon"
@@ -346,61 +395,69 @@ export default function Home() {
 
               <div className="flex flex-col md:flex-row md:items-center md:justify-between mt-5 gap-4">
                 <div className="flex items-center gap-5 order-2 md:order-1">
-                  <a
+                  <Link
                     href="https://github.com/bando9/perpustakaan-mini"
                     target="_blank"
                     className="flex items-center gap-1 hover:underline"
                   >
                     <Image
+                      width={450}
+                      height={450}
                       src="/images/stack/github.svg"
                       alt="GitHub Icon"
                       className="w-5"
                     />
                     <p className="caption-500-14">Repository</p>
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     href="https://perpustakaan-mini.vercel.app/"
                     target="_blank"
                     className="flex items-center gap-1 hover:underline"
                   >
                     <Image
+                      width={450}
+                      height={450}
                       src="/images/icons/link-1.svg"
                       alt="Link Icon"
                       className="w-5"
                     />
                     <p className="caption-500-14">Open link sites</p>
-                  </a>
+                  </Link>
                 </div>
 
-                <a
+                <Link
                   href="/projects/project-details"
                   className="order-1 md:order-2"
                 >
                   <div className="flex items-center gap-1 hover:underline">
                     <p className="caption-500-14">View project</p>
                     <Image
+                      width={450}
+                      height={450}
                       src="/images/icons/arrow-right.svg"
                       alt="Arrow right icon"
                       className="w-5"
                     />
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
         </div>
 
         <div className="flex justify-center mt-8 md:mt-12 text-center">
-          <a href="/projects/">
+          <Link href="/projects/">
             <h3 className="flex items-center gap-2 cursor-pointer border rounded-lg py-1 px-3 hover:underline">
               See more projects
               <Image
+                width={450}
+                height={450}
                 src="/images/icons/arrow-right.svg"
                 alt="Arrow Right Icon"
                 className="w-5"
               />
             </h3>
-          </a>
+          </Link>
         </div>
       </section>
 
@@ -427,8 +484,10 @@ export default function Home() {
               </p>
               <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
                 <div className="icon flex gap-5">
-                  <div className="flex gap-1 md:gap-1.5 items-center">
+                  <div className="flex gap-1 md:gap-1.5 items-center w-4 md:w-5">
                     <Image
+                      width={450}
+                      height={450}
                       src="/images/icons/book-1.svg"
                       className="w-4 md:w-5"
                       alt="Book Icon"
@@ -437,6 +496,8 @@ export default function Home() {
                   </div>
                   <div className="flex gap-1.5 items-center">
                     <Image
+                      width={450}
+                      height={450}
                       src="/images/icons/time.svg"
                       alt="Clock Icon"
                       className="w-4 md:w-5"
@@ -456,7 +517,9 @@ export default function Home() {
             </div>
             <div className="order-1 w-full md:w-2/5 md:max-w-sm">
               <Image
-                src="images/blog-image.jpg"
+                width={450}
+                height={450}
+                src="/images/blog-image.jpg"
                 alt="Blog Image"
                 className="rounded-lg w-full"
               />
@@ -477,8 +540,10 @@ export default function Home() {
               </p>
               <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
                 <div className="icon flex gap-5">
-                  <div className="flex gap-1 md:gap-1.5 items-center">
+                  <div className="flex gap-1 md:gap-1.5 items-center w-4 md:w-5">
                     <Image
+                      width={450}
+                      height={450}
                       src="/images/icons/book-1.svg"
                       className="w-4 md:w-5"
                       alt="Book Icon"
@@ -487,6 +552,8 @@ export default function Home() {
                   </div>
                   <div className="flex gap-1.5 items-center">
                     <Image
+                      width={450}
+                      height={450}
                       src="/images/icons/time.svg"
                       alt="Clock Icon"
                       className="w-4 md:w-5"
@@ -506,7 +573,9 @@ export default function Home() {
             </div>
             <div className="order-1 w-full md:w-2/5 md:max-w-sm">
               <Image
-                src="images/blog-image.jpg"
+                width={450}
+                height={450}
+                src="/images/blog-image.jpg"
                 alt="Blog Image"
                 className="rounded-lg w-full"
               />
@@ -527,8 +596,10 @@ export default function Home() {
               </p>
               <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
                 <div className="icon flex gap-5">
-                  <div className="flex gap-1 md:gap-1.5 items-center">
+                  <div className="flex gap-1 md:gap-1.5 items-center w-4 md:w-5">
                     <Image
+                      width={450}
+                      height={450}
                       src="/images/icons/book-1.svg"
                       className="w-4 md:w-5"
                       alt="Book Icon"
@@ -537,6 +608,8 @@ export default function Home() {
                   </div>
                   <div className="flex gap-1.5 items-center">
                     <Image
+                      width={450}
+                      height={450}
                       src="/images/icons/time.svg"
                       alt="Clock Icon"
                       className="w-4 md:w-5"
@@ -556,7 +629,9 @@ export default function Home() {
             </div>
             <div className="order-1 w-full md:w-2/5 md:max-w-sm">
               <Image
-                src="images/blog-image.jpg"
+                width={450}
+                height={450}
+                src="/images/blog-image.jpg"
                 alt="Blog Image"
                 className="rounded-lg w-full"
               />
@@ -565,16 +640,18 @@ export default function Home() {
         </div>
 
         <div className="flex justify-center mt-8 md:mt-12 text-center">
-          <a href="/blog">
+          <Link href="/blog">
             <h3 className="flex items-center gap-2 cursor-pointer border-1 rounded-lg py-1 px-3 hover:underline">
               See more posts
               <Image
+                width={450}
+                height={450}
                 src="/images/icons/arrow-right.svg"
                 alt="Arrow Right Icon"
                 className="w-5"
               />
             </h3>
-          </a>
+          </Link>
         </div>
       </section>
 
@@ -595,12 +672,12 @@ export default function Home() {
             glad to hear from you.
           </p>
           <div className="flex justify-center items-center mt-10">
-            <a
+            <Link
               href="/contact"
               className="inline-flex items-center justify-center py-3 px-6 bg-button rounded-2xl heading-700-20 md:heading-700-24 hover:shadow-md hover:shadow-bg-light transition"
             >
               Say Hello
-            </a>
+            </Link>
           </div>
         </div>
       </section>
