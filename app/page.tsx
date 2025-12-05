@@ -57,7 +57,6 @@ export default function Home() {
                 alt="CV Icon"
                 className="w-5"
               />
-              {/* <RiBook2Line /> */}
               <p>Resume</p>
             </Link>
             <Link
@@ -65,12 +64,6 @@ export default function Home() {
               target="_blank"
               className="flex gap-1 opacity-50 hover:underline"
             >
-              {/* <Image                 width={450}
-                height={450}
-                src="/images/icons/linkedin.svg"
-                alt="LinkedIn Icon"
-                className="w-5"
-              /> */}
               <RiLinkedinBoxFill />
               <p>LinkedIn</p>
             </Link>
@@ -79,12 +72,6 @@ export default function Home() {
               target="_blank"
               className="flex gap-1 opacity-50 hover:underline"
             >
-              {/* <Image                 width={450}
-                height={450}
-                src="/images/stack/github.svg"
-                alt="GitHub Icon"
-                className="w-5"
-              /> */}
               <RiGithubFill />
               <p>GitHub</p>
             </Link>
