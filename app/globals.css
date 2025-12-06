@@ -6,19 +6,6 @@
 
 @plugin "tailwindcss-animate";
 
-@theme {
-  --color-primary: #006aff;
-  --color-secondary: #0fb8f0;
-  --color-accent: #ef3434;
-  --color-bg-dark: #020104;
-  --color-bg-light: #04131c;
-  --color-text: #f3eef7;
-  --color-text-muted: #666269;
-  --color-text-blog: #e6e5e6;
-  --color-card: #021636;
-  --color-button: #06384b;
-}
-
 @layer base {
   ::selection {
     @apply bg-text text-primary;
@@ -268,4 +255,17 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+}
+
+@theme {
+  --color-primary: #006aff;
+  --color-secondary: #0fb8f0;
+  --color-accent: #ef3434;
+  --color-bg-dark: #020104;
+  --color-bg-light: #04131c;
+  --color-text: #f3eef7;
+  --color-text-muted: #666269;
+  --color-text-blog: #e6e5e6;
+  --color-card: #021636;
+  --color-button: #06384b;
 }

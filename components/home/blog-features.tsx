@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
+import CTALink from "./cta-link";
 
 export default function BlogFeatures() {
   return (
@@ -11,7 +11,7 @@ export default function BlogFeatures() {
         </span>
       </h1>
 
-      <div className="blog-list mt-9 md:mt-13">
+      <div className="blog-list mt-9 md:mt-13 mb-10">
         <div className="card-blog text-text flex flex-col md:flex-row cursor-pointer gap-6 items-start md:items-start md:justify-between mt-8 md:mt-12 group">
           <div className="order-2 md:order-1">
             <h4 className="caption-500-14 mb-2 md:mb-4">September 24, 2025</h4>
@@ -175,20 +175,7 @@ export default function BlogFeatures() {
         </div>
       </div>
 
-      <div className="flex justify-center mt-8 md:mt-12 text-center">
-        <Link href="/blog">
-          <h3 className="flex items-center gap-2 cursor-pointer border rounded-lg py-1 px-3 hover:underline">
-            See more posts
-            <Image
-              width={450}
-              height={450}
-              src="/images/icons/arrow-right.svg"
-              alt="Arrow Right Icon"
-              className="w-5"
-            />
-          </h3>
-        </Link>
-      </div>
+      <CTALink text="See more posts" />
     </section>
   );
 }
