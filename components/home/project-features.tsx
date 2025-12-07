@@ -1,6 +1,5 @@
+import ProjectList from "../lists/project-list";
 import CTALink from "./cta-link";
-import ProjectCard from "../ui/project-card";
-import { projects } from "@/data/projects";
 
 export default function ProjectFeatures() {
   return (
@@ -18,13 +17,9 @@ export default function ProjectFeatures() {
         </p>
       </div>
 
-      <div className="projects-list mt-7 md:mt-13 flex flex-col gap-10 md:gap-20 mb-10">
-        {projects.map((project) => {
-          return <ProjectCard key={project.id} project={project} />;
-        })}
-      </div>
+      <ProjectList limit={3} />
 
-      <CTALink text="See more projects" />
+      <CTALink text="See more projects" link="/projects" />
     </section>
   );
 }

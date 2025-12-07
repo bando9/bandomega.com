@@ -175,7 +175,7 @@ export default function BlogFeatures() {
         </div>
       </div>
 
-      <CTALink text="See more posts" />
+      <CTALink text="See more posts" link="/blog" />
     </section>
   );
 }
