@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import CTALink from "./cta-link";
 import ProjectCard from "../ui/project-card";
+import { projects } from "@/data/projects";
 
 export default function ProjectFeatures() {
   return (
@@ -20,199 +21,21 @@ export default function ProjectFeatures() {
       </div>
 
       <div className="projects-list mt-7 md:mt-13 flex flex-col gap-10 md:gap-20 mb-10">
-        <ProjectCard
-          title="Bandomega Personal Website "
-          description="A personal portfolio website showcasing projects, GitHub
-          links, and project highlights. Built with HTML5 and Bootstrap."
-          tools="HTML"
-          websiteURL="https://v1.bandomega.com/"
-          githubURL="https://github.com/bando9/bandomega-portfolio/"
-          projectdetailURL="/projects/project-details"
-        />
-
-        <div className="project-card-right flex flex-col md:flex-row items-start md:justify-between gap-6">
-          <div className="order-2 md:order-1 md:w-2/3">
-            <h1 className="subtitle-600-20 md:subtitle-600-24 mb-2 group-hover:underline">
-              Memomate – Daily Notes App
-            </h1>
-            <h3 className="caption-500-14">
-              A simple web app for creating and managing daily notes. Built with
-              ReactJS and modular styling.
-            </h3>
-
-            <div className="flex mt-3 gap-2 md:gap-4 items-center">
-              <h3 className="caption-500-14">Tools:</h3>
-              <div className="flex gap-3">
-                <Image
-                  width={450}
-                  height={450}
-                  src="/images/stack/react.svg"
-                  alt="HTML Icon"
-                  className="w-5"
-                />
-              </div>
-            </div>
-
-            <div className="flex flex-col md:flex-row md:items-center md:justify-between mt-5 gap-4">
-              <div className="flex items-center gap-5 order-2 md:order-1">
-                <Link
-                  href="https://github.com/bando9/memomate"
-                  target="_blank"
-                  className="flex items-center gap-1 hover:underline"
-                >
-                  <Image
-                    width={450}
-                    height={450}
-                    src="/images/stack/github.svg"
-                    alt="GitHub Icon"
-                    className="w-5"
-                  />
-                  <p className="caption-500-14">Repository</p>
-                </Link>
-                <Link
-                  href="https://memomate-six.vercel.app/"
-                  target="_blank"
-                  className="flex items-center gap-1 hover:underline"
-                >
-                  <Image
-                    width={450}
-                    height={450}
-                    src="/images/icons/link-1.svg"
-                    alt="Link Icon"
-                    className="w-5"
-                  />
-                  <p className="caption-500-14">Open link sites</p>
-                </Link>
-              </div>
-
-              <Link
-                href="/projects/project-details"
-                className="order-1 md:order-2"
-              >
-                <div className="flex items-center gap-1 hover:underline">
-                  <p className="caption-500-14">View project</p>
-                  <Image
-                    width={450}
-                    height={450}
-                    src="/images/icons/arrow-right.svg"
-                    alt="Arrow right icon"
-                    className="w-5"
-                  />
-                </div>
-              </Link>
-            </div>
-          </div>
-
-          <div className="order-1 w-full md:w-md">
-            <Image
-              width={450}
-              height={450}
-              src="/images/project-2.jpg"
-              alt="Photo Memomate"
-              className="rounded-lg w-full h-auto"
+        {projects.map((project) => {
+          return (
+            <ProjectCard
+              key={project.id}
+              title={project.title}
+              description={project.description}
+              websiteURL={project.websiteURL}
+              githubURL={project.githubURL}
+              projectdetailURL={project.projectdetailURL}
+              isContentTextLeft={project.isContentTextLeft}
+              image={project.image}
+              tools={project.tools}
             />
-          </div>
-        </div>
-
-        <div className="project-card-right flex flex-col md:flex-row items-start md:justify-between gap-6">
-          <div className="order-1 w-full md:w-md">
-            <Image
-              width={450}
-              height={450}
-              src="/images/project-3.jpg"
-              alt="Photo Memomate"
-              className="rounded-lg w-full h-auto"
-            />
-          </div>
-
-          <div className="order-2 md:order-1 md:w-2/3">
-            <h1 className="subtitle-600-20 md:subtitle-600-24 mb-2 group-hover:underline">
-              Mini Library – Book CRUD Application
-            </h1>
-            <h3 className="caption-500-14">
-              A personal portfolio website showcasing projects, GitHub links,
-              and project highlights. Built with HTML5 and Bootstrap.
-            </h3>
-
-            <div className="flex mt-3 gap-2 md:gap-4 items-center">
-              <h3 className="caption-500-14">Tools:</h3>
-              <div className="flex gap-3">
-                <Image
-                  width={450}
-                  height={450}
-                  src="/images/stack/html5.svg"
-                  alt="HTML Icon"
-                  className="w-5"
-                />
-
-                <Image
-                  width={450}
-                  height={450}
-                  src="/images/stack/css.svg"
-                  className="w-5"
-                  alt="CSS Icon"
-                />
-
-                <Image
-                  width={450}
-                  height={450}
-                  src="/images/stack/javascript.svg"
-                  className="w-5"
-                  alt="JavaScript Icon"
-                />
-              </div>
-            </div>
-
-            <div className="flex flex-col md:flex-row md:items-center md:justify-between mt-5 gap-4">
-              <div className="flex items-center gap-5 order-2 md:order-1">
-                <Link
-                  href="https://github.com/bando9/perpustakaan-mini"
-                  target="_blank"
-                  className="flex items-center gap-1 hover:underline"
-                >
-                  <Image
-                    width={450}
-                    height={450}
-                    src="/images/stack/github.svg"
-                    alt="GitHub Icon"
-                    className="w-5"
-                  />
-                  <p className="caption-500-14">Repository</p>
-                </Link>
-                <Link
-                  href="https://perpustakaan-mini.vercel.app/"
-                  target="_blank"
-                  className="flex items-center gap-1 hover:underline"
-                >
-                  <Image
-                    width={450}
-                    height={450}
-                    src="/images/icons/link-1.svg"
-                    alt="Link Icon"
-                    className="w-5"
-                  />
-                  <p className="caption-500-14">Open link sites</p>
-                </Link>
-              </div>
-
-              <Link
-                href="/projects/project-details"
-                className="order-1 md:order-2"
-              >
-                <div className="flex items-center gap-1 hover:underline">
-                  <p className="caption-500-14">View project</p>
-                  <Image
-                    width={450}
-                    height={450}
-                    src="/images/icons/arrow-right.svg"
-                    alt="Arrow right icon"
-                    className="w-5"
-                  />
-                </div>
-              </Link>
-            </div>
-          </div>
-        </div>
+          );
+        })}
       </div>
 
       <CTALink text="See more projects" />

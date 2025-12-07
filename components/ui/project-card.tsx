@@ -4,21 +4,24 @@ import Image from "next/image";
 type ProjectCardProps = {
   title: string;
   description: string;
+  image: string;
   tools: string;
   websiteURL: string;
   githubURL: string;
   projectdetailURL: string;
+  isContentTextLeft: boolean;
 };
 
 export default function ProjectCard({
   title,
   description,
+  image,
   tools,
   websiteURL,
   githubURL,
   projectdetailURL,
+  isContentTextLeft = false,
 }: ProjectCardProps) {
-  const isContentTextLeft = false;
   return (
     <div
       className={`flex flex-col items-start md:justify-between gap-6 ${
@@ -29,7 +32,7 @@ export default function ProjectCard({
         <Image
           width={450}
           height={450}
-          src="/images/project-1.png"
+          src={image}
           alt="Photo Personal Web v1"
           className="rounded-lg w-full h-auto"
         />
