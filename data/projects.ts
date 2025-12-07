@@ -1,38 +1,75 @@
-export const projects = [
+import {
+  RemixiconComponentType,
+  RiBootstrapFill,
+  RiCss3Fill,
+  RiHtml5Fill,
+  RiJavascriptFill,
+  RiReactjsFill,
+} from "@remixicon/react";
+
+interface Tool {
+  id: number;
+  name: string;
+  icon: RemixiconComponentType;
+}
+
+export interface ProjectType {
+  id: number;
+  title: string;
+  description: string;
+  image: string;
+  tools: Tool[];
+  websiteURL: string;
+  githubURL: string;
+  projectdetailURL: string;
+  isContentTextLeft: boolean;
+}
+
+type ProjectsType = ProjectType[];
+
+export const projects: ProjectsType = [
   {
     id: 1,
     title: "Bandomega Personal Website ",
     description:
       "A personal portfolio website showcasing projects, GitHub links, and project highlights. Built with HTML5 and Bootstrap.",
-    tools: "HTML",
     githubURL: "https://github.com/bando9/bandomega-portfolio/",
     websiteURL: "https://v1.bandomega.com/",
     projectdetailURL: "/projects/project-details",
     isContentTextLeft: false,
     image: "/images/project-1.png",
+    tools: [
+      { id: 1, name: "HTML5", icon: RiHtml5Fill },
+      { id: 2, name: "CSS3", icon: RiCss3Fill },
+      { id: 3, name: "Bootsrap", icon: RiBootstrapFill },
+    ],
   },
   {
     id: 2,
     title: "Memomate – Daily Notes App",
     description:
       "A simple web app for creating and managing daily notes. Built with ReactJS and modular styling.",
-    tools: "HTML",
     githubURL: "https://github.com/bando9/memomate",
     websiteURL: "https://memomate-six.vercel.app/",
     projectdetailURL: "/projects/project-details",
     isContentTextLeft: true,
     image: "/images/project-2.jpg",
+    tools: [{ id: 1, name: "React", icon: RiReactjsFill }],
   },
   {
     id: 3,
     title: "Mini Library – Book CRUD Application",
     description:
       "A personal portfolio website showcasing projects, GitHub links, and project highlights. Built with HTML5 and Bootstrap.",
-    tools: "HTML",
     githubURL: "https://github.com/bando9/perpustakaan-mini",
     websiteURL: "https://perpustakaan-mini.vercel.app/",
     projectdetailURL: "/projects/project-details",
     isContentTextLeft: false,
     image: "/images/project-3.jpg",
+    tools: [
+      { id: 1, name: "HTML5", icon: RiHtml5Fill },
+      { id: 2, name: "CSS3", icon: RiCss3Fill },
+      { id: 3, name: "JS", icon: RiJavascriptFill },
+    ],
   },
 ];

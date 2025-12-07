@@ -1,5 +1,3 @@
-import Link from "next/link";
-import Image from "next/image";
 import CTALink from "./cta-link";
 import ProjectCard from "../ui/project-card";
 import { projects } from "@/data/projects";
@@ -22,19 +20,7 @@ export default function ProjectFeatures() {
 
       <div className="projects-list mt-7 md:mt-13 flex flex-col gap-10 md:gap-20 mb-10">
         {projects.map((project) => {
-          return (
-            <ProjectCard
-              key={project.id}
-              title={project.title}
-              description={project.description}
-              websiteURL={project.websiteURL}
-              githubURL={project.githubURL}
-              projectdetailURL={project.projectdetailURL}
-              isContentTextLeft={project.isContentTextLeft}
-              image={project.image}
-              tools={project.tools}
-            />
-          );
+          return <ProjectCard key={project.id} project={project} />;
         })}
       </div>
 
