@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import CTALink from "./cta-link";
+import ProjectCard from "../ui/project-card";
 
 export default function ProjectFeatures() {
   return (
@@ -19,103 +20,15 @@ export default function ProjectFeatures() {
       </div>
 
       <div className="projects-list mt-7 md:mt-13 flex flex-col gap-10 md:gap-20 mb-10">
-        <div className="project-card-left flex flex-col md:flex-row items-start md:justify-between gap-6">
-          <div className="order-1 w-full md:w-md">
-            <Image
-              width={450}
-              height={450}
-              src="/images/project-1.png"
-              alt="Photo Personal Web v1"
-              className="rounded-lg w-full h-auto"
-            />
-          </div>
-
-          <div className="order-2 md:order-1 md:w-2/3">
-            <h1 className="subtitle-600-20 md:subtitle-600-24 mb-2 group-hover:underline">
-              Bandomega Personal Website
-            </h1>
-            <h3 className="caption-500-14">
-              A personal portfolio website showcasing projects, GitHub links,
-              and project highlights. Built with HTML5 and Bootstrap.
-            </h3>
-
-            <div className="flex mt-3 gap-2 md:gap-4 items-center">
-              <h3 className="caption-500-14">Tools:</h3>
-              <div className="flex gap-3">
-                <Image
-                  width={450}
-                  height={450}
-                  src="/images/stack/html5.svg"
-                  alt="HTML Icon"
-                  className="w-5"
-                />
-                <Image
-                  width={450}
-                  height={450}
-                  src="/images/stack/css.svg"
-                  alt="CSS Icon"
-                  className="w-5"
-                />
-                <Image
-                  width={450}
-                  height={450}
-                  src="/images/stack/bootstrap.svg"
-                  alt="Bootstrap Icon"
-                  className="w-6"
-                />
-              </div>
-            </div>
-
-            <div className="flex flex-col md:flex-row md:items-center md:justify-between mt-5 gap-4">
-              <div className="flex items-center gap-5 order-2 md:order-1">
-                <Link
-                  href="https://github.com/bando9/bandomega-portfolio/tree/main"
-                  target="_blank"
-                  className="flex items-center gap-1 hover:underline"
-                >
-                  <Image
-                    width={450}
-                    height={450}
-                    src="/images/stack/github.svg"
-                    alt="GitHub Icon"
-                    className="w-5"
-                  />
-                  <p className="caption-500-14">Repository</p>
-                </Link>
-                <Link
-                  href="https://v1.bandomega.com/"
-                  target="_blank"
-                  className="flex items-center gap-1 hover:underline"
-                >
-                  <Image
-                    width={450}
-                    height={450}
-                    src="/images/icons/link-1.svg"
-                    alt="Link Icon"
-                    className="w-5"
-                  />
-                  <p className="caption-500-14">Open link sites</p>
-                </Link>
-              </div>
-
-              <Link
-                href="/projects/project-details"
-                className="order-1 md:order-2"
-              >
-                <div className="flex items-center gap-1 hover:underline">
-                  <p className="caption-500-14">View project</p>
-                  <Image
-                    width={450}
-                    height={450}
-                    src="/images/icons/arrow-right.svg"
-                    alt="Arrow right icon"
-                    className="w-5"
-                  />
-                </div>
-              </Link>
-            </div>
-          </div>
-        </div>
+        <ProjectCard
+          title="Bandomega Personal Website "
+          description="A personal portfolio website showcasing projects, GitHub
+          links, and project highlights. Built with HTML5 and Bootstrap."
+          tools="HTML"
+          websiteURL="https://v1.bandomega.com/"
+          githubURL="https://github.com/bando9/bandomega-portfolio/"
+          projectdetailURL="/projects/project-details"
+        />
 
         <div className="project-card-right flex flex-col md:flex-row items-start md:justify-between gap-6">
           <div className="order-2 md:order-1 md:w-2/3">
