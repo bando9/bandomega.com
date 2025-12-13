@@ -1,6 +1,7 @@
 import { getAllPosts } from "@/lib/posts";
 import Link from "next/link";
 import Image from "next/image";
+import BlogCard from "@/components/cards/blog-card";
 
 export default function Blog() {
   const posts = getAllPosts();
@@ -22,7 +23,7 @@ export default function Blog() {
       </section>
 
       <section className="mt-20 md:mt-25 md:mx-25 mx-5 flex justify-center">
-        <div className="bg-gradient-to-r from-primary from-30% to-accent h-10 w-60 md:w-150 rounded-xl p-[1.5px] flex justify-center items-center">
+        <div className="bg-linear-to-r from-primary from-30% to-accent h-10 w-60 md:w-150 rounded-xl p-[1.5px] flex justify-center items-center">
           <label
             htmlFor="search"
             className="h-full w-full rounded-xl bg-bg-light flex items-center justify-around"
@@ -44,243 +45,18 @@ export default function Blog() {
       </section>
 
       <section className="mt-20 mx-5 md:ms-25 md:me-12 flex flex-col md:flex-row gap-1 md:gap-3">
-        <div className="blog-list w-full md:w-230 flex flex-col gap-10 md:gap-20 order-2 md:order-1">
-          <Link href="/blog/blog-details/">
-            <div className="blog-card flex flex-col md:flex-row gap-5 group bg">
-              <div className="flex flex-col gap-5 order-2 md:order-1 w-full md:w-2/3">
-                <div className="flex flex-col gap-2">
-                  <p className="caption-500-14">December 17, 2024</p>
-                  <h3 className="subtitle-600-16 group-hover:underline">
-                    List Animation using Motion for ReactList Animation using
-                    Motion for React
-                  </h3>
-                  <p className="body-small-400-14">
-                    An in-depth guide on how to animate enter and exit animation
-                    for list using Motion for React (previously Framer Motion).
-                  </p>
-                </div>
-                <div className="flex justify-between flex-col md:flex-row gap-3">
-                  <div className="icon flex gap-5">
-                    <div className="flex gap-1.5 items-center">
-                      <Image
-                        width={450}
-                        height={450}
-                        src="/images/icons/book-1.svg"
-                        className="w-5 h-5"
-                        alt="Book Icon"
-                      />
-                      <p className="caption-500-14">1,200 views</p>
-                    </div>
-                    <div className="flex gap-1.5 items-center">
-                      <Image
-                        width={450}
-                        height={450}
-                        src="/images/icons/time.svg"
-                        alt="Clock Icon"
-                        className="w-5"
-                      />
-                      <p className="caption-500-14">6 min read</p>
-                    </div>
-                  </div>
-                  <div className="tag flex gap-3">
-                    <h4 className="inline-block body-extra-small-400-12 bg-card py-2 px-4 rounded-2xl hover:bg-bg-light">
-                      React
-                    </h4>
-                    <h4 className="inline-block body-extra-small-400-12 bg-card py-2 px-4 rounded-2xl hover:bg-bg-light">
-                      Animation
-                    </h4>
-                  </div>
-                </div>
-              </div>
-              <div className="order-1">
-                <Image
-                  width={450}
-                  height={450}
-                  src="/images/blog-image-1.jpg"
-                  alt="Blog Image"
-                  className="rounded-lg w-full"
-                />
-              </div>
-            </div>
-          </Link>
+        <ul className="blog-list w-full md:w-230 flex flex-col gap-10 md:gap-20 order-2 md:order-1">
+          {postsPublic.map((post) => {
+            return (
+              <li key={post.slug}>
+                {/* <Link href={`/blog/${post.slug}`}> {post.title} </Link> */}
+                <BlogCard post={post} />
+              </li>
+            );
+          })}
+        </ul>
 
-          <Link href="/blog/blog-details/">
-            <div className="blog-card flex flex-col md:flex-row gap-5 group">
-              <div className="flex flex-col gap-5 order-2 md:order-1 w-full md:w-2/3">
-                <div className="flex flex-col gap-2">
-                  <p className="caption-500-14">December 17, 2024</p>
-                  <h3 className="subtitle-600-16 group-hover:underline">
-                    List Animation using Motion for ReactList Animation using
-                    Motion for React
-                  </h3>
-                  <p className="body-small-400-14">
-                    An in-depth guide on how to animate enter and exit animation
-                    for list using Motion for React (previously Framer Motion).
-                  </p>
-                </div>
-                <div className="flex justify-between flex-col md:flex-row gap-3">
-                  <div className="icon flex gap-5">
-                    <div className="flex gap-1.5 items-center">
-                      <Image
-                        width={450}
-                        height={450}
-                        src="/images/icons/book-1.svg"
-                        className="w-5 h-5"
-                        alt="Book Icon"
-                      />
-                      <p className="caption-500-14">1,200 views</p>
-                    </div>
-                    <div className="flex gap-1.5 items-center">
-                      <Image
-                        width={450}
-                        height={450}
-                        src="/images/icons/time.svg"
-                        alt="Clock Icon"
-                        className="w-5"
-                      />
-                      <p className="caption-500-14">6 min read</p>
-                    </div>
-                  </div>
-                  <div className="tag flex gap-3">
-                    <h4 className="inline-block body-extra-small-400-12 bg-card py-2 px-4 rounded-2xl hover:bg-bg-light">
-                      React
-                    </h4>
-                    <h4 className="inline-block body-extra-small-400-12 bg-card py-2 px-4 rounded-2xl hover:bg-bg-light">
-                      Animation
-                    </h4>
-                  </div>
-                </div>
-              </div>
-              <div className="order-1">
-                <Image
-                  width={450}
-                  height={450}
-                  src="/images/blog-image-1.jpg"
-                  alt="Blog Image"
-                  className="rounded-lg w-full"
-                />
-              </div>
-            </div>
-          </Link>
-          <Link href="/blog/blog-details/">
-            <div className="blog-card flex flex-col md:flex-row gap-5 group">
-              <div className="flex flex-col gap-5 order-2 md:order-1 w-full md:w-2/3">
-                <div className="flex flex-col gap-2">
-                  <p className="caption-500-14">December 17, 2024</p>
-                  <h3 className="subtitle-600-16 group-hover:underline">
-                    List Animation using Motion for ReactList Animation using
-                    Motion for React
-                  </h3>
-                  <p className="body-small-400-14">
-                    An in-depth guide on how to animate enter and exit animation
-                    for list using Motion for React (previously Framer Motion).
-                  </p>
-                </div>
-                <div className="flex justify-between flex-col md:flex-row gap-3">
-                  <div className="icon flex gap-5">
-                    <div className="flex gap-1.5 items-center">
-                      <Image
-                        width={450}
-                        height={450}
-                        src="/images/icons/book-1.svg"
-                        className="w-5 h-5"
-                        alt="Book Icon"
-                      />
-                      <p className="caption-500-14">1,200 views</p>
-                    </div>
-                    <div className="flex gap-1.5 items-center">
-                      <Image
-                        width={450}
-                        height={450}
-                        src="/images/icons/time.svg"
-                        alt="Clock Icon"
-                        className="w-5"
-                      />
-                      <p className="caption-500-14">6 min read</p>
-                    </div>
-                  </div>
-                  <div className="tag flex gap-3">
-                    <h4 className="inline-block body-extra-small-400-12 bg-card py-2 px-4 rounded-2xl hover:bg-bg-light">
-                      React
-                    </h4>
-                    <h4 className="inline-block body-extra-small-400-12 bg-card py-2 px-4 rounded-2xl hover:bg-bg-light">
-                      Animation
-                    </h4>
-                  </div>
-                </div>
-              </div>
-              <div className="order-1">
-                <Image
-                  width={450}
-                  height={450}
-                  src="/images/blog-image-1.jpg"
-                  alt="Blog Image"
-                  className="rounded-lg w-full"
-                />
-              </div>
-            </div>
-          </Link>
-          <Link href="/blog/blog-details/">
-            <div className="blog-card flex flex-col md:flex-row gap-5 group">
-              <div className="flex flex-col gap-5 order-2 md:order-1 w-full md:w-2/3">
-                <div className="flex flex-col gap-2">
-                  <p className="caption-500-14">December 17, 2024</p>
-                  <h3 className="subtitle-600-16 group-hover:underline">
-                    List Animation using Motion for ReactList Animation using
-                    Motion for React
-                  </h3>
-                  <p className="body-small-400-14">
-                    An in-depth guide on how to animate enter and exit animation
-                    for list using Motion for React (previously Framer Motion).
-                  </p>
-                </div>
-                <div className="flex justify-between flex-col md:flex-row gap-3">
-                  <div className="icon flex gap-5">
-                    <div className="flex gap-1.5 items-center">
-                      <Image
-                        width={450}
-                        height={450}
-                        src="/images/icons/book-1.svg"
-                        className="w-5 h-5"
-                        alt="Book Icon"
-                      />
-                      <p className="caption-500-14">1,200 views</p>
-                    </div>
-                    <div className="flex gap-1.5 items-center">
-                      <Image
-                        width={450}
-                        height={450}
-                        src="/images/icons/time.svg"
-                        alt="Clock Icon"
-                        className="w-5"
-                      />
-                      <p className="caption-500-14">6 min read</p>
-                    </div>
-                  </div>
-                  <div className="tag flex gap-3">
-                    <h4 className="inline-block body-extra-small-400-12 bg-card py-2 px-4 rounded-2xl hover:bg-bg-light">
-                      React
-                    </h4>
-                    <h4 className="inline-block body-extra-small-400-12 bg-card py-2 px-4 rounded-2xl hover:bg-bg-light">
-                      Animation
-                    </h4>
-                  </div>
-                </div>
-              </div>
-              <div className="order-1">
-                <Image
-                  width={450}
-                  height={450}
-                  src="/images/blog-image-1.jpg"
-                  alt="Blog Image"
-                  className="rounded-lg w-full"
-                />
-              </div>
-            </div>
-          </Link>
-        </div>
-
-        <aside className="w-full md:w-60 flex pt-2 md:border-l-1 md:border-text-muted md:h-50 order-1 mb-10">
+        <aside className="w-full md:w-60 flex pt-2 md:border-l md:border-text-muted md:h-50 order-1 mb-10">
           <div className="ms-3">
             <div className="flex items-center gap-5">
               <p className="caption-500-14">Select date</p>
@@ -319,20 +95,6 @@ export default function Blog() {
           </div>
         </aside>
       </section>
-
-      <div className="space-y-5">
-        <h1>Hi From Blog</h1>
-
-        <ul className="space-y-2">
-          {postsPublic.map((post) => {
-            return (
-              <li key={post.slug}>
-                <Link href={`/blog/${post.slug}`}> {post.title} </Link>
-              </li>
-            );
-          })}
-        </ul>
-      </div>
     </main>
   );
 }

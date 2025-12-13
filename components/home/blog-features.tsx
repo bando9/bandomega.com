@@ -1,5 +1,5 @@
 import CTALink from "./cta-link";
-import BlogCard from "../cards/blog-card";
+import BlogFeatureCard from "../cards/blog-feature-card";
 
 export default function BlogFeatures() {
   return (
@@ -12,9 +12,9 @@ export default function BlogFeatures() {
       </h1>
 
       <div className="blog-list mt-9 md:mt-13 mb-10">
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
+        <BlogFeatureCard />
+        <BlogFeatureCard />
+        <BlogFeatureCard />
       </div>
 
       <CTALink text="See more posts" link="/blog" />

@@ -66,7 +66,7 @@ export default async function Post({
       </section>
 
       <section className="mt-20 ms-25 flex gap-3 ">
-        <article className="prose prose-zinc dark:prose-invert w-full max-w-5xl pe-7 text-text-blog">
+        <article className="prose prose-zinc dark:prose-invert w-full max-w-5xl pe-20 text-text-blog">
           {blocks.map((block, i) => {
             if (block.type === "code") {
               return (

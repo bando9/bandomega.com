@@ -35,7 +35,7 @@ export const projects: ProjectsType = [
       "A personal portfolio website showcasing projects, GitHub links, and project highlights. Built with HTML5 and Bootstrap.",
     githubURL: "https://github.com/bando9/bandomega-portfolio/",
     websiteURL: "https://v1.bandomega.com/",
-    projectdetailURL: "/projects/project-details",
+    projectdetailURL: "/blog/personal-website",
     isContentTextLeft: false,
     image: "/images/project-1.png",
     tools: [
