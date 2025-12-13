@@ -1,5 +1,5 @@
 import ButtonContact from "@/components/home/button-contact";
-import ProjectList from "@/components/lists/project-list";
+import ProjectList from "@/components/home/project-list";
 
 export default function Projects() {
   return (

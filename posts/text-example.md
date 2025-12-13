@@ -6,7 +6,7 @@ date: 2025-11-29
 author: "Bando"
 like: 1200
 read: 8
-watch: 12200
+view: 12200
 ---
 
 Markdown is powered by [Markdoc](https://markdoc.dev/). This is an example post to demonstrate all the basic markdown syntax. You can author content using the familiar markdown syntax you already know.

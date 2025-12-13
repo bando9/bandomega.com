@@ -1,17 +1,29 @@
+import dayjs from "dayjs";
 import Image from "next/image";
+import Link from "next/link";
+import localizedFormat from "dayjs/plugin/localizedFormat";
+import { PostType } from "@/app/type";
 
-export default function BlogFeatureCard() {
+interface BlogCardProps {
+  post: PostType;
+}
+
+export default function BlogFeatureCard({ post }: BlogCardProps) {
+  dayjs.extend(localizedFormat);
+  const formattedDate = dayjs(post?.date).format("LL");
+  const formattedNumberUS = post?.view.toLocaleString("en-US");
+
   return (
-    <div className="card-blog text-text flex flex-col md:flex-row cursor-pointer gap-6 items-start md:items-start md:justify-between mt-8 md:mt-12 group">
+    <Link
+      href={`/blog/${post.slug}`}
+      className="card-blog text-text flex flex-col md:flex-row cursor-pointer gap-6 items-start md:items-start md:justify-between mt-8 md:mt-12 group"
+    >
       <div className="order-2 md:order-1">
-        <h4 className="caption-500-14 mb-2 md:mb-4">September 24, 2025</h4>
+        <h4 className="caption-500-14 mb-2 md:mb-4">{formattedDate} </h4>
         <h1 className="subtitle-600-20 md:subtitle-600-24 mb-1 group-hover:underline">
-          List Animation using Motion for React
+          {post.title}
         </h1>
-        <p className="body-small-400-14 mb-3">
-          An in-depth guide on how to animate enter and exit animation for list
-          using Motion for React (previously Framer Motion).
-        </p>
+        <p className="body-small-400-14 mb-3">{post.description}</p>
         <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
           <div className="icon flex gap-5">
             <div className="flex gap-1 md:gap-1.5 items-center">
@@ -22,7 +34,7 @@ export default function BlogFeatureCard() {
                 className="w-4 md:w-5"
                 alt="Book Icon"
               />
-              <p className="caption-500-14">1,200 views</p>
+              <p className="caption-500-14">{formattedNumberUS} views</p>
             </div>
             <div className="flex gap-1.5 items-center">
               <Image
@@ -32,7 +44,7 @@ export default function BlogFeatureCard() {
                 alt="Clock Icon"
                 className="w-4 md:w-5"
               />
-              <p className="caption-500-14">6 min read</p>
+              <p className="caption-500-14">{post.read} min read</p>
             </div>
           </div>
           <div className="tag flex flex-wrap gap-2 md:gap-3 mt-2 md:mt-0">
@@ -54,6 +66,6 @@ export default function BlogFeatureCard() {
           className="rounded-lg w-full"
         />
       </div>
-    </div>
+    </Link>
   );
 }

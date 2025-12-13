@@ -2,19 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import dayjs from "dayjs";
 import localizedFormat from "dayjs/plugin/localizedFormat";
-
-type PostType = {
-  slug: string;
-  content: string;
-  author: string;
-  date: Date;
-  title: string;
-  description: string;
-  like: number;
-  watch: number;
-  read: number;
-  draft: boolean;
-};
+import { PostType } from "@/app/type";
 
 interface BlogCardProps {
   post: PostType;
@@ -23,7 +11,7 @@ interface BlogCardProps {
 export default function BlogCard({ post }: BlogCardProps) {
   dayjs.extend(localizedFormat);
   const formattedDate = dayjs(post?.date).format("LL");
-  const formattedNumberUS = post?.watch.toLocaleString("en-US");
+  const formattedNumberUS = post?.view.toLocaleString("en-US");
 
   return (
     <>

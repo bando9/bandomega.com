@@ -6,7 +6,7 @@ date: 2025-11-30
 author: "Bando"
 like: 1200
 read: 8
-watch: 12200
+view: 12200
 ---
 
 # Personal Website

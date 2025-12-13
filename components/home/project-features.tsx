@@ -1,4 +1,4 @@
-import ProjectList from "../lists/project-list";
+import ProjectList from "./project-list";
 import CTALink from "./cta-link";
 
 export default function ProjectFeatures() {

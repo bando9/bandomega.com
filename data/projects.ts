@@ -1,31 +1,11 @@
+import { ProjectsType } from "@/app/type";
 import {
-  RemixiconComponentType,
   RiBootstrapFill,
   RiCss3Fill,
   RiHtml5Fill,
   RiJavascriptFill,
   RiReactjsFill,
 } from "@remixicon/react";
-
-interface Tool {
-  id: number;
-  name: string;
-  icon: RemixiconComponentType;
-}
-
-export interface ProjectType {
-  id: number;
-  title: string;
-  description: string;
-  image: string;
-  tools: Tool[];
-  websiteURL: string;
-  githubURL: string;
-  projectdetailURL: string;
-  isContentTextLeft: boolean;
-}
-
-type ProjectsType = ProjectType[];
 
 export const projects: ProjectsType = [
   {

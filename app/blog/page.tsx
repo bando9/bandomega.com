@@ -49,7 +49,6 @@ export default function Blog() {
           {postsPublic.map((post) => {
             return (
               <li key={post.slug}>
-                {/* <Link href={`/blog/${post.slug}`}> {post.title} </Link> */}
                 <BlogCard post={post} />
               </li>
             );

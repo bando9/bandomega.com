@@ -30,7 +30,7 @@ export default async function Post({
 
   dayjs.extend(localizedFormat);
   const formattedDate = dayjs(post?.date).format("LL");
-  const formattedNumberUS = post?.watch.toLocaleString("en-US");
+  const formattedNumberUS = post?.view.toLocaleString("en-US");
   const formatter = new Intl.NumberFormat("en-US", {
     notation: "compact",
     compactDisplay: "short",
