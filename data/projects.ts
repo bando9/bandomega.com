@@ -6,6 +6,9 @@ import {
   RiJavascriptFill,
   RiReactjsFill,
 } from "@remixicon/react";
+import project1 from "@/public/images/project-1.png";
+import project2 from "@/public/images/project-2.jpg";
+import project3 from "@/public/images/project-3.jpg";
 
 export const projects: ProjectsType = [
   {
@@ -17,7 +20,7 @@ export const projects: ProjectsType = [
     websiteURL: "https://v1.bandomega.com/",
     projectdetailURL: "/blog/personal-website",
     isContentTextLeft: false,
-    image: "/images/project-1.png",
+    image: project1,
     tools: [
       { id: 1, name: "HTML5", icon: RiHtml5Fill },
       { id: 2, name: "CSS3", icon: RiCss3Fill },
@@ -33,7 +36,7 @@ export const projects: ProjectsType = [
     websiteURL: "https://memomate-six.vercel.app/",
     projectdetailURL: "/projects/project-details",
     isContentTextLeft: true,
-    image: "/images/project-2.jpg",
+    image: project2,
     tools: [{ id: 1, name: "React", icon: RiReactjsFill }],
   },
   {
@@ -45,7 +48,7 @@ export const projects: ProjectsType = [
     websiteURL: "https://perpustakaan-mini.vercel.app/",
     projectdetailURL: "/projects/project-details",
     isContentTextLeft: false,
-    image: "/images/project-3.jpg",
+    image: project3,
     tools: [
       { id: 1, name: "HTML5", icon: RiHtml5Fill },
       { id: 2, name: "CSS3", icon: RiCss3Fill },

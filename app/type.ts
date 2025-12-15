@@ -1,4 +1,5 @@
 import { RemixiconComponentType } from "@remixicon/react";
+import { StaticImageData } from "next/image";
 
 export type PostType = {
   slug: string;
@@ -23,7 +24,7 @@ export interface ProjectType {
   id: number;
   title: string;
   description: string;
-  image: string;
+  image: StaticImageData;
   tools: Tool[];
   websiteURL: string;
   githubURL: string;
