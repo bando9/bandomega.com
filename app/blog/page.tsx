@@ -1,7 +1,7 @@
 import { getAllPosts } from "@/lib/posts";
 import Link from "next/link";
 import Image from "next/image";
-import BlogCard from "@/components/cards/blog-card";
+import BlogCard from "@/features/blog/components/blog-card";
 
 export default function Blog() {
   const posts = getAllPosts();

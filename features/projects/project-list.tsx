@@ -1,4 +1,4 @@
-import ProjectCard from "@/components/cards/project-card";
+import ProjectCard from "@/features/projects/project-card";
 import { projects } from "@/data/projects";
 
 interface ProjectListProps {

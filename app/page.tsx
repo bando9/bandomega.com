@@ -1,6 +1,6 @@
-import BlogFeatures from "@/components/home/blog-features";
-import ButtonContact from "@/components/home/button-contact";
-import ProjectFeatures from "@/components/home/project-features";
+import BlogFeatures from "@/features/home/sections/blog-features";
+import ButtonContact from "@/features/home/components/button-contact";
+import ProjectFeatures from "@/features/home/sections/project-features";
 import { RiGithubFill, RiLinkedinBoxFill } from "@remixicon/react";
 import Image from "next/image";
 import Link from "next/link";
@@ -94,7 +94,7 @@ export default function Home() {
 
       <section
         id="gallery"
-        className="mt-15 md:mt-40 flex gap-4 md:gap-10 overflow-hidden h-55 md:h-120 py-10"
+        className="mt-15 md:mt-40 flex gap-4 md:gap-10 h-55 md:h-120 py-10"
       >
         <div className="max-w-60 md:max-w-75 max-h-10 md:max-h-75">
           <Image
@@ -106,7 +106,7 @@ export default function Home() {
           />
         </div>
 
-        <div className="max-w-60 md:max-w-75 max-h-10 md:max-h-75">
+        <div className="max-w-60 md:max-w-72 max-h-10 md:max-h-75">
           <Image
             width={450}
             height={450}
@@ -116,7 +116,7 @@ export default function Home() {
           />
         </div>
 
-        <div className="max-w-60 md:max-w-75 max-h-10 md:max-h-75">
+        <div className="max-w-60 md:max-w-72 max-h-10 md:max-h-75">
           <Image
             width={450}
             height={450}
@@ -126,11 +126,11 @@ export default function Home() {
           />
         </div>
 
-        <div className="max-w-60 md:max-w-75 max-h-10 md:max-h-75">
+        <div className="max-w-60 md:max-w-64 max-h-10 md:max-h-75">
           <Image
             width={450}
             height={450}
-            className="-rotate-2 rounded-xl h-35 w-45 md:h-100 md:w-100"
+            className="-rotate-2 rounded-xl h-20 w-40 md:h-100 md:w-100"
             src="https://images.unsplash.com/photo-1737638423079-5bac4c563ba4?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="makassar-city"
           />
