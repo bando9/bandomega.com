@@ -1,7 +1,8 @@
 import { getAllPosts } from "@/lib/posts";
 import Link from "next/link";
 import Image from "next/image";
-import BlogCard from "@/features/blog/components/blog-card";
+import Header from "@/components/layout/header";
+import BlogCard from "@/components/shared/blog-card";
 
 export default function Blog() {
   const posts = getAllPosts();
@@ -10,17 +11,12 @@ export default function Blog() {
 
   return (
     <main className="mt-25 md:mt-35">
-      <section className="mt-20 md:mt-25 md:mx-25 mx-5">
-        <div className="title text-center">
-          <h1 className="heading-600-32 md:title-600-48">
-            The <span className="color-gradient-primary">Blogs</span>
-          </h1>
-          <p className="body-default-400-16 md:body-large-400-18 text-text-muted md:text-text-muted mt-1 md:mt-0">
-            Dive into my thoughts on coding, tech trends, and developer life.
-            Explore my latest posts below.
-          </p>
-        </div>
-      </section>
+      <Header
+        preTitle="The"
+        title="Blog"
+        description="Dive into my thoughts on coding, tech trends, and developer life.
+            Explore my latest posts below."
+      />
 
       <section className="mt-20 md:mt-25 md:mx-25 mx-5 flex justify-center">
         <div className="bg-linear-to-r from-primary from-30% to-accent h-10 w-60 md:w-150 rounded-xl p-[1.5px] flex justify-center items-center">

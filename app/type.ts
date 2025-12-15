@@ -33,3 +33,9 @@ export interface ProjectType {
 }
 
 export type ProjectsType = ProjectType[];
+
+export type HeaderProps = {
+  title: string;
+  description: string;
+  preTitle?: string;
+};

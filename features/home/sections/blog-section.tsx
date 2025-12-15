@@ -1,8 +1,8 @@
 import CTALink from "@/features/home/components/cta-link";
-import BlogFeatureCard from "@/features/blog/components/blog-feature-card";
+import BlogCard from "@/components/shared/blog-card";
 import { getAllPosts } from "@/lib/posts";
 
-export default function BlogFeatures() {
+export default function BlogSection() {
   const posts = getAllPosts();
   const blogsPublic = posts.filter((post) => !post.draft);
   const displayBlogFeatures = blogsPublic.slice(0, 3);
@@ -20,7 +20,7 @@ export default function BlogFeatures() {
         {displayBlogFeatures.map((post) => {
           return (
             <li key={post.slug}>
-              <BlogFeatureCard post={post} />
+              <BlogCard post={post} />
             </li>
           );
         })}

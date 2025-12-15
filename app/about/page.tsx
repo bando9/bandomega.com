@@ -1,17 +1,15 @@
+import Header from "@/components/layout/header";
 import Image from "next/image";
 
 export default function About() {
   return (
     <main className="mt-25 md:mt-35">
       <section id="header" className="mt-25 md:mt-25 md:mx-25 mx-5">
-        <div className="title">
-          <h1 className="heading-600-32 md:title-600-48 text-center">
-            About <span className="color-gradient-primary">Me</span>
-          </h1>
-          <p className="body-large-400-18 text-center text-text-muted">
-            Learning, building, and becoming along the way
-          </p>
-        </div>
+        <Header
+          preTitle="About"
+          title="Me"
+          description="Learning, building, and becoming along the way"
+        />
 
         <div className="flex flex-col md:flex-row justify-between items-center gap-25 mt-25">
           <div className="order-2 md:order-1">

@@ -8,7 +8,7 @@ interface BlogCardProps {
   post: PostType;
 }
 
-export default function BlogFeatureCard({ post }: BlogCardProps) {
+export default function BlogCard({ post }: BlogCardProps) {
   dayjs.extend(localizedFormat);
   const formattedDate = dayjs(post?.date).format("LL");
   const formattedNumberUS = post?.view.toLocaleString("en-US");

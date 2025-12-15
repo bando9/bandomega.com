@@ -1,17 +1,12 @@
+import Header from "@/components/layout/header";
+
 export default function Contact() {
   return (
     <main className="mt-25 md:mt-35">
-      <section className="mt-20 md:mx-25 mx-5">
-        <div className="title text-center">
-          <h1 className="title-600-48 bg-gradient-to-r from-primary from-30% to-accent text-transparent bg-clip-text inline-block">
-            Contact
-          </h1>
-          <p className="body-large-400-18 text-text-muted">
-            Let’s connect! Whether it’s about tech, collaboration, or just
-            sharing ideas - here’s where you can reach me.
-          </p>
-        </div>
-      </section>
+      <Header
+        title="Contact"
+        description="Let’s connect! Whether it’s about tech, collaboration, or just sharing ideas - here’s where you can reach me."
+      />
 
       <section className="mt-20 md:mx-25 mx-5">
         <form className="bg-bg-light px-5 py-5 md:px-15 md:py-15 w-full md:w-150 flex flex-col gap-10 mx-auto rounded-lg">

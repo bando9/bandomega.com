@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function ButtonContact() {
+export default function ContactSection() {
   return (
     <section
       id="contact"

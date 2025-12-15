@@ -1,7 +1,7 @@
 import ProjectList from "@/features/projects/project-list";
 import CTALink from "@/features/home/components/cta-link";
 
-export default function ProjectFeatures() {
+export default function ProjectSection() {
   return (
     <section id="projects" className="mt-8 md:mt-25 md:mx-25 mx-5">
       <div>
