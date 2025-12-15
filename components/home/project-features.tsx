@@ -1,5 +1,5 @@
-import ProjectList from "./project-list";
-import CTALink from "./cta-link";
+import ProjectList from "@/components/home/project-list";
+import CTALink from "@/components/home/cta-link";
 
 export default function ProjectFeatures() {
   return (

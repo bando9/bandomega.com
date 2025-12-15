@@ -1,5 +1,5 @@
-import CTALink from "./cta-link";
-import BlogFeatureCard from "../cards/blog-feature-card";
+import CTALink from "@/components/home/cta-link";
+import BlogFeatureCard from "@/components/cards/blog-feature-card";
 import { getAllPosts } from "@/lib/posts";
 
 export default function BlogFeatures() {
