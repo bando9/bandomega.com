@@ -4,6 +4,7 @@ import ProjectFeatures from "@/features/home/sections/project-features";
 import { RiGithubFill, RiLinkedinBoxFill } from "@remixicon/react";
 import Image from "next/image";
 import Link from "next/link";
+import photoMakassar from "@/public/images/photo-makassar.png";
 
 export default function Home() {
   return (
@@ -131,7 +132,7 @@ export default function Home() {
             width={450}
             height={450}
             className="-rotate-2 rounded-xl h-20 w-40 md:h-100 md:w-100"
-            src="https://images.unsplash.com/photo-1737638423079-5bac4c563ba4?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src={photoMakassar}
             alt="makassar-city"
           />
         </div>
