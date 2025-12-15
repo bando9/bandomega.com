@@ -14,6 +14,8 @@ export type PostType = {
   draft: boolean;
 };
 
+export type PostsType = PostType[];
+
 export interface Tool {
   id: number;
   name: string;

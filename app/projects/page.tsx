@@ -1,5 +1,5 @@
 import Header from "@/components/layout/header";
-import ContactSection from "@/features/home/sections/contact-section";
+import ContactSection from "@/components/shared/contact-section";
 import ProjectList from "@/features/projects/project-list";
 
 export default function Projects() {
