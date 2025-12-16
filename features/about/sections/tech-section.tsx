@@ -28,7 +28,7 @@ export default function TechSection() {
           className="w-7 h-7 md:w-10 md:h-10 -rotate-8"
         />
         <h2 className="heading-600-32 md:title-600-48">
-          Growth <span className="color-gradient-primary">Stack</span>
+          Growth <span className="gradient-primary">Stack</span>
         </h2>
       </div>
 

@@ -12,9 +12,7 @@ export default function EducationSection() {
             alt="education-icon"
             className="w-8 h-8 -rotate-8"
           />
-          <h2 className="heading-600-32 bg-linear-to-r from-primary from-30% to-accent text-transparent bg-clip-text inline-block">
-            Education
-          </h2>
+          <h2 className="heading-600-32 gradient-primary">Education</h2>
         </div>
       </div>
       <div className="grid grid-cols-2 md:grid-cols-4 mt-10">

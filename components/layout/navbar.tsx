@@ -11,7 +11,7 @@ const menuData = [
   { id: 5, label: "Contact", link: "/contact" },
 ];
 export default function NavBar() {
-  const active: string = "text-secondary";
+  const active: string = "text-[#0fb8f0]";
   const location = usePathname();
 
   function isActive(path: string) {

@@ -8,10 +8,7 @@ export default function ContactSection() {
     >
       <div className="w-full max-w-3xl text-center">
         <h1 className="title-600-48 md:title-600-64">
-          Get{" "}
-          <span className="bg-linear-to-r from-primary from-30% to-accent text-transparent bg-clip-text inline-block">
-            In Touch
-          </span>
+          Get <span className="gradient-primary">In Touch</span>
         </h1>
         <p className="body-default-400-16 md:body-large-400-18 text-text-muted max-w-xl mx-auto mt-4">
           While I’m focused on my current journey, my inbox is always open.

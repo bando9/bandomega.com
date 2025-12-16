@@ -31,7 +31,7 @@ const defaultFence =
 
 md.renderer.rules.fence = (tokens, idx, options, env, self) => {
   const token = tokens[idx];
-  const rawCode = token.content; // kode asli
+  const rawCode = token.content;
   const lang = token.info.trim() || "text";
 
   const encodedRaw = encodeURIComponent(rawCode);
