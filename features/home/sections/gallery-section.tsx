@@ -37,11 +37,11 @@ export default function GallerySection() {
         />
       </div>
 
-      <div className="max-w-60 md:max-w-64 max-h-10 md:max-h-75">
+      <div className="max-w-60 md:max-w-72 max-h-10 md:max-h-75">
         <Image
           width={450}
           height={450}
-          className="-rotate-2 rounded-xl h-20 w-40 md:h-100 md:w-100"
+          className="-rotate-2 rounded-xl h-35 w-45 md:h-100 md:w-100"
           src={photoMakassar}
           alt="makassar-city"
         />

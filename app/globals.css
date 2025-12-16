@@ -6,7 +6,7 @@
 
 @plugin "tailwindcss-animate";
 
-/* @theme {
+@theme {
   --color-primary: #006aff;
   --color-secondary: #0fb8f0;
   --color-accent: #ef3434;
@@ -17,7 +17,7 @@
   --color-text-blog: #e6e5e6;
   --color-card: #021636;
   --color-button: #06384b;
-} */
+}
 
 @layer base {
   ::selection {
@@ -214,7 +214,7 @@ body {
 }
 
 .dark {
-  --background: oklch(0.2046 0 0);
+  --background: #020104;
   --foreground: oklch(0.9219 0 0);
   --card: oklch(0.2686 0 0);
   --card-foreground: oklch(0.9219 0 0);

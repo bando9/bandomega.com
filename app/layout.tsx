@@ -27,9 +27,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="dark" style={{ colorScheme: "dark" }}>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-bg-dark text-text`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased  text-text`}
       >
         <NavBar />
         <ThemeProvider
