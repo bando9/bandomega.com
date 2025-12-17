@@ -34,7 +34,7 @@ export default function RootLayout({
         <NavBar />
         <ThemeProvider
           attribute="class"
-          defaultTheme=""
+          defaultTheme="dark"
           enableSystem
           disableTransitionOnChange
         >

@@ -5,7 +5,7 @@ export default function GallerySection() {
   return (
     <section
       id="gallery"
-      className="mt-15 md:mt-40 flex gap-4 md:gap-10 h-55 md:h-120 py-10"
+      className="mt-15 md:mt-40 flex gap-4 md:gap-10 h-55 md:h-120 py-10 overflow-hidden"
     >
       <div className="max-w-60 md:max-w-75 max-h-10 md:max-h-75">
         <Image
