@@ -55,4 +55,19 @@ export const projects: ProjectsType = [
       { id: 3, name: "JS", icon: RiJavascriptFill },
     ],
   },
+  {
+    id: 4,
+    title: "Mindflow ",
+    description:
+      "A personal portfolio website showcasing projects, GitHub links, and project highlights. Built with HTML5 and Bootstrap.",
+    githubURL: "https://github.com/bando9/mindflow",
+    websiteURL: "https://mindflow.bandomega.com/",
+    projectdetailURL: "/projects/project-details",
+    isContentTextLeft: true,
+    image: project3,
+    tools: [
+      { id: 2, name: "CSS3", icon: RiCss3Fill },
+      { id: 3, name: "JS", icon: RiJavascriptFill },
+    ],
+  },
 ];

@@ -1,5 +1,5 @@
 import ProjectCard from "@/components/shared/project-card";
-import { projects } from "@/data/projects";
+import { projects } from "@/features/projects/data/projects";
 
 interface ProjectListProps {
   limit?: number;
