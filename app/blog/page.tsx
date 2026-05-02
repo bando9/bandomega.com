@@ -2,6 +2,12 @@ import Header from "@/components/layout/header";
 import SearchForm from "@/features/blog/sections/search-form";
 import AsideSection from "@/features/blog/sections/aside-section";
 import BlogList from "@/features/blog/components/blog-list";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  description:
+    "Read articles about Web Development, JavaScript, React, and more from Bando Mega Kusuma.",
+};
 
 export default function Blog() {
   const preTitle = "The";
