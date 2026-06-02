@@ -1,6 +1,6 @@
 import Header from "@/components/layout/header";
 import ContactSection from "@/components/shared/contact-section";
-import ProjectList from "@/features/projects/project-list";
+import ProjectList from "@/app/projects/_components/project-list";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {

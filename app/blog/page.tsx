@@ -1,7 +1,7 @@
 import Header from "@/components/layout/header";
-import SearchForm from "@/features/blog/sections/search-form";
-import AsideSection from "@/features/blog/sections/aside-section";
-import BlogList from "@/features/blog/components/blog-list";
+import SearchForm from "@/app/blog/_components/search-form";
+import AsideSection from "@/app/blog/_components/aside-section";
+import BlogList from "@/app/blog/_components/blog-list";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {

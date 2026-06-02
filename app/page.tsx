@@ -1,8 +1,8 @@
-import BlogSection from "@/features/home/sections/blog-section";
+import BlogSection from "@/app/home/_components/blog-section";
 import ContactSection from "@/components/shared/contact-section";
-import GallerySection from "@/features/home/sections/gallery-section";
-import HeaderSection from "@/features/home/sections/header-section";
-import ProjectSection from "@/features/home/sections/project-section";
+import GallerySection from "@/app/home/_components/gallery-section";
+import HeaderSection from "@/app/home/_components/header-section";
+import ProjectSection from "@/app/home/_components/project-section";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {

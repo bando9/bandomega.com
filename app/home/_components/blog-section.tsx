@@ -1,4 +1,4 @@
-import CTALink from "@/features/home/components/cta-link";
+import CTALink from "@/app/home/_components/cta-link";
 import BlogCard from "@/components/shared/blog-card";
 import { getAllPosts } from "@/lib/posts";
 

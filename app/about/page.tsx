@@ -1,8 +1,8 @@
-import HeaderSectionAbout from "@/features/about/sections/header-section-about";
-import TechSection from "@/features/about/sections/tech-section";
-import CertificateSection from "@/features/about/sections/certificate-section";
-import WorkExperienceSection from "@/features/about/sections/experience-section";
-import EducationSection from "@/features/about/sections/education-section";
+import HeaderSectionAbout from "@/app/about/_components/header-section-about";
+import TechSection from "@/app/about/_components/tech-section";
+import CertificateSection from "@/app/about/_components/certificate-section";
+import WorkExperienceSection from "@/app/about/_components/experience-section";
+import EducationSection from "@/app/about/_components/education-section";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
