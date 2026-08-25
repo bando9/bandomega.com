@@ -1,5 +1,11 @@
 import Header from "@/components/layout/header";
-import ContactForm from "@/features/contact/sections/contact-form";
+import ContactForm from "@/app/contact/_components/contact-form";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  description:
+    "Get in touch with Bando Mega Kusuma for collaboration, freelance projects, or tech discussions.",
+};
 
 export default function Contact() {
   return (

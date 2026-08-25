@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { Works } from "../data/works";
-import TimeLine from "../components/timeline";
+import { Works } from "../../../data/works";
+import TimeLine from "./timeline";
 
 export default function WorkExperienceSection() {
   return (

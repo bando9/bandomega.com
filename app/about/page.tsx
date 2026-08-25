@@ -1,10 +1,16 @@
-import HeaderSectionAbout from "@/features/about/sections/header-section-about";
-import TechSection from "@/features/about/sections/tech-section";
-import CertificateSection from "@/features/about/sections/certificate-section";
-import WorkExperienceSection from "@/features/about/sections/experience-section";
-import EducationSection from "@/features/about/sections/education-section";
+import HeaderSectionAbout from "@/app/about/_components/header-section-about";
+import TechSection from "@/app/about/_components/tech-section";
+import CertificateSection from "@/app/about/_components/certificate-section";
+import WorkExperienceSection from "@/app/about/_components/experience-section";
+import EducationSection from "@/app/about/_components/education-section";
+import { Metadata } from "next";
 import { ShootingStars } from "@/components/ui/shooting-stars";
 import { StarsBackground } from "@/components/ui/stars-background";
+
+export const metadata: Metadata = {
+  description:
+    "I'm Bando Mega Kusuma, a Software Engineer and Frontend Developer. Explore my portfolio, projects, blog, and ways to connect with me.",
+};
 
 export default function About() {
   return (

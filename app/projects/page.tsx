@@ -1,8 +1,14 @@
 import Header from "@/components/layout/header";
 import ContactSection from "@/components/shared/contact-section";
+import ProjectList from "@/app/projects/_components/project-list";
+import { Metadata } from "next";
 import { ShootingStars } from "@/components/ui/shooting-stars";
 import { StarsBackground } from "@/components/ui/stars-background";
-import ProjectList from "@/features/projects/project-list";
+
+export const metadata: Metadata = {
+  description:
+    "Explore projects by Bando Mega Kusuma including modern web apps.",
+};
 
 export default function Projects() {
   return (

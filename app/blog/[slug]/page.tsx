@@ -6,8 +6,8 @@ import { RiBookOpenLine, RiHeartLine, RiTimeLine } from "@remixicon/react";
 import dayjs from "dayjs";
 import localizedFormat from "dayjs/plugin/localizedFormat";
 import { extractHeadings } from "@/lib/extract-heading";
-import BlogToc from "@/features/blog/components/blog-toc";
-import CodeBlock from "@/features/blog/components/code-blocks";
+import BlogToc from "@/app/blog/_components/blog-toc";
+import CodeBlock from "@/app/blog/_components/code-blocks";
 
 async function fetchPosts(slug: string) {
   const posts = getAllPosts();

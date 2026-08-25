@@ -1,4 +1,4 @@
-import { WorkType } from "../data/works";
+import { WorkType } from "@/data/works";
 
 type TimeLineProps = {
   work: WorkType;
