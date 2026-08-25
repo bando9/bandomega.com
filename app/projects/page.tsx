@@ -1,5 +1,7 @@
 import Header from "@/components/layout/header";
 import ContactSection from "@/components/shared/contact-section";
+import { ShootingStars } from "@/components/ui/shooting-stars";
+import { StarsBackground } from "@/components/ui/stars-background";
 import ProjectList from "@/features/projects/project-list";
 
 export default function Projects() {
@@ -17,6 +19,8 @@ export default function Projects() {
       </section>
 
       <ContactSection />
+      <ShootingStars />
+      <StarsBackground />
     </main>
   );
 }

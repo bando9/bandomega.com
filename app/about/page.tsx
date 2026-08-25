@@ -3,6 +3,8 @@ import TechSection from "@/features/about/sections/tech-section";
 import CertificateSection from "@/features/about/sections/certificate-section";
 import WorkExperienceSection from "@/features/about/sections/experience-section";
 import EducationSection from "@/features/about/sections/education-section";
+import { ShootingStars } from "@/components/ui/shooting-stars";
+import { StarsBackground } from "@/components/ui/stars-background";
 
 export default function About() {
   return (
@@ -16,6 +18,9 @@ export default function About() {
       <WorkExperienceSection />
 
       <EducationSection />
+
+      <ShootingStars />
+      <StarsBackground />
     </main>
   );
 }
