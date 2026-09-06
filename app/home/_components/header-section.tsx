@@ -2,11 +2,14 @@ import { RiGithubFill, RiLinkedinBoxFill } from "@remixicon/react";
 import Link from "next/link";
 import Image from "next/image";
 
+import { ShootingStars } from "@/components/ui/shooting-stars";
+import { StarsBackground } from "@/components/ui/stars-background";
+
 export default function HeaderSection() {
   return (
     <section
       id="header"
-      className="flex flex-col lg:flex-row justify-between items-start gap-3 mt-15 md:mx-25 mx-5"
+      className="flex flex-col lg:flex-row justify-between items-start gap-3 mt-15 md:mx-25 mx-5 z-10"
     >
       <div className="w-full">
         <div className="inline-flex items-center md:px-6 md:py-3 px-3 py-2 rounded-full color-gradient-secondary mb-10">
@@ -87,6 +90,8 @@ export default function HeaderSection() {
           className="rounded-xl max-w-80 md:max-w-120 sm:w-full object-cover"
         />
       </div>
+      <ShootingStars className="pointer-events-none" />
+      <StarsBackground className="pointer-events-none" />
     </section>
   );
 }

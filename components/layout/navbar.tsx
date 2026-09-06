@@ -1,17 +1,20 @@
 "use client";
 
-import Link from "next/link";
+import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
+import { ArrowRightIcon, ArrowUpRightIcon } from "lucide-react";
+import { AnimatePresence, motion } from "framer-motion";
+import Link from "next/link";
 
 const menuData = [
   { id: 1, label: "Home", link: "/" },
   { id: 2, label: "Projects", link: "/projects" },
-  { id: 3, label: "Blog", link: "/blog" },
-  { id: 4, label: "About", link: "/about" },
-  { id: 5, label: "Contact", link: "/contact" },
+  { id: 3, label: "About", link: "/about" },
+  { id: 4, label: "Blog", link: "/blog" },
 ];
 export default function NavBar() {
-  const active: string = "text-[#0fb8f0]";
+  const [isScrolled, setIsScrolled] = useState(false);
+  const active: string = "text-[#F5E68E]";
   const location = usePathname();
 
   function isActive(path: string) {
@@ -19,42 +22,94 @@ export default function NavBar() {
     return location.startsWith(path);
   }
 
-  return (
-    <>
-      <header className="fixed top-0 left-0 w-full z-10">
-        <div className="flex justify-center items-center px-4">
-          <button
-            id="hamburger"
-            name="hamburger"
-            type="button"
-            className="block absolute right-10 top-5 md:hidden"
-          >
-            <span className="hamburger-line transition origin-top-left"></span>
-            <span className="hamburger-line transition"></span>
-            <span className="hamburger-line transition origin-bottom-left"></span>
-          </button>
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 20) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
 
-          <nav
-            id="nav-menu"
-            className="bg-bg-light text-text mt-10 max-w-fit rounded-xl absolute py-12 px-12 md:px-10 md:py-3 hidden md:block top-full md:top-full right-20 md:right-auto md:left-1/2 md:-translate-x-1/2"
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  return (
+    <header className="fixed top-0 left-0 right-0 z-50 flex justify-center px-4 pt-4">
+      <motion.nav
+        initial={false}
+        animate={{
+          maxWidth: isScrolled ? "640px" : "1024px",
+          borderRadius: isScrolled ? "9999px" : "16px",
+          paddingLeft: isScrolled ? "24px" : "32px",
+          paddingRight: isScrolled ? "24px" : "32px",
+          paddingTop: isScrolled ? "10px" : "16px",
+          paddingBottom: isScrolled ? "10px" : "16px",
+        }}
+        transition={{
+          type: "spring",
+          stiffness: 260,
+          damping: 28,
+          mass: 0.8,
+        }}
+        className="flex items-center justify-between gap-6 w-2/3 bg-[#141414]/80 backdrop-blur-md border border-[#262626] text-sm shadow-2xl text-neutral-100"
+      >
+        <div className="flex items-center gap-6">
+          <Link
+            href="/"
+            className="font-bold tracking-tight text-base hover:opacity-80 transition-opacity flex items-center h-6 overflow-hidden"
           >
-            <ul className="subtitle-600-16 flex flex-col md:flex-row gap-4 md:gap-8">
-              {menuData.map((menu) => {
-                return (
-                  <li key={menu.id}>
-                    <Link
-                      href={menu.link}
-                      className={`${isActive(menu.link) ? active : ""}`}
-                    >
-                      {menu.label}
-                    </Link>
-                  </li>
-                );
-              })}
-            </ul>
-          </nav>
+            <AnimatePresence mode="wait">
+              {isScrolled ? (
+                <motion.span
+                  key="short-logo"
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -10 }}
+                  transition={{ duration: 0.2 }}
+                  className="tracking-tighter"
+                >
+                  BMK
+                </motion.span>
+              ) : (
+                <motion.span
+                  key="full-logo"
+                  initial={{ opacity: 0, y: -10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: 10 }}
+                  transition={{ duration: 0.2 }}
+                  className="whitespace-nowrap"
+                >
+                  Bando Mega Kusuma
+                </motion.span>
+              )}
+            </AnimatePresence>
+          </Link>
+          <div className="h-4 w-px bg-border"></div>
+
+          <div className="flex items-center gap-5 text-neutral-400 text-xs sm:text-sm font-medium">
+            {menuData.map((menu) => {
+              return (
+                <Link
+                  key={menu.id}
+                  href={menu.link}
+                  className={`${isActive(menu.link) ? active : "hover:text-white transition-colors"}`}
+                >
+                  {menu.label}
+                </Link>
+              );
+            })}
+          </div>
         </div>
-      </header>
-    </>
+
+        <Link
+          href="/contact"
+          className="hidden sm:flex items-center gap-1.5 px-4 py-1.5 bg-white text-black text-xs font-semibold rounded-full hover:bg-neutral-200 transition-colors shrink-0"
+        >
+          Contact <ArrowRightIcon size={12} />
+        </Link>
+      </motion.nav>
+    </header>
   );
 }
