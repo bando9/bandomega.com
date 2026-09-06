@@ -46,6 +46,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             <Link
               href={project.githubURL}
               target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center gap-1 hover:underline"
             >
               <Image
@@ -60,6 +61,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             <Link
               href={project.websiteURL}
               target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center gap-1 hover:underline"
             >
               <Image

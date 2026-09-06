@@ -45,8 +45,9 @@ export default function HeaderSection() {
 
         <div className="flex gap-3 mt-3 md:mt-5 flex-wrap">
           <Link
-            href="https://drive.google.com/file/d/1gmkJ5dN6XnUKEilYNey5fBkEe_Gq8_zE/view?usp=sharing"
+            href="/docs/resume.pdf"
             target="_blank"
+            rel="noopener noreferrer"
             className="flex gap-1 opacity-50 hover:underline"
           >
             <Image
