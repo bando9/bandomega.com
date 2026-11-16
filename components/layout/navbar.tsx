@@ -14,7 +14,7 @@ const menuData = [
 ];
 export default function NavBar() {
   const [isScrolled, setIsScrolled] = useState(false);
-  const active: string = "text-[#F5E68E]";
+  const active: string = "text-[#0EB8F0]";
   const location = usePathname();
 
   function isActive(path: string) {

@@ -1,7 +1,21 @@
-import Header from "@/components/layout/header";
+"use client";
+
 import Image from "next/image";
+import { useState } from "react";
+import { motion } from "framer-motion";
+
+import Header from "@/components/layout/header";
 
 export default function HeaderSectionAbout() {
+  const [isHovered, setIsHovered] = useState(false);
+
+  const springTransition = {
+    type: "spring" as const,
+    stiffness: 200,
+    damping: 20,
+    mass: 0.8,
+  };
+
   return (
     <section id="header" className="mt-25 md:mt-25 md:mx-25 mx-5">
       <Header
@@ -41,24 +55,50 @@ export default function HeaderSectionAbout() {
         </div>
 
         <div className="relative w-2/3 ms-10 md:ms-0 flex justify-center items-center py-5 order-1">
-          <div className="absolute -rotate-3 -left-5 top-2 md:-left-10 md:top-0">
-            <Image
-              width={450}
-              height={450}
-              src="/images/profile.jpg"
-              alt="Profile 1"
-              className="w-40 h-56 md:w-60 md:h-80 object-cover rounded-xl shadow-lg"
-            />
-          </div>
+          <div
+            className="relative w-72 h-80 cursor-pointer flex items-center justify-center"
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+          >
+            <motion.div
+              className="absolute w-fit h-fit rounded-2xl overflow-hidden shadow-2xl border border-white/10 bg-neutral-800"
+              animate={{
+                x: isHovered ? 15 : -25,
+                y: isHovered ? 10 : -15,
+                rotate: isHovered ? 4 : -6,
+                scale: isHovered ? 1.02 : 0.95,
+                zIndex: isHovered ? 20 : 10,
+              }}
+              transition={springTransition}
+            >
+              <Image
+                width={450}
+                height={450}
+                src="/images/profile.jpg"
+                alt="Profile 1"
+                className="w-50 h-56 md:w-60 md:h-80 object-cover rounded-xl shadow-lg"
+              />
+            </motion.div>
 
-          <div className="relative rotate-3 z-10">
-            <Image
-              width={450}
-              height={450}
-              src="/images/profile-2.jpg"
-              alt="Profile 2"
-              className="w-44 h-56 md:w-70 md:h-80 object-cover rounded-xl shadow-lg"
-            />
+            <motion.div
+              className="absolute w-fit h-fit rounded-2xl overflow-hidden shadow-2xl border border-white/10 bg-neutral-800"
+              animate={{
+                x: isHovered ? -25 : 15,
+                y: isHovered ? -15 : 10,
+                rotate: isHovered ? -6 : 4,
+                scale: isHovered ? 0.95 : 1.02,
+                zIndex: isHovered ? 10 : 20,
+              }}
+              transition={springTransition}
+            >
+              <Image
+                width={450}
+                height={450}
+                src="/images/profile-2.jpg"
+                alt="Profile 1"
+                className="w-40 h-56 md:w-60 md:h-80 object-cover rounded-xl shadow-lg"
+              />
+            </motion.div>
           </div>
         </div>
       </div>
